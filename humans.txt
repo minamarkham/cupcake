@@ -1,0 +1,45 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+
+  Designer & Developer: Mina Markham
+  Site: http://mina.codes
+  Twitter: @minamarkham
+  Location: Dallas, Texas
+
+/* THANKS */
+
+  Portrait Photo: Marco Sierra (http://www.sierrablu.net/)
+
+/* SITE */
+
+  Last update: December 2014
+  Standards: HTML5, CSS3, Sass
+  Components: Modernizr, jQuery
+
+/* SECTIONS */
+	
+
+/* SCRIPTS */
+
+
+Software: Sublime Text 2, Transmit, Adobe Photoshop CS6 
+
+
+                                           ,-.
+               /^\                         ` -
+         ,,   ;  ]          *..*
+        /. \  [  [        ,*/.** ;)
+         \  \.|  |       ;`;**{ ;**         ,=*``*
+          \  \|  |       :*/./.*.*{      ,x*`     ;. ,,,.,,
+           \  | |       [/ ;.{.* [    ,*      ,,*^`       *
+            ". /.      ;*  * *;  [   "*,,*=*`` /`         **
+              `^`     /*  { ***  *.         ,/`            [
+      ,             /`{   * **    ".     ,=*                *,_                     __
+      |           *^  *  {  *.       ```                       `^^^^^^^^^^^"^`````
+      |         /`   {  ;.  "
+      \     _,*`     ]  *
+       `*=*`         * *
+                     "`
