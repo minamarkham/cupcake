@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sitesettings SYSTEM "sitesettings.dtd">
+<!--Adobe GoLive settings file-->
+<sitesettings section="urlhandling" version="1.0">
+	<attributes>
+		<attribute name="autoaddmailto" value="yes"/>
+		<attribute name="casesensitive" value="yes"/>
+		<attribute name="cgiparameters" value="?"/>
+		<attribute name="encoding" value="UTF8"/>
+		<attribute name="hhescapingState" value="complete"/>
+		<attribute name="honorcgiparameters" value="yes"/>
+		<attribute name="linksabsolute" value="no"/>
+		<list name="urlfilter"/>
+		<attribute name="version" value="1"/>
+	</attributes>
+</sitesettings>
