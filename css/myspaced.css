@@ -1,0 +1,405 @@
+﻿		﻿@import "font-face.css";
+
+/*  CSS Document for MinaMarkham.com */
+/*
+
+
+Title:			myspaced.css
+Browser(s): 		All 
+
+Author: 		Mina Markham
+Created: 		07.28.11
+
+*/
+
+/*COLOR CODES*/
+
+/*----------------------
+#FF3377: Dark Pink
+#792E00: Brown
+#716B66: Dark Grey
+----------------------*/
+
+/* -------------------------------------------------------------- 
+   Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, small, mark, img, q, dl, dt, dd, ol, ul, li, fieldset, figure, figcaption, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+body { line-height: 1.5; background: #fff; margin: 1.5em 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight:400; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+a img { border: none; }
+input,textarea { margin: 0; }
+
+/* Removes Firefox imposed outline */
+a { outline: none; }
+
+/* Clearing floats without extra markup  */
+.wrapper { display: inline-block; }
+.wrapper:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .wrapper { height: 1%; }
+.wrapper { display: block; }
+
+
+/* -------------------------------------------------------------- 
+   978 Grid System CSS Framework	http://978.gs
+-------------------------------------------------------------- */
+
+div.layout-978 { width: 978px; margin: 0px auto; }
+
+div.row { height: 1%; }
+div.row-end { clear: both; font: 1px/1px sans-serif; height: 1px; overflow: hidden; }
+
+div.col1, div.col2, div.col3, div.col4, div.col5, div.col6, div.col7, div.col8, div.col9, div.col10, div.col11, div.col12 { float: left;  }
+div.col1:first-child, div.col2:first-child, div.col3:first-child, div.col4:first-child, div.col5:first-child, div.col6:first-child, div.col7:first-child, div.col8:first-child, div.col9:first-child, div.col10:first-child, div.col11:first-child, div.col12:first-child { margin-left: 0px; }
+div.col1 { width: 54px; }
+div.col2 { width: 138px; }
+div.col3 { width: 222px; margin-right: 30px;}
+div.col4 { width: 306px; margin-left: 30px;}
+div.col5 { width: 390px;}
+div.col6 { width: 474px; }
+div.col7 { width: 558px; margin-top: 30px;}
+div.col8 { width: 642px;}
+div.col9 { width: 726px; }
+div.col10 { width: 810px; }
+div.col11 { width: 894px; }
+div.col12 { width: 978px; }
+
+
+/* Typography
+-------------------------------------------------------------- */
+
+/* This is where you set your desired font size. The line-heights 
+   and vertical margins are automatically calculated from this. 
+   The percentage is of 16px (0.75 * 16px = 12px). */
+
+body { font-size: 75%; color: purple; }
+
+p {font-family: "Comic Sans MS", "Comic Sans MS5", cursive; font-size: 1.2em; line-height: 1.5em;}
+p span{font-family: "Comic Sans MS", "Comic Sans MS5", cursive;}
+
+p.copyright {
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	font-size: 1em;
+	line-height: 1.3em;
+	padding-top: .5em;
+	margin-top: .5em;
+}
+
+p.center {text-align: center;}
+
+a#gs-overlay-badge {float: right; clear: none; margin-top: 10px; margin-right: -30px;}
+a#humans {float: right; clear: none; margin-top: 13px; margin-right: 10px;}
+
+/* Layout
+-------------------------------------------------------------- */
+#background {background: blue url(i/bganimated16.gif) repeat;}
+#container { width: 978px; margin: 0 auto; padding-top: 60px;}
+#border {height: 40px; width: 100%; background: red;margin-top: -20px;position: fixed; z-index: 998;}
+#border-container { margin:auto; width: 978px;}
+#logo {float: left; clear: none;margin: 10px 10px 0 0;}
+nav { margin: 5px 0; float: right; }
+nav a {margin-left: 10px; font-family: "Comic Sans MS", "Comic Sans MS5", cursive;text-transform: uppercase; color: #FFF; display: inline; font-size: 1.6em; line-height: 1.5em;}
+nav a:hover{color: #FF3377;}
+section { margin-bottom:150px; padding-top: 75px; float: left;}
+section:last-child { width: 978px; margin-bottom: 31px; padding-top: 50px; float: left;}
+footer {width: 978px; float:left;  border-top: 1.5px dotted #999;}
+article.reasons div.col4 {margin: 30px 30px 30px 0;}
+aside.col4 {float: right; width: 306px; margin: 30px 0;}
+section#download {clear:both; margin-top: -50px;}
+#thumbs {clear: both;}
+#thumbs img {margin: 0 20px 15px 0; border: 5px solid yellow; float: left;}
+article.reasons {clear: both;}
+#mail{background: url(i/mail.png) no-repeat;}
+#call{background: url(i/phone.png) no-repeat;}
+#docs{background: url(i/doc.png) no-repeat;}
+#tweet li{list-style-type: none; font-family: "Comic Sans MS", "Comic Sans MS5", cursive; font-size: 1.2em; line-height: 1.5em; margin-bottom: 1em;}
+#toTop a
+{
+	/* display: block before hiding */
+	display: block;
+	display: none;
+ 
+	/* link is above all other elements */
+	z-index: 999; 
+ 
+	/* link doesn't hide text behind it */
+	opacity: .8;
+ 
+	/* link stays at same place on page */
+	position: fixed;
+ 
+	/* link goes at the bottom of the page */
+	top: 100%;
+	margin-top: -912px; /* = height + preferred bottom margin */
+ 
+	/* link is centered */
+	right: 50%;
+	margin-right: -110px; /* = half of width */
+ 
+	/* round the corners (to your preference) */
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+ 
+	/* make it big and easy to see (size, style to preferences) */
+	width: 48px;
+	height: 48px;
+	background: url(i/scroll.png) no-repeat center;
+
+}
+
+
+/* HEADINGS
+-------------------------------------------------------------- */
+
+h1 {
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	font-size: 4.2em; 
+	line-height: 1em;
+	margin: 0.5em 0;
+	color: #573B1F;	
+	text-align: center;
+}
+
+h2 {
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	font-size: 2em; 
+	line-height: 1.5em;
+	margin-bottom: 0.5em;
+	color: #666;	
+	text-align: center;
+	text-transform: none;
+}
+
+h2#hireme, h2#hireme a{background: url(i/banner_pink.png) no-repeat center; height: 55px; color: #FFF;text-transform: uppercase;}
+
+h3 {
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	font-size: 2em; 
+	line-height: 1em;
+	color: #666;	
+	text-align: center;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+}
+
+h3.hi {	text-align: center;letter-spacing: 0; margin-bottom: .5em;}
+
+h3 a {	border-top: 1px solid #999;
+	border-width: 100%;
+	padding-top: .5em;
+	margin-top: .5em;
+	color: #999;}
+
+
+h4 {
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	font-size: 1.2em; 
+	line-height: 1.25em;
+	color: #573B1F;	
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+
+h5 {
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	font-size: 1.1em; 
+	line-height: 1.5em;
+	margin: .5em 0 3em 0;
+	color: #666;	
+	letter-spacing: .5em;
+	text-align: center;
+	text-transform: lowercase; 
+}
+
+
+h6 {	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	font-size: 1.5em; 
+	color: #999;	
+	text-align: center;
+}
+h6 a {color: #999;}
+h6 a:hover, h6 span { color: #ff3377;}
+
+
+
+
+/* TEXT ELEMENTS
+-------------------------------------------------------------- */
+
+p { margin: 0 0 1.5em;}
+
+figcaption { font-family: "Comic Sans MS", "Comic Sans MS5", cursive;  font-size:1em;margin:.6em 0 5em -5em;}
+
+h2.reasons {
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	font-size: 1.6em; 
+	line-height: 1.5em;
+	margin-bottom: 1em;
+	color: #666;	
+	text-align: left;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+h2.reasons:after {content: " " url(i/plus.png);}
+
+h2 p{margin-right: 50px;}
+
+ul#knowledge {
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive; 
+	font-size: 1.1em; 
+	line-height: 2em;
+	text-transform: none;	
+	color: #573B1F;
+	margin-left: 1.25em;
+	margin-bottom: 1em;}
+
+ul#tools { 
+	-moz-column-count: 2;
+	-moz-column-gap: 30px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 30px;
+	column-count: 2;
+	column-gap: 30px;
+}
+
+ul#tools { font-family: "Comic Sans MS", "Comic Sans MS5", cursive; font-size: 1em; line-height: 1em; list-style-type: none;}
+ul#tools li.one{ background: url(i/skill-1.png) no-repeat left; height:20px; text-indent: 50px;}
+ul#tools li.two{ background: url(i/skill-2.png) no-repeat left; height:20px; text-indent: 50px;}
+ul#tools li.three{ background: url(i/skill-3.png) no-repeat left; height:20px; text-indent: 50px;}
+ul#tools li.four{ background: url(i/skill-4.png) no-repeat left; height:20px; text-indent: 50px;}
+
+ul#social {margin: 0 auto;}
+ul#social li{display: inline-block; list-style-type: none;}
+
+a { color: red; text-decoration: none; }
+a:hover { text-decoration: none; }
+
+.kicker { font-size: 1em; margin: 0 2em 0 4em; }
+mark, mark a {font-family: "Comic Sans MS", "Comic Sans MS5", cursive;background-color: blue;color: yellow; padding: .1em .2em;}
+blockquote{background: url(i/quotes.png) no-repeat; padding: 5px 0 5px 20px; font-family: "Comic Sans MS", "Comic Sans MS5", cursive; font-size: 1.5em; line-height:1.6em;margin:0 1em 1.5em 0;}
+cite{font-family: "Comic Sans MS", "Comic Sans MS5", cursive; display:block;text-align:right;text-transform:uppercase;letter-spacing:.2em;margin:-1.5em 1em 1.5em 0;font-style:normal;font-size:1em;}
+cite:before{content:"— ";margin-left:-3.4em;margin-right:.9em;opacity:.3;}
+
+/* CLASSES 
+-------------------------------------------------------------- */
+
+.hasnote {
+	background: url('i/bg_hasnote.png') top right no-repeat;
+	padding-right: 15px;
+	position: relative;}
+
+.hasnote .note {
+	display: none;
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;}
+
+.hasnote:hover .note {
+	display: inline-block;
+	float: right;
+	position: absolute;
+	top: -30px;
+	right: -100px;
+	height: 30px;
+	font-size: 0.5em;
+	text-align: center;
+	background: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px dotted #444;
+	padding: 5px;}
+
+/* FIGURES
+-------------------------------------------------------------- */
+img.tagline{margin: 0 auto; display: block;}
+img.love-me{margin: 0 auto; display: block;}
+img.me {float: left; margin: 0 20px 20px 0; display: block; clear: both;}
+section#hireme img {margin: auto; display: block;}
+section#sayhi img {margin: 10px auto; display: block;}
+section#thanks img {margin: auto; display: block;}
+figure#sig {float: right; clear: both;}
+figure#reasons {margin: 20px auto; width: 978px;}
+
+figure.with-cap { 
+	display: block; 
+	position: relative; 
+	float: left; 
+	overflow: hidden; }
+
+figcaption { 
+	position: absolute; 
+	background: green;
+	background: rgba(0,0,255,0.5); 
+	color: white; 
+	padding: 10px 20px; 
+	opacity: 0;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition:    all 0.6s ease;
+	-o-transition:      all 0.6s ease;
+	width: 190px;}
+
+figure:hover figcaption {opacity: 1;}
+
+.with-cap:before { bottom: 0; left: 0; }
+.with-cap figcaption {left: 60px; bottom: -30px; }
+.with-cap:hover figcaption { bottom: -30px; }
+
+/* FORMS
+-------------------------------------------------------------- */
+#form-container { width:500px; margin: 0 auto;}
+#contact_form { margin: 0 auto;}
+
+#contact_form input, 
+#contact_form textarea {
+	width: 95%;
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	background-color: #FFF;
+	border: 5px solid yellow;
+	color: #573B1F;
+	font-size: 15px;
+	padding: 5px 10px;
+	margin: 0;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+textarea#submit_message { height:150px; }
+
+#contact_form .submit_contact {
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	text-transform: uppercase;
+	width: 100px;
+	margin:10px 0 0 0;
+ 	background:yellow;
+	color:#444 !important;
+	padding:6px 10px 6px 10px;
+	font-size:12px;
+	border:none;
+	cursor: pointer;}
+
+#contact_form .submit_contact:hover { 
+	background: green;
+	color: #FFF !important;
+	text-decoration: none;}
+
+#contact_form input:focus, #contact_form textarea:focus, #contact_form select:focus{ border: 2px solid #FF3377;}
+#contact_form .submit_contact:focus {border:none;}
+
+#switchform select{
+	font-family: "Comic Sans MS", "Comic Sans MS5", cursive;
+	background-color: red;
+	border: 1px solid red;
+	color: #FFF;
+	font-size: 11px;
+	padding: 1px;
+	float: left;
+	margin-top: 11px;
+	width: 120px;
+}
+
+form p { position:relative; margin: 0; text-align: left;}
+label  { position:absolute; top:23px; left:13px}

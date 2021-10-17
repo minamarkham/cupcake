@@ -1,0 +1,67 @@
+﻿/*
+Type-A-File "Library Science" designed by Jessica Hische.
+http://www.jessicahische.com
+@jessicahische
+
+Creative Commons License by Attribution. 
+Feel free to take it, adapt it, & use it on both commercial and non-commercial projects.
+Though I'd like a smidgeon of credit, so just leave this bit in here. K?
+*/
+
+/*Pick Your Fonts*/
+
+body, h3, h4, h5, h6, .header, .subheader, .head, .subhead, .pullquote, .kicker {font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'serif'}
+h1,.pullquote, aside, .sidenote, blockquote, aside h1, .sidenote h1, h2 {font-family: Georgia, serif;}
+.drop-cap{font-family:'Times New Roman', Times, serif;}
+
+/*Size & Vertical Rhythm*/
+body{font-size:87.5%;font-size:14px;line-height:1.58em;}
+
+/*HTML Standard Elements*/
+h1{font-size:3em;line-height:1.333em;margin:.97em 0 0em;border-bottom:1px dotted black;padding-bottom:.4em;} 
+h2{font-size:2em;line-height:1.1em;margin:2em 0 .5em;letter-spacing:.05em;font-style:italic;}
+h1 + img, h2 + img{margin-top:1em;}
+h3{font-size:1.125em;}
+h4{font-weight:bold;font-size:1em;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+small{display:block;font-size:.75em;letter-spacing:.1em;margin:2.2em 0 -.2em;font-style:italic;font-weight:bold;line-height:2em;}
+p, ul, ol, form{margin:1.5em 0 1em;}
+ul{list-style-position:outside;list-style-type:disc;line-height:1.5;}
+li{margin-bottom:.75em;}
+ol{list-style-position:outside;list-style-type:decimal;}
+blockquote{font-style:italic;margin:0em 0em 0em 1.5em;line-height:1.75em;font-size:1.2em;}
+blockquote:before{content: "â€œ";font-size:2em;text-indent:-.8em;margin-top:.1em;float:left;opacity:.5;}
+cite{display:block;text-transform:uppercase;letter-spacing:1px;font-style:normal;font-size:smaller;margin-top:.5em;margin-left:1.5em;}
+cite:before{content:"â€”";font-size:1.5em;text-indent:-1.3em;font-weight:bold;margin-top:-.1em;opacity:.5;}
+pre{margin:1.5em;}
+dl{margin:1.45em 0;/*border-top:1px dotted #999;border-bottom:1px dotted #999;*/}
+dt{word-spacing:.2em;border-bottom:1px dotted #999;margin-top:1.5em;font-weight:bold;text-transform:uppercase;font-size:.9em;letter-spacing:.2em;padding-bottom:.5em;}
+dt:before{content:"\2767";font-size:1.25em;text-indent:-1.5em;float:left;}
+dd{font-style:italic;font-size:.9em;margin-bottom:1.65em;line-height:1.75em;margin-top:.75em;}
+abbr{text-transform:uppercase;font-size:.9em;letter-spacing:.1em;}
+p {margin-bottom:0;hyphenate: auto;hyphenate-before:2;hyphenate-after:3;hyphenate-lines: 3;orphans:4}
+p + p, p + aside + p, p + .sidenote + p, p.kicker + p.kicker{text-indent:1.8em;margin-top:0;}
+p span.pullquote{text-indent:0;}
+
+/*Compositional Elements*/
+.kicker{font-size:1.33em;line-height:1.693em;font-style:italic;margin:-.35em 0 -.35em;}
+.kicker, .pullquote{font-weight:100;}
+.run-in, cite{text-transform:uppercase;font-style:normal;letter-spacing:.2em;font-size:.9em;}
+.superscript{font-family:arial, sans-serif;vertical-align:super;font-size:75%;margin-right:.4em;text-transform:lowercase;font-variant:small-caps;letter-spacing:.1em;line-height:0;}
+.subscript{font-family:arial, sans-serif;vertical-align:sub;font-size:75%;margin-right:.4em;text-transform:lowercase;font-variant:small-caps;letter-spacing:.1em;line-height:0em;}
+a.superscript, a.subscript{text-decoration:none;}
+aside, .sidenote{font-size:.83em;font-style:italic;margin-top:-.4em;}
+aside h1, .sidenote h1{text-transform:uppercase;margin-bottom:.8em;font-size:1em;line-height:1.5em;font-style:normal;font-weight:bold;letter-spacing:.2em;padding-bottom:.7em;}
+aside p, .sidenote p{line-height:1.7em;margin:0;font-style:normal;}
+aside ul, aside ol, .sidenote ul, .sidenote ol{margin-top:1.3em;line-height:1.7em;}
+aside ul li, aside ol li, .sidenote ul li, .sidenote ol li{margin-bottom:1.3em;}
+.pullquote{font-style:italic;letter-spacing:.05em;margin:0em .7em 0 0;padding-top:.35em;line-height:1.5em;display:block;float:left;font-size:1.75em;width:50%;}
+.pullquote:before {font-family:Georgia, serif;content: "â€œ";font-size:2em;text-indent:-.6em;margin-top:.05em;float:left;opacity:.3;}
+.footnote{border-top:1px solid black;font-size:.75em;margin-top:3.5em;}
+.footnote li{margin:1.5em 0 1.5em;word-spacing:.1em;line-height:1.75em;}
+.caption{font-size:.8em;font-style:italic;margin:.6em 0 -.2em;}
+.kicker .run-in{text-transform:uppercase;font-style:normal;letter-spacing:.25em;font-size:.9em;}
+.drop-cap {display:block;font-style:normal;font-size:8em;float:left;margin:.04em .1em 0 0;line-height:.67em;}
+
+/*Tweaks*/
+.kern{letter-spacing:-.1em;}

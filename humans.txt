@@ -1,0 +1,59 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Designer & Developer: Mina Markham
+  Site: minamarkham.com
+  Twitter: @minamarkham
+  Location: Dallas, Texas
+
+/* THANKS */
+  HTML5 Boilerplate (http://html5boilerplate.com/)
+  
+
+
+/* SITE */
+  Last update: August 2011
+
+  Standards: HTML5, CSS3
+
+  Components: Modernizr, jQuery
+
+  Scripts:
+  		1) Invasion of the Body Switchers (http://www.alistapart.com/articles/bodyswitchers/)
+		2) Filterable Portfolio (http://www.gethifi.com/blog/a-jquery-plugin-to-create-an-interactive-filterable-portfolio-like-ours)
+		3) Infield Label (http://fuelyourcoding.com/scripts/infield/)
+  		4) Anchor Slider (http://www.position-absolute.com/articles/better-html-anchor-a-jquery-script-to-slide-the-scrollbar/) 
+		5) Twitter.js (http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/)
+		6) jQuery Mousewheel (http://plugins.jquery.com/project/mousewheel)
+		7) FancyBox (http://fancybox.net/)
+		8) HTML5 Grayscale Image Hover (http://webdesignerwall.com/tutorials/html5-grayscale-image-hover)
+		9) Scroll to top (http://briancray.com/2009/10/06/scroll-to-top-link-jquery-css/)  
+
+  Software: Coda, Textastic (for iPad), Adobe Photoshop CS3        
+  
+                                                        
+                               -o/-                       
+                               +oo//-                     
+                              :ooo+//:                    
+                             -ooooo///-                   
+                             /oooooo//:                   
+                            :ooooooo+//-                  
+                           -+oooooooo///-                 
+           -://////////////+oooooooooo++////////////::    
+            :+ooooooooooooooooooooooooooooooooooooo+:::-  
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-   
+                     -:+ooooooooooooooooo+:://////:--     
+                       /ooooooooooooooooo+//////:-        
+                      -ooooooooooooooooooo////-           
+                      /ooooooooo+oooooooooo//:            
+                     :ooooooo+/::/+oooooooo+//-           
+                    -oooooo/::///////+oooooo///-          
+                    /ooo+::://////:---:/+oooo//:          
+                   -o+/::///////:-      -:/+o+//-         
+                   :-:///////:-            -:/://         
+                     -////:-                 --//:        
+                       --                       -:        

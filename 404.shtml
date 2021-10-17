@@ -1,0 +1,127 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <!--
+    Description: minamarkham.com ver.4 - launched 2011
+    Version: 4.3 (07.25.2011)
+    Author: Mina Markham (Copyright 2011)
+    
+    Hi there, source peeker.
+    There's still some formatting to tweaked, but things are pretty much how I want them now.
+    
+    To do:	add print styles
+    		add responsive design
+    		add PDF portfolio
+    //-->
+
+<meta charset="utf-8">
+	<title>DON'T PANIC! | Page Not Found</title>
+	<link type="text/plain" rel="author" href="http://minamarkham.com/humans.txt" />
+	<meta name="description" content="Professional and personal background of Mina Markham, a graphic designer and interactive developer in Dallas, Texas.">
+	<meta name="author" content="Mina Markham, http://www.minamarkham.com/">
+	<meta name="google-site-verification" content="8YjcXMUgXS9SXcmj05R2m7N4Qf6rzyvB-Wzq0nb1QfE">
+
+<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- CSS: implied media="all" -->
+	<link rel="stylesheet" title="default" href="css/styles.css">
+
+</head>
+
+<body id="background">
+
+<!--TOP -->
+	<div id="top"></div>
+	<div id="border">
+		<div id="border-container">
+			<div id="logo"><a href="/"><img src="img/logo.png" height="20" alt="My logo"></a></div>
+			<!--!<div id="screen-switcher"></div>-->
+
+<!--NAVIGATION -->
+			<nav>
+				<a href="/">my work</a>
+				<a href="/">my story</a>
+				<a href="/">why me</a>
+				<a href="mailto:mina@minamarkham.com">say hi</a>
+				<a id="inline" href="#soon">blog</a>
+				<div style="display:none"><aside id="soon"><h1>Coming Soon!</h1></div>
+			</nav>
+		</div> <!--! end of #border-container -->
+	</div> <!--! end of #border -->
+
+<!--CONTENT -->
+	<div id="container">
+		<section id="error">
+			<h2 class="center">Don&#39;t Panic! I&#39;m sorry, I can&#39;t find that page or file you&#39;re looking for.</h2>
+			<img src="img/404.png" alt="Oh my! What happened to the page?">
+			<h2 class="center">So, what now?</h2>
+			<p class="center">
+				- You can try refreshing the page, the problem may be temporary.<br> 
+				- If you typed in the address, try double-checking the spelling.<br> 
+				- Go back to the <a href="/">homepage</a> or choose an item from the main navigation above.<br>
+				- Throw your computer against a wall*<br>
+				- Keep calm and eat a <a href="cupcake.html" class="iframe">cupcake</a>.
+			</p><BR>
+			<p class="disclaimer">*I am not responsible for property damage</p>
+		</section>
+	</div> <!--! end of #container -->
+
+<!--FOOTER -->
+	<section id="footer">
+		<footer>
+			<p class="footer left">Created during many sleepless nights by Mina Markham &copy; 2011 | Valid <a href="http://validator.w3.org/">HTML5</a> &amp; <a href="http://jigsaw.w3.org/css-validator/">CSS3</a> | <a href="humans.txt">Colophon</a></p>
+			<p class="footer right">Email me at <a href="mailto:mina@minamarkham.com">mina [at] minamarkham [dot] com</a></p>
+			<!--<div id="tweet">
+				<p>Please wait while my tweets load<img src="img/spinner.gif" alt="Tweets are loading..." class="loader"/><br/><a href="http://twitter.com/minamarkham">(If you can&rsquo;t wait - check out my tweets)</a></p>
+			</div>-->
+		</footer>
+	</section>
+
+<!-- JavaScript -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+<script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+<script src="js/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			$("a#inline").fancybox({
+				'hideOnContentClick': true
+			});
+			$("a.iframe").fancybox({
+				'width'				: '75%',
+				'height'			: '100%',
+				'autoScale'     	: false,
+				'type'				: 'iframe',
+				'hideOnContentClick'	: 'false'
+			});
+		});
+</script>
+
+<!--[if lt IE 7 ]>
+	<script src="js/libs/dd_belatedpng.js"></script>
+	<script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+<![endif]-->
+
+<!-- Google Analytics-->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-9004889-1']);
+		_gaq.push(['_setDomainName', '.minamarkham.com']);
+		_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

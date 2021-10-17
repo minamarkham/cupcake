@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'LatoBlackItalic';
+    src: url('fonts/Lato-BlackItalic-webfont.eot');
+    src: url('fonts/Lato-BlackItalic-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-BlackItalic-webfont.woff') format('woff'),
+         url('fonts/Lato-BlackItalic-webfont.ttf') format('truetype'),
+         url('fonts/Lato-BlackItalic-webfont.svg#webfontrnJeSSUP') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoBlack';
+    src: url('fonts/Lato-Black-webfont.eot');
+    src: url('fonts/Lato-Black-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-Black-webfont.woff') format('woff'),
+         url('fonts/Lato-Black-webfont.ttf') format('truetype'),
+         url('fonts/Lato-Black-webfont.svg#webfontx1AeDq9C') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoBoldItalic';
+    src: url('fonts/Lato-BoldItalic-webfont.eot');
+    src: url('fonts/Lato-BoldItalic-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-BoldItalic-webfont.woff') format('woff'),
+         url('fonts/Lato-BoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/Lato-BoldItalic-webfont.svg#webfontFaSudPkB') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: url('fonts/Lato-Bold-webfont.eot');
+    src: url('fonts/Lato-Bold-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-Bold-webfont.woff') format('woff'),
+         url('fonts/Lato-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Lato-Bold-webfont.svg#webfontWChoG53K') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoItalic';
+    src: url('fonts/Lato-Italic-webfont.eot');
+    src: url('fonts/Lato-Italic-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-Italic-webfont.woff') format('woff'),
+         url('fonts/Lato-Italic-webfont.ttf') format('truetype'),
+         url('fonts/Lato-Italic-webfont.svg#webfontK66ymxTv') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('fonts/Lato-Regular-webfont.eot');
+    src: url('fonts/Lato-Regular-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-Regular-webfont.woff') format('woff'),
+         url('fonts/Lato-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Lato-Regular-webfont.svg#webfontwlOsaZaJ') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoLightItalic';
+    src: url('fonts/Lato-LightItalic-webfont.eot');
+    src: url('fonts/Lato-LightItalic-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-LightItalic-webfont.woff') format('woff'),
+         url('fonts/Lato-LightItalic-webfont.ttf') format('truetype'),
+         url('fonts/Lato-LightItalic-webfont.svg#webfont9EREcdyY') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url('fonts/Lato-Light-webfont.eot');
+    src: url('fonts/Lato-Light-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-Light-webfont.woff') format('woff'),
+         url('fonts/Lato-Light-webfont.ttf') format('truetype'),
+         url('fonts/Lato-Light-webfont.svg#webfontbUmjvwph') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoHairlineItalic';
+    src: url('fonts/Lato-HairlineItalic-webfont.eot');
+    src: url('fonts/Lato-HairlineItalic-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-HairlineItalic-webfont.woff') format('woff'),
+         url('fonts/Lato-HairlineItalic-webfont.ttf') format('truetype'),
+         url('fonts/Lato-HairlineItalic-webfont.svg#webfontggOmHsEi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoHairline';
+    src: url('fonts/Lato-Hairline-webfont.eot');
+    src: url('fonts/Lato-Hairline-webfont.eot?iefix') format('eot'),
+         url('fonts/Lato-Hairline-webfont.woff') format('woff'),
+         url('fonts/Lato-Hairline-webfont.ttf') format('truetype'),
+         url('fonts/Lato-Hairline-webfont.svg#webfontNPUciU5G') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabThin';
+    src: url('fonts/JosefinSlab-Thin-webfont.eot');
+    src: url('fonts/JosefinSlab-Thin-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-Thin-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Thin-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Thin-webfont.svg#webfontR2lZVBc3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabThinItalic';
+    src: url('fonts/JosefinSlab-ThinItalic-webfont.eot');
+    src: url('fonts/JosefinSlab-ThinItalic-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-ThinItalic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-ThinItalic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-ThinItalic-webfont.svg#webfontZNeJTQxW') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabLight';
+    src: url('fonts/JosefinSlab-Light-webfont.eot');
+    src: url('fonts/JosefinSlab-Light-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-Light-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Light-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Light-webfont.svg#webfontj5wOmE3w') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabLightItalic';
+    src: url('fonts/JosefinSlab-LightItalic-webfont.eot');
+    src: url('fonts/JosefinSlab-LightItalic-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-LightItalic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-LightItalic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-LightItalic-webfont.svg#webfontTpyxNDoo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabRegular';
+    src: url('fonts/JosefinSlab-Regular-webfont.eot');
+    src: url('fonts/JosefinSlab-Regular-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-Regular-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Regular-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Regular-webfont.svg#webfonteLSPYN56') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabItalic';
+    src: url('fonts/JosefinSlab-Italic-webfont.eot');
+    src: url('fonts/JosefinSlab-Italic-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-Italic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Italic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Italic-webfont.svg#webfontafJ1TUK6') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabSemiBold';
+    src: url('fonts/JosefinSlab-SemiBold-webfont.eot');
+    src: url('fonts/JosefinSlab-SemiBold-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-SemiBold-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-SemiBold-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-SemiBold-webfont.svg#webfontyVaaX3CG') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabSemiBoldItalic';
+    src: url('fonts/JosefinSlab-SemiBoldItalic-webfont.eot');
+    src: url('fonts/JosefinSlab-SemiBoldItalic-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-SemiBoldItalic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-SemiBoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-SemiBoldItalic-webfont.svg#webfontmbN6K4hw') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabBold';
+    src: url('fonts/JosefinSlab-Bold-webfont.eot');
+    src: url('fonts/JosefinSlab-Bold-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-Bold-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-Bold-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-Bold-webfont.svg#webfontJdkZPQ7q') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JosefinSlabBoldItalic';
+    src: url('fonts/JosefinSlab-BoldItalic-webfont.eot');
+    src: url('fonts/JosefinSlab-BoldItalic-webfont.eot?iefix') format('eot'),
+         url('fonts/JosefinSlab-BoldItalic-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-BoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-BoldItalic-webfont.svg#webfontjilVDTfS') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

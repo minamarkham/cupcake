@@ -1,0 +1,297 @@
+﻿@import "font-face.css";
+
+/*  CSS Document for MinaMarkham.com */
+/*
+
+
+Title:			main.css
+Browser(s): 	All (expect IE)
+
+Author: 		Mina Markham (www.pinksneakscreative.com)
+Created: 		06.06.11
+
+*/
+
+/*COLOR CODES*/
+
+/*----------------------
+#FF3377: Dark Pink
+#792E00: Brown
+#716B66: Dark Grey
+----------------------*/
+
+/* -------------------------------------------------------------- 
+   Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, small, mark, img, q, dl, dt, dd, ol, ul, li, fieldset, figure, figcaption, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+body { line-height: 1.5; background: #fff; margin: 1.5em 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight:400; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+a img { border: none; }
+input,textarea { margin: 0; }
+
+/* Removes Firefox imposed outline */
+a { outline: none; }
+
+/* Clearing floats without extra markup  */
+.wrapper { display: inline-block; }
+.wrapper:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .wrapper { height: 1%; }
+.wrapper { display: block; }
+
+
+
+
+/* -------------------------------------------------------------- 
+   Typography
+-------------------------------------------------------------- */
+
+/* This is where you set your desired font size. The line-heights 
+   and vertical margins are automatically calculated from this. 
+   The percentage is of 16px (0.75 * 16px = 12px). */
+
+body { font-size: 75%; color: #573B1F; }
+
+p {font-family: "LatoRegular",sans-serif; font-size: 1.1em; line-height: 1.3em;}
+p span{font-family: "LatoItalic",sans-serif;}
+
+p.copyright {
+	font-family: "LatoRegular",sans-serif;
+	font-size: .9em;
+	line-height: 1.3em;
+ 	border-top: 1.5px dotted #999;
+	width: 90%;
+	padding-top: .5em;
+	margin-top: .5em;
+}
+
+/* Layout
+-------------------------------------------------------------- */
+#background {background: #333 url(i/bg.png) repeat;}
+#container { width: 978px; margin: 0 auto; padding-top: 60px;}
+#border {height: 20px; width: 100%; background: #ff3377;margin-top: -20px;}
+nav { margin: 20px 0 400px 0; float: left;}
+nav a {font-family: "JosefinSlabBold",serif;text-transform: uppercase; display: block; font-size: 1.8em; line-height: 1.5em;}
+header {background: url(i/ribbon.png) no-repeat;}
+section { margin-bottom:500px; padding-top: 75px; float: left;}
+section#about {padding-top: 55px;}
+section:last-child { margin-bottom: 31px; padding-top: 50px; float: left;}
+footer {float:left;}
+aside img.me {margin: 0 auto; display: block;}
+.col2 {position: fixed; float: left;}
+.col10 { padding-left: 138px; float: left;}
+aside.col4 {float: left; width: 306px; }
+aside.download {clear:both; }
+#sig {float: right;}
+#thumbs img {margin: 0 20px 15px 0; border: 5px solid #FFF;}
+figure#reasons {margin: 20px auto;}
+article.reasons {width: 810px; clear: both;}
+#toTop a
+{
+	/* display: block before hiding */
+	display: block;
+	display: none;
+ 
+	/* link is above all other elements */
+	z-index: 999; 
+ 
+	/* link doesn't hide text behind it */
+	opacity: .8;
+ 
+	/* link stays at same place on page */
+	position: fixed;
+ 
+	/* link goes at the bottom of the page */
+	top: 100%;
+	margin-top: -68px; /* = height + preferred bottom margin */
+ 
+	/* link is centered */
+
+	margin-left: -95px; /* = half of width */
+	width: 300px;
+	height: 48px;
+	background: url(i/scroll.png) no-repeat center;
+
+}
+
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1 {
+	font-family: "LatoBlack",sans-serif;
+	font-size: 3em; 
+	line-height: 1em;
+	margin-bottom: 0.5em;
+	color: #573B1F;	
+	text-align: left;
+}
+
+h2 {
+	font-family: "JosefinSlabBold",serif;
+	font-size: 2em; 
+	line-height: 1.5em;
+	margin: 0.5em 0;
+	color: #666;	
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2#hireme, h2#hireme a{background: url(i/banner_pink.png) no-repeat center; height: 55px; color: #FFF;}
+
+h3 {
+	font-family: "JosefinSlabBold",serif;
+	font-size: 2em; 
+	line-height: 1em;
+	margin-bottom: 1em;
+	color: #666;	
+	text-align: left;
+	text-transform: uppercase;
+}
+
+h3.hi {	text-align: center;}
+
+h3 a {
+	border-top: 1.5px solid #999;
+	border-width: 100%;
+	padding-top: .5em;
+	margin-top: .5em;
+}
+
+h4 {
+	font-family: "JosefinSlabBold",serif;
+	font-size: 1.2em; 
+	line-height: 1.25em;
+	color: #573B1F;	
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-family: "LatoBold",sans-serif;
+	font-size: 1em; 
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+	color: #573B1F;	
+	text-align: center;
+	text-transform: lowercase; 
+}
+
+h5.contact {
+	line-height: 1em;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+h6 {	font-family: "JosefinSlabSemiBoldItalic",serif;
+	font-size: 1.5em; 
+	color: #999;	
+	text-align: center;
+	width: 810px;
+}
+h6 a {color: #999;}
+h6 span { color: #ff3377;}
+
+
+
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p { margin: 0 0 1.5em; }
+
+figcaption { font-family: "LatoRegular",sans-serif;  font-size:1em;margin:.6em 0 5em -5em;}
+
+ol li.reasons {
+	font-family: "JosefinSlabBold",serif;
+	font-size: 1.3em; 
+	line-height: 1.5em;
+	margin-bottom: 1em;
+	color: #666;	
+	text-align: left;
+	text-transform: uppercase;
+}
+
+ol p{margin-right: 50px;}
+
+ul#knowledge {
+	font-family: "LatoRegular",sans-serif; 
+	font-size: 1.1em; 
+	line-height: 1.5em;
+	text-transform: none;	
+	color: #573B1F;
+	margin-left: 1.25em;
+	margin-bottom: 3em;}
+
+#tools ul#tools { 
+	-moz-column-count: 2;
+	-moz-column-gap: 30px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 30px;
+	column-count: 2;
+	column-gap: 30px;
+}
+
+#tools {margin: 10px 0;}
+ul#tools { font-family: "LatoRegular",sans-serif; font-size: 1em; line-height: 1.3em; list-style-type: none;}
+ul#tools li.one{ background: url(i/skill-1.png) no-repeat left; height:15px; text-indent: 50px;}
+ul#tools li.two{ background: url(i/skill-2.png) no-repeat left; height:15px; text-indent: 50px;}
+ul#tools li.three{ background: url(i/skill-3.png) no-repeat left; height:15px; text-indent: 50px;}
+ul#tools li.four{ background: url(i/skill-4.png) no-repeat left; height:15px; text-indent: 50px;}
+
+a { color: #ff3377; text-decoration: none; }
+a:hover { text-decoration: none; }
+
+.kicker { font-size: 1em; margin: 0 2em 0 4em; }
+mark {font-family: "LatoBold",sans-serif;background-color: #ff3377;color: #fff; padding: .1em .2em;}
+blockquote{background: url(i/quotes.png) no-repeat; padding: 5px 10px 5px 20px; font-family: "LatoBoldItalic",sans-serif; font-size: 1.5em; line-height:1em;margin:1.5em 1em 1.5em 2em;}
+cite{font-family: "JosefinSlabBold",serif; display:block;text-align:right;text-transform:uppercase;letter-spacing:.2em;margin:-1.5em 1em 1.5em 0;font-style:normal;font-size:1em;}
+cite:before{content:"— ";margin-left:-3.4em;margin-right:.9em;opacity:.3;}
+
+
+/* -------------------------------------------------------------- 
+   Forms
+-------------------------------------------------------------- */
+#form-container { max-width:500px; margin: 0 auto;}
+section#sayhi { margin: 0 auto; padding-top: 0;}
+section#sayhi img {margin: 10px auto; display: block;}
+section#thanks img {margin: auto; display: block;}
+#contact_form { margin: 0 auto;}
+
+#contact_form input, 
+#contact_form textarea {
+	width:480px;
+	font-family: "LatoRegular",sans-serif;
+	background-color: #FFF;
+	border: 1px solid #FF3377;
+	color: #573B1F;
+	font-size: 15px;
+	padding: 5px 10px;
+	margin: 0;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+textarea#submit_message { height:150px; }
+
+#contact_form .submit_contact {
+	color:#ff3377; 
+	background: url(i/buttons.png) no-repeat 0 0;
+	width: 154px;
+	height: 38px;
+	display: block;
+	cursor: pointer;
+	border:none;
+	margin: 15px 0;
+}
+
+#contact_form .submit_contact:hover { background-position: 0 -38px; border:none;}
+#contact_form .submit_contact:active { background-position: 0 -76px; border:none;}
+#contact_form input:focus, #contact_form textarea:focus, #contact_form select:focus{ border: 2px solid #FF3377;}
+#contact_form .submit_contact:focus {border:none;}
+form p { position:relative; margin: 0;}
+label  { position:absolute; top:23px; left:13px}
+

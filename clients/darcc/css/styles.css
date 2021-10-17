@@ -1,0 +1,413 @@
+@import url("typography.css");
+
+/*  CSS Document for DallasRapeCrisis.org */
+/*
+
+
+Title:			main.css
+Browser(s): 		All (expect IE)
+
+Author: 		Mina Markham (www.pinksneakscreative.com)
+Created: 		06.06.11
+
+*/
+
+/*COLOR CODES*/
+
+/*----------------------
+#58c3bb: Light Teal
+#00877C: Teal
+#444: Dark Grey
+----------------------*/
+
+/* -------------------------------------------------------------- 
+   Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, article, aside, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, figure, figcaption, label, legend, table, caption, section, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+body { line-height: 1.5; background: #fff; margin: 1.5em 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight:400; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+a img { border: none; }
+input,textarea { margin: 0; }
+
+/* Removes Firefox imposed outline */
+a { outline: none; }
+
+/* Clearing floats without extra markup  */
+.wrapper { display: inline-block; }
+.wrapper:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .wrapper { height: 1%; }
+.wrapper { display: block; }
+
+
+/* -------------------------------------------------------------- 
+   Typography
+-------------------------------------------------------------- */
+
+/* This is where you set your desired font size. The line-heights 
+   and vertical margins are automatically calculated from this. 
+   The percentage is of 16px (0.75 * 16px = 12px). */
+body {font-size: 75%;  margin-bottom: 10px; font-family: 'LatoRegular', sans-serif; color: #333;}
+
+
+/* Default fonts and colors. */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea { font-family: 'LatoRegular', sans-serif; }
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p { margin: 0 0 1.5em;}
+
+ul, ol { margin: 0 1.5em 1.5em 1.5em; }
+ul { list-style-type: circle; }
+ol { list-style-type: decimal; }
+
+a { color: #00877C; text-decoration: none; }
+a:hover { color: #444; text-decoration: none; }
+
+blockquote {font-family: 'DejaVuSerifItalic', serif; font-size: 2em; line-height: 1em; width: 474px; float: left;}
+cite {font-family: 'DejaVuSerifBook', serif; font-size: 1.2em; line-height: 2em; width: 474px; float: left;}
+
+a.reverse{color: #FFF;}
+a.reverse:hover{color: #000;}
+
+/* Layout
+-------------------------------------------------------------- */
+#background{background: url("i/hope-woman.png") no-repeat center 165px,#58c3bb url("i/bg.jpg") repeat; }
+#texture{background: #58c3bb url("i/bg.jpg") repeat; }
+#border {height: 20px; width: 100%; background: rgba(0, 135, 124, 0.5); margin-top: -20px; text-align: right; padding: 2px 0;}
+.container {width: 978px; margin: 0 auto; padding-top: 40px;}
+.logo{float:left;}
+#hotline{width: 978px; margin: 0 auto;}
+header{}
+div#main {width: 100%; height: 400px; float: left; clear: both; margin-top: 20px;}
+div#main h3{font-size: 1em; text-transform: uppercase; color: #FFF; background: #00877C; width: 30%; padding: .5em 1em; float: right; clear: right; margin-right: 80px;}
+#search{float: right;}
+
+section#full-width{float: left; clear: both; width: 978px; margin-bottom: 20px;}
+section#title{float: left; clear: both; width: 978px; margin-bottom: 20px;}
+section#main{float: left; clear: right; width: 726px; margin-left: 30px;}
+section#side{float: left; clear: right; width: 222px;}
+
+article, aside{ float: left;}
+article.col4{width: 306px; margin-left: 30px; }
+article.col6{width: 474px; margin-left: 0;}
+article.col5{width: 390px; margin-left: 30px;}
+article.half-page{width: 474px; margin-left: 30px;}
+article.half-page:first-child{margin-left: 0;}
+
+aside.col2{float: left; clear: right; width: 138px; margin-left: 30px; }
+
+/* Ads
+-------------------------------------------------------------- */
+aside.ad-main{margin-left: 20px; margin-bottom: 20px; float:left; width: 285px; height: 200px; padding: 0 10px; border: 1px solid #58c3bb;}
+aside.ad-main:first-child{margin-left: 0;}
+aside.ad-main h3{text-transform: uppercase; background: #00877C; width: 100%;}
+
+aside.ad{margin-bottom: 20px; padding: 0 20px; border: 1px solid #00877C;}
+aside.ad h4{font-family: 'LatoBlack', sans-serif; text-transform: uppercase; background: #00877C; width: 100%; text-align: center;  z-index: 10;}
+figure.ad {margin:-36px 0 0 -22px; z-index: -1000;}
+
+
+/* Header 
+-------------------------------------------------------------- */
+#breadcrumbs {width: 100%; border-top: 1px solid #000; border-bottom : 1px solid #000; height: 32px; float: left; clear: both; margin: 10px 0;}
+
+/* Main Navigation
+-------------------------------------------------------------- */
+nav#main ul{clear: left; margin-left: 0; color: #333; z-index: 2000;}
+nav#main li {font-family: 'LatoBlack', sans-serif; font-size: 1.2em; display: inline; text-transform: uppercase; float: left; }
+nav#main li a{color: #333;}
+nav#main li a:hover{color: #00877C; text-decoration: none; background: none;}
+
+#nav li{
+	margin-right:10px;
+	position:relative;}
+
+#nav a{
+	display:block;
+	padding:5px;
+	color:#333;
+	text-decoration:none;}
+
+#nav a:hover{
+	color:#fff;
+	background:none;
+	text-decoration:none;}
+
+
+/*--- DROPDOWN ---*/
+#nav ul{
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	margin-left: 0;
+	width: 140px;}
+
+#nav ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+	text-transform: none;
+	font-family: 'LatoRegular', sans-serif;
+	font-size: .8em;
+	line-height: .8em;
+	margin: 0;}
+
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	color: #FFF;}
+
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */}
+
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background:#00877C;
+	text-decoration:none;}
+
+#nav li:hover a.top{ 
+	background:none;
+	color: #00877C;}
+
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+	color: #FFF;}
+
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#333;}
+
+/* GET Navigation
+-------------------------------------------------------------- */
+.get{width: 155px; height: 140px; background: rgba(255,255,255, 0.7); padding: 15px; float: left; margin-right: 10px; margin-bottom: 30px;}
+.get:last-child{margin-right: 0}
+.get h3{font-family: 'DejaVuSerifCondensedBold', serif; text-transform: uppercase; font-size: 1.3em;}
+.get h5{font-family: 'DejaVuSerifItalic', serif; }
+.get p{font-family: 'DejaVuSerifBook', serif; font-size: .9em;}
+
+/* Footer Navigation
+-------------------------------------------------------------- */
+nav.footer{
+	height: 180px;
+	width: 171px;
+	float: left;
+	margin-left: 30px;
+	list-style-type: circle;
+	line-height: 1.2em;}
+	
+nav.footer li{margin-left: 1.3em; line-height: 1.3em;}
+
+nav.footer:first-child{margin-left: 0px;}
+nav img{margin: 10px 5px 10px 0;}
+nav.footer a{color: #444;}
+nav.footer a:hover{color: #00877C;}
+
+/* Footer 
+-------------------------------------------------------------- */
+footer { background: #333 url("i/footer.jpg") repeat-x; height: 280px; width: 100%; position: bottom; margin-top: 20px;  float: left; clear: both;}
+#footer-wrapper{ width: 978px; margin: 0 auto; clear:both; padding-top: 20px;}
+#bottom{ width: 978px; margin: 0 auto; clear:both; padding: 15px 0;}
+#bottom p{ margin: 10px 0 5px 150px; color: #FFF;}
+#bottom a:hover{color: #FFF;}
+
+/* Twitter 
+-------------------------------------------------------------- */
+aside#twitter {background: url(i/twitter-bg.png) no-repeat; height: 155px; padding: 10px 3px 10px 3px; width: 285px;}
+#tweet {font-family: 'LatoBold',sans-serif; font-size: 12px; padding: 5px 10px; width: 285px;}
+#tweet li {margin-left: 0px; list-style-type: none;line-height:1.3em;}
+#follow {margin: 20px 0 0 70px;}
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1#main { font-size: 3em; line-height: 1.1; margin: 0.5em 1em 3em 0; float: right; clear: both;}
+h1#pageTitle {font-family: 'MEgalopolisExtraRegular', sans-serif; letter-spacing: -5px; font-size: 5em; line-height: .9; margin-bottom: 0; margin-right: 0.5em;text-transform: uppercase; float: left; color: #00877C}
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h2.hotline { font-size: 2em; margin-bottom: 0.75em; float:right;}
+h3 { font-family: 'LatoBold', sans-serif; font-size: 1.4em; line-height: .9; margin: .4em 0 1em 0; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em;}
+h5 { font-size: 1em; margin-bottom: 1.5em; }
+h6 { font-family: 'LatoBlack', sans-serif; font-size: 1.5em; text-transform: uppercase; margin-bottom: .5em;}
+
+
+/* Images
+-------------------------------------------------------------- */
+figure#section{width: 978px; height: 340px; margin-bottom: 20px;}
+figure#page{width: 726px; height: 340px; margin-bottom: 20px;}
+figure.faces{width: 220px; height: 135px; margin: 0 20px 20px 0; float: left; clear: left;}
+figcaption{margin: -30px 0 0 20px;}
+
+
+/*    Forms
+-------------------------------------------------------------- */
+
+form#searchbox_demo {margin: -15px 0 0 0;float: right;}
+form#searchbox_demo input{float: none; }
+form {margin-right: 30px;}
+form#newsletter input{float: left; clear: none;}
+
+/* form p { position:relative; margin: 0;}
+label  { font-family: 'LatoBold',sans-serif; position:absolute; top:23px; left:13px;}*/
+
+/* Fieldsets */
+fieldset { padding: 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ddd; clear: both;}
+legend { padding: 0 .4em; font-weight: bold; font-size: 1.2em; clear: both;}
+
+/* Textareas */
+textarea { margin: 0.5em 0.5em 0 0; clear: both; padding: .4em; border: 1px solid #00877C;}
+
+/* Inputs */
+input { border: 1px solid #58c3bb; float: left; clear: both;}
+input:focus { border: 2px solid #00877C;}
+
+/* Saftey Alert
+-------------------------------------------------------------- */
+#overlay {
+	position:absolute;
+	background-color: rgba(0,0,0,0.8);
+	z-index:9999;
+	width:100%;
+	height:100%;}
+	
+#overlay #thebox {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10%;
+	width:350px;
+	border-radius:5px;
+	-webkit-box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+	background-color:#FFF;
+	padding:25px;
+	position:relative;}
+	
+#thebox h6 {
+	font-size:18px;
+	color:#00877C;
+	padding-bottom:6px;}
+	
+#thebox p {
+		margin-top:-15px;
+		color:#666;
+		font-size:12px;
+		line-height:16px;}
+		
+#thebox a {
+		margin-left: 50px;
+		font-size:20px;
+		line-height:50px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;}
+
+#thebox a:hover {font-family: 'LatoBlack', sans-serif; text-decoration: none;}
+		
+#thebox .close {
+	display:block;
+	background: url(i/close.png);
+	height: 22px;
+	width: 22px;
+	position:absolute;
+	top:10px;
+	right:10px;}
+
+/* Escape Button
+-------------------------------------------------------------- */
+#escape {position: fixed; margin: 65px 0 0 -5px; z-index: 2000;}
+
+/* Donate Button
+-------------------------------------------------------------- */
+#donate {position: absolute; right: 0; top: 0;}
+
+
+/* Float Clearing
+ ---------------------------------------------------------------------*/
+
+.module:after{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;}
+
+/* float clearing for IE6 */
+* html .module{
+	height: 1%;
+	overflow: visible;}
+
+/* float clearing for IE7 */
+* + html .module{min-height: 1%;}
+
+/* Breadcrumb Styles
+ ---------------------------------------------------------------------*/
+
+.breadCrumb {
+	margin: 0;
+	padding: 0;
+	float: left;
+	display: block;
+	height: 21px;
+	overflow: hidden;
+	width: 990px;
+	padding:5px;
+	background:none;}
+
+.breadCrumb ul{
+	margin: 0;
+	padding: 0;
+	height: 21px;
+	display: block;}
+
+.breadCrumb ul li{
+	display: block;
+	float: left;
+	position: relative;
+	height: 21px;
+	overflow: hidden;
+	line-height: 21px;
+	margin: 0px 6px 0px 0;
+	padding: 0px 10px 0px 0;
+	font-size: .9167em;
+	background: url(i/Chevron.gif) no-repeat 100% 0;}
+
+.breadCrumb ul li div.chevronOverlay{
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;}
+
+.breadCrumb ul li span{
+	display: block;
+	overflow: hidden;}
+
+.breadCrumb ul li a{
+	display: block;
+	position: relative;
+	height: 21px;
+	line-height: 21px;
+	overflow: hidden;
+	float: left;}
+
+.breadCrumb ul li.first a{
+	height: 16px !important;
+	text-indent:-1000em;
+	width:16px;
+	padding: 0;
+	margin-top: 2px;
+	overflow: hidden;
+	background:url(i/IconHome.gif) no-repeat 0 0;}
+
+.breadCrumb ul li.first a:hover{background-position: 0 -16px;}
+
+.breadCrumb ul li.last{
+	background: none;
+	margin-right: 0;
+	padding-right: 0;}
+
+.chevronOverlay{
+	display: none;
+	background: url(i/ChevronOverlay.png) no-repeat 100% 0;
+	width: 13px;
+	height: 20px;}
