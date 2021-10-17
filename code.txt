@@ -1,0 +1,14 @@
+						<form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
+							<label for="name" accesskey="U">Your Name</label>
+							<input name="name" type="text" id="name" placeholder="NAME" required="required" /> 
+							<label for="email" accesskey="E">Email</label>
+							<input name="email" type="email" id="email" placeholder="EMAIL" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+							<label for="comments" accesskey="C">Comments</label>
+							<textarea name="comments" cols="40" rows="3"  id="comments" placeholder="TALK TO ME" spellcheck="true" required="required"></textarea>
+					        <fieldset>            	        	
+					        	<legend>Are you human?</legend>
+					            <label for="verify" accesskey="V" class="verify"><img src="image.php" alt="Verification code" /></label>
+					            <input name="verify" type="text" id="verify" size="6" required="required" style="width: 50px;" title="This confirms you are a human user and not a spam-bot." />
+					        </fieldset>  
+							<input type="submit" id="submit" value="send message"/>
+						</form>

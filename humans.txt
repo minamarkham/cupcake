@@ -1,0 +1,52 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+
+	Designer & Developer: Mina Markham
+	Site: http://mina.is
+	Twitter: @minamarkham
+	Location: Dallas, Texas
+
+/* THANKS */
+
+	HTML5 Boilerplate 	(http://html5boilerplate.com/)
+	Mono Template		(http://themeforest.net/user/yokCreative)
+	Portrait Photos by: 	Marco & April Sierra (http://www.sierrablu.net/)
+				Stacey Moore (http://www.onetrueart.com)
+	404 Photo by: 		Kevin Trotman (http://www.flickr.com/photos/kt/)
+
+/* SITE */
+
+  Last update: June 2012
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+
+/* SCRIPTS */
+ 
+  	1) Filterable Portfolio (http://www.gethifi.com/blog/a-jquery-plugin-to-create-an-interactive-filterable-portfolio-like-ours)
+	2) Slimbox2 (http://www.digitalia.be/software/slimbox2)
+	3) jQuery.ScrollTo (http://flesler.blogspot.com/2007/10/jqueryscrollto.html)
+  	4) jQuery.LocalScroll (http://flesler.blogspot.com/2007/10/jquerylocalscroll-10.html)
+	5) Twitter.js (http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/)
+	6) Half-Court Shot (http://blog.mediahack.com/apps/half-court-shot)
+
+Software: Coda, Diet Coda (for iPad), Adobe Photoshop CS3        
+  
+                                                                                        
+                                           ,-.                                          
+               /^\                         ` -                                           
+         ,,   ;  ]          *..*                                                        
+        /. \  [  [        ,*/.** ;)                                                     
+         \  \.|  |       ;`;**{ ;**         ,=*``*                                     
+          \  \|  |       :*/./.*.*{      ,x*`     ;. ,,,.,,                              
+           \  | |       [/ ;.{.* [    ,*      ,,*^`       *                             
+            ". /.      ;*  * *;  [   "*,,*=*`` /`         **                            
+              `^`     /*  { ***  *.         ,/`            [                            
+      ,             /`{   * **    ".     ,=*                *,_                     __  
+      |           *^  *  {  *.       ```                       `^^^^^^^^^^^"^`````      
+      |         /`   {  ;.  "                                                           
+      \     _,*`     ]  *                                                               
+       `*=*`         * *                                                                
+                     "`                                                                 
