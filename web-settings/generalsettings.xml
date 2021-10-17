@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sitesettings SYSTEM "sitesettings.dtd">
+<!--Adobe GoLive settings file-->
+<sitesettings section="general" version="1.0">
+	<attributes>
+		<attribute name="defaultCSSURL" value="/css/basic.css"/>
+		<attribute name="homepageURL" value="/index.html"/>
+		<attribute name="version" value="1"/>
+	</attributes>
+</sitesettings>

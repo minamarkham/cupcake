@@ -1,0 +1,140 @@
+                       .page {
+					    background-image : url(img/bg_page.gif);
+		                background-color : #ffffff;
+						margin : 10px 0px 0px 0px;
+	                               }
+					 .outerbody_bg {
+				        background: #CAE1B3 url(img/bg_body.gif) no-repeat  ;
+				                  }
+					    .menu {
+				        background-color: #5C8E49;
+	                               }
+			       .menuButton, .menudefault, .menuButton_on {
+				        background-color: #91C46F;
+		                font-family : arial;
+		                font-size : 8pt;
+						font-weight : bold;
+						color : #ffffff;
+						font-style : normal;
+						padding-left: 15px;
+						padding-right :15px;
+	                               }
+					.menuButton {
+						background-color: #91C46F;
+					}
+					.menuButton_on {
+						background-color: #FF9600;
+					}
+                    .menudefault{
+					background-color: #91C46F;
+					width:25%;
+					 }
+					.menuright {
+						background-color: #91C46F;
+						width:1px;
+					}
+					.menuright_on {
+						background-color: #FF9600;
+						width:1px;
+					}
+					
+					.menuleft {
+						background-color: #91C46F;
+						width:1px;
+					}
+                    .menuleft_on {
+						background-color: #FF9600;
+						width:1px;
+					}
+					.menu_ButtonHeight {
+					  background-color : none ;
+					   width: 0px;
+					   height: 30px;
+					}
+					.menu_h_space{
+					background-color : none ;
+					height : 1px;
+					}
+					.menu a:link, .menu a:active{
+					color: #ffffff;
+	                text-decoration: none;
+					}
+					.menu a:hover, .menu a:visited{
+					color: #ffffff;
+	                text-decoration: none;
+					}
+					 .body {
+				          font-family : arial;
+						  font-size : 9pt;
+						  font-weight : normal;
+						  color : #000000;
+						  font-style : normal;
+
+						               }
+					 .body td {
+				          font-family : arial;
+						  font-size : 9pt;
+						  font-weight : normal;
+						  color : #000000;
+						  font-style : normal;
+						               }
+					   .footer {
+					    background-color : #5C8E49;
+				        font-family : arial;
+					    font-size : 8pt;
+						font-weight : normal;
+						font-style : normal;
+						color : #ffffff;
+			            padding : 5px;
+						}
+					.footer td {
+					    background-color : #5C8E49;
+				        font-family : arial;
+					    font-size : 8pt;
+						font-weight : normal;
+						font-style : normal;
+						color : #ffffff;
+			            padding : 5px;
+						}		
+					 .edit {
+					     background-image: url(img/bg.gif);
+						 border: solid 1px #C0C0C0;
+						 font-family: arial;
+						 font-size: 8pt;
+					           }
+					.futureLink{
+						background: #4B9F67;
+						padding: 2px;
+						color: #ffffff;
+						font-weight: bold;
+						text-align: center;
+						border: solid 1px #ffffff;
+						}	
+						a:link, a:visited, a:link{
+					    color: #006600;
+	                    text-decoration: underline;
+						 font-weight: bold;
+					   }
+			           a:hover{
+					   color: #006600;
+	                   text-decoration: underline;
+					    font-weight: bold;
+					   }	
+					   .signin td
+						{
+						font-family: arial;
+						font-size: 8pt;
+						}
+					.signin a:link, .signin a:visited, .signin a:link{
+					    color: #0000cc;
+	                    text-decoration: underline;
+					   }
+			        .signin a:hover{
+					   color: #0000cc;
+	                   text-decoration: underline;
+					   }	
+					 .Header{font-size: 13pt; font-weight: bold;}
+					  .toolHeader{color: #37760D;}
+					  .toolText {color: #000000; font-size:8pt;}	
+					    li {color:#006600; font-weight:bold;}	
+						  .divider{background-image: url(img/h_dotline.gif); background-repeat: repeat-x;}

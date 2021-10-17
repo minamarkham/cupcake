@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sitesettings SYSTEM "sitesettings.dtd">
+<!--Adobe GoLive settings file-->
+<sitesettings section="collectiontab" version="1.0">
+	<attributes>
+		<attribute name="dataVersion" value="1"/>
+		<list name="entries"/>
+	</attributes>
+</sitesettings>

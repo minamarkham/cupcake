@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "User Backups"
+AuthUserFile /var/chroot/home/content/m/i/n/miname1201/html/stats/.statspwd
+require valid-user
+Options +Indexes
