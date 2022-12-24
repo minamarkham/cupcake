@@ -1,46 +1,59 @@
 {
-  "name": "cupcake",
-  "version": "7.0.0",
-  "description": "The absolutely delicious, I mean really just scrumptious, personal site for Mina Markham",
-  "main": ".eleventy.js",
-  "scripts": {
-    "🚧": "cross-env ELEVENTY_ENV=development eleventy --serve",
-    "🚀": "cross-env ELEVENTY_ENV=production eleventy",
-    "🐞": "cross-env DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve",
-    "dev": "npm run-s 🚧",
-    "production": "npm run-s 🚀",
-    "debug": "npm run-s 🐞",
-    "watch:sass": "sass --watch src/assets/styles:www/assets/styles",
-    "build:sass": "sass src/assets/styles:www/assets/styles",
-    "start": "npm run-s dev & npm run watch:sass",
-    "serve": "npm run-s dev & npm run watch:sass",
-    "build": "npm run build:sass & npm run-s production",
-    "clean": "rimraf www"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/minamarkham/cupcake.git"
-  },
-  "author": {
-    "name": "Mina Markham",
-    "email": "mina@mina.codes",
-    "url": "https://mina.codes/"
-  },
-  "bugs": {
-    "url": "https://github.com/minamarkham/cupcake/issues"
-  },
-  "homepage": "https://github.com/minamarkham/cupcake#readme",
-  "license": "MIT",
-  "browserslist": [
-    "last 2 versions"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.13",
-    "chalk": "^4.0.0",
-    "cross-env": "^7.0.3",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2",
-    "sass": "^1.57.1"
-  }
+	"name": "cupcake",
+	"version": "7.0.0",
+	"description": "The absolutely delicious, I mean really just scrumptious, personal site for Mina Markham",
+	"main": ".eleventy.js",
+	"scripts": {
+		"🚧": "cross-env ELEVENTY_ENV=development eleventy --serve",
+		"🚀": "cross-env ELEVENTY_ENV=production eleventy",
+		"🐞": "cross-env DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve",
+		"dev": "npm run-s 🚧",
+		"production": "npm run-s 🚀",
+		"debug": "npm run-s 🐞",
+		"watch:sass": "sass --watch src/assets/styles:www/assets/styles",
+		"build:sass": "sass src/assets/styles:www/assets/styles",
+		"start": "npm run-s dev & npm run watch:sass",
+		"serve": "npm run-s dev & npm run watch:sass",
+		"build": "npm run build:sass & npm run-s production",
+		"clean": "rimraf www"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/minamarkham/cupcake.git"
+	},
+	"author": {
+		"name": "Mina Markham",
+		"email": "mina@mina.codes",
+		"url": "https://mina.codes/"
+	},
+	"bugs": {
+		"url": "https://github.com/minamarkham/cupcake/issues"
+	},
+	"homepage": "https://github.com/minamarkham/cupcake#readme",
+	"license": "MIT",
+	"browserslist": [
+		"last 2 versions"
+	],
+	"dependencies": {
+		"@11ty/eleventy-navigation": "^0.3.2"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.0-canary.13",
+		"@11ty/eleventy-img": "^2.0.1",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+		"@rollup/plugin-commonjs": "^21.0.2",
+		"@rollup/plugin-image": "^3.0.1",
+		"@rollup/plugin-node-resolve": "^13.1.3",
+		"@rollup/plugin-replace": "^4.0.0",
+		"chalk": "^4.0.0",
+		"cross-env": "^7.0.3",
+		"eleventy-plugin-metagen": "^1.4.8",
+		"eleventy-plugin-rollup": "^1.0.3",
+		"luxon": "^2.3.0",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^3.0.2",
+		"rollup": "^2.69.1",
+		"rollup-plugin-terser": "^7.0.2",
+		"sass": "^1.57.1"
+	}
 }
