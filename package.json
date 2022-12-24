@@ -1,0 +1,43 @@
+{
+  "name": "cupcake",
+  "version": "7.0.0",
+  "description": "The absolutely delicious, I mean really just scrumptious, personal site for Mina Markham",
+  "main": ".eleventy.js",
+  "scripts": {
+    "🚧": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "🚀": "cross-env ELEVENTY_ENV=production eleventy",
+    "🐞": "cross-env DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve",
+    "dev": "npm run-s 🚧",
+    "production": "npm run-s 🚀",
+    "debug": "npm run-s 🐞",
+    "start": "npm run dev",
+    "serve": "npm run-s 🚧",
+    "build": "npm run-s 🚀",
+    "clean": "rimraf www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/minamarkham/cupcake.git"
+  },
+  "author": {
+    "name": "Mina Markham",
+    "email": "mina@mina.codes",
+    "url": "https://mina.codes/"
+  },
+  "bugs": {
+    "url": "https://github.com/minamarkham/cupcake/issues"
+  },
+  "homepage": "https://github.com/minamarkham/cupcake#readme",
+  "license": "MIT",
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.13",
+    "chalk": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}
