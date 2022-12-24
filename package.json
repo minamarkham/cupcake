@@ -14,7 +14,7 @@
     "build:sass": "sass src/assets/styles:www/assets/styles",
     "start": "npm run-s dev & npm run watch:sass",
     "serve": "npm run-s dev & npm run watch:sass",
-    "build": "npm run-s production & npm run build:sass",
+    "build": "npm run build:sass & npm run-s production",
     "clean": "rimraf www"
   },
   "repository": {
