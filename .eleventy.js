@@ -58,8 +58,7 @@ const TEMPLATE_ENGINE = 'njk';
 
 module.exports = function (eleventyConfig) {
 	// Start pretty console output
-	console.group('\n', '   🪐');
-	console.log(chalk.white('  |'));
+	console.group('\n', '   🧁');
 
 	// Echo the registered collections in the terminal
 	// Create collections from /11ty/collections.js
@@ -72,7 +71,7 @@ module.exports = function (eleventyConfig) {
 	Object.keys(collections).forEach((collectionName, index) => {
 		let len = Object.keys(collections).length - 1;
 		let pre = index === len ? '└── ' : '├── ';
-		console.log(chalk.white('│       ' + pre) + chalk.green(collectionName));
+		console.log(chalk.white('│      ' + pre) + chalk.green(collectionName));
 
 		collections[collectionName](eleventyConfig);
 	});
@@ -88,7 +87,7 @@ module.exports = function (eleventyConfig) {
 	Object.keys(plugins).forEach((pluginName, index) => {
 		let len = Object.keys(plugins).length - 1;
 		let pre = index == len ? '└── ' : '├── ';
-		console.log(chalk.white('│       ' + pre) + chalk.green(pluginName));
+		console.log(chalk.white('│      ' + pre) + chalk.green(pluginName));
 
 		plugins[pluginName](eleventyConfig);
 	});
@@ -104,7 +103,7 @@ module.exports = function (eleventyConfig) {
 	Object.keys(filters).forEach((filterName, index) => {
 		let len = Object.keys(filters).length - 1;
 		let pre = index == len ? '└── ' : '├── ';
-		console.log(chalk.white('│       ' + pre) + chalk.green(filterName));
+		console.log(chalk.white('│      ' + pre) + chalk.green(filterName));
 
 		filters[filterName](eleventyConfig);
 	});
@@ -120,7 +119,7 @@ module.exports = function (eleventyConfig) {
 	Object.keys(shortcodes).forEach((shortcodeName, index) => {
 		let len = Object.keys(shortcodes).length - 1;
 		let pre = index == len ? '└── ' : '├── ';
-		console.log(chalk.white('│       ' + pre) + chalk.green(shortcodeName));
+		console.log(chalk.white('│      ' + pre) + chalk.green(shortcodeName));
 
 		shortcodes[shortcodeName](eleventyConfig);
 	});
@@ -138,7 +137,7 @@ module.exports = function (eleventyConfig) {
 	Object.keys(passthroughs).forEach((passthroughName, index) => {
 		let len = Object.keys(passthroughs).length - 1;
 		let pre = index == len ? '└── ' : '├── ';
-		console.log(chalk.white('│       ' + pre) + chalk.green(passthroughName));
+		console.log(chalk.white('│      ' + pre) + chalk.green(passthroughName));
 
 		eleventyConfig.addPassthroughCopy(passthroughs[passthroughName]());
 	});
@@ -156,7 +155,7 @@ module.exports = function (eleventyConfig) {
 	Object.keys(templateLanguages).forEach((templateLanguageName, index) => {
 		let len = Object.keys(templateLanguages).length - 1;
 		let pre = index == len ? '└── ' : '├── ';
-		console.log(chalk.white('│       ' + pre) + chalk.green(templateLanguageName));
+		console.log(chalk.white('│      ' + pre) + chalk.green(templateLanguageName));
 
 		eleventyConfig.addTemplateFormats(templateLanguageName);
 		eleventyConfig.addExtension(
@@ -176,7 +175,7 @@ module.exports = function (eleventyConfig) {
 	Object.keys(transforms).forEach((transformName, index) => {
 		let len = Object.keys(transforms).length - 1;
 		let pre = index == len ? '└── ' : '├── ';
-		console.log(chalk.white('│       ' + pre) + chalk.green(transformName));
+		console.log(chalk.white('│      ' + pre) + chalk.green(transformName));
 
 		eleventyConfig.addTransform(transforms[transformName]());
 	});
@@ -192,7 +191,7 @@ module.exports = function (eleventyConfig) {
 	Object.keys(watchtargets).forEach((watchtargetName, index) => {
 		let len = Object.keys(watchtargets).length - 1;
 		let pre = index === len ? '└── ' : '├── ';
-		console.log(chalk.white('        ' + pre) + chalk.green(watchtargetName));
+		console.log(chalk.white('       ' + pre) + chalk.green(watchtargetName));
 
 		eleventyConfig.addWatchTarget(watchtargets[watchtargetName]());
 	});
