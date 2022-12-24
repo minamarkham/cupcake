@@ -1,0 +1,53 @@
+@use 'sass:math';
+
+.page-404 {
+	background: #1c1c1c;
+	color: #d3d7de;
+	font-size: 2rem;
+	line-height: 1.5em;
+	cursor: default;
+	font-family: var(--font-family-monospace);
+	&::before { display: none; }
+}
+
+.code-area {
+	position: absolute;
+	min-width: 750px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.code-area > span {
+	display: block;
+}
+
+@media screen and (max-width: 320px) {
+	.code-area {
+		min-width: auto;
+		width: 95%;
+		margin: auto;
+		padding: 5px;
+		padding-left: 10px;
+		line-height: 6.5vw;
+	}
+}
+
+.fof {
+	display: table-cell;
+	vertical-align: middle;
+	h1 {
+		font-size: 100px;
+		display: inline-block;
+		padding-right: 5px;
+		animation: type 0.5s alternate infinite;
+		line-height: 1;
+		margin-top: 4rem;
+	}
+}
+
+@keyframes type {
+	from { box-shadow: inset -1px 0px 0px var(--primary); }
+	to { box-shadow: inset -1px 0px 0px transparent; }
+}
