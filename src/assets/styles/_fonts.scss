@@ -1,0 +1,100 @@
+$typefaces: (
+	'DankMono-Regular': (
+		family: 'Dank Mono',
+		weight: 400,
+		style: normal,
+	),
+	'DankMono-Bold': (
+		family: 'Dank Mono',
+		weight: 600,
+		style: normal,
+	),
+	'DankMono-Italic': (
+		family: 'Dank Mono',
+		weight: 400,
+		style: italic,
+	),
+
+	'TTChocolates-Bold': (
+		family: 'TT Chocolates',
+		weight: 700,
+		style: normal,
+	),
+	'TTChocolates-Bold-Italic': (
+		family: 'TT Chocolates',
+		weight: 700,
+		style: italic,
+	),
+	'TTChocolates-Demi-Bold': (
+		family: 'TT Chocolates',
+		weight: 600,
+		style: normal,
+	),
+	'TTChocolates-Demi-Bold-Italic': (
+		family: 'TT Chocolates',
+		weight: 600,
+		style: italic,
+	),
+	'TTChocolates-Extra-Bold': (
+		family: 'TT Chocolates',
+		weight: 800,
+		style: normal,
+	),
+	'TTChocolates-Extra-Bold-Italic': (
+		family: 'TT Chocolates',
+		weight: 800,
+		style: italic,
+	),
+	'TTChocolates-Extra-Light-Italic': (
+		family: 'TT Chocolates',
+		weight: 200,
+		style: italic,
+	),
+	'TTChocolates-Extra-Light': (
+		family: 'TT Chocolates',
+		weight: 200,
+		style: normal,
+	),
+	'TTChocolates-Italic': (
+		family: 'TT Chocolates',
+		weight: 400,
+		style: italic,
+	),
+	'TTChocolates-Light-Italic': (
+		family: 'TT Chocolates',
+		weight: 300,
+		style: italic,
+	),
+	'TTChocolates-Light': (
+		family: 'TT Chocolates',
+		weight: 300,
+		style: normal,
+	),
+	'TTChocolates-Medium-Italic': (
+		family: 'TT Chocolates',
+		weight: 500,
+		style: italic,
+	),
+	'TTChocolates-Medium': (
+		family: 'TT Chocolates',
+		weight: 500,
+		style: normal,
+	),
+	'TTChocolates-Regular': (
+		family: 'TT Chocolates',
+		weight: 400,
+		style: normal,
+	),
+);
+
+@if variable-exists(typefaces) {
+	@each $file, $option in $typefaces {
+		@font-face {
+			font-family: map-get(map-get($typefaces, $file), family);
+			font-style: map-get(map-get($typefaces, $file), style);
+			font-weight: map-get(map-get($typefaces, $file), weight);
+			src: url('../fonts/#{$file}.woff') format('woff'),
+				url('../fonts/#{$file}.woff2') format('woff2');
+		}
+	}
+}

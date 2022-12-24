@@ -203,7 +203,7 @@ module.exports = function (eleventyConfig) {
 	console.groupEnd();
 
 	// Configure dev server
-	// https://www.11ty.dev/docs/watch-serve/#eleventy-dev-server
+	// https://www.11ty.dev/docs/dev-server/
 	eleventyConfig.setServerOptions({
 		// Default values are shown:
 
@@ -236,6 +236,9 @@ module.exports = function (eleventyConfig) {
 
 		// Change the default file encoding for reading/serving files
 		encoding: 'utf-8',
+
+		// Watch CSS files for changes
+		files: './www/assets/styles/**/*.css'
 	});
 
 	// Enable quiet mode
