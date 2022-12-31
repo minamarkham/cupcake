@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mina Markham</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
-  </head>
-  <body class="page-404">
-      <div class="code-area">
-        <span style="color: #777;font-style:italic;">
-          // 404 page not found
-        </span>
-        <br>
-        <span>
-          <span style="color:#d65562;">if</span><span style="color: #a6a61f">(</span>
-          <span style="color:#d65562;">!</span><span style="font-style: italic;color:#fff;">found</span>
-          <span style="color: #a6a61f">)</span>
-          {
-        </span>
-        <span>
-          <span style="padding-left: 15px;color:#d65562">
-            <i style="width: 10px;display:inline-block"></i>throw
-          </span>
-          <span>
-            <span style="color: #a6a61f">(</span><span style="color: #fff">"</span><span style="color: #a6a61f">(╯°□°)╯︵ ┻━┻</span><span style="color: #fff">"</span>);
-          </span>
-          <span style="display:block">}</span>
-          <br>
-          <span style="color: #f37;font-style:italic;">
-            <a href="/">return home<span style="color: #a6a61f">()</span>;</a>
-          </span>
-        </span>
-      </div>
-  </body>
+<!--
+	 _          _   _
+	| |        | | | |      |
+	| |     _  | | | |  __  |
+	|/ \   |/  |/  |/  /  \_|
+	|   |_/|__/|__/|__/\__/ o
+
+	look at you, being nosy.
+	View the source here: {{ site.repo }}
+-->
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		{# Favicon #}
+		<link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.png">
+
+		{# metagen plugin output #}
+		{% metagen
+			title = title or docTitle or metadata.title + "| Mina Markham",
+			desc = desc or subtitle,
+			url = env.siteUrl + page.url,
+			img=image_src,
+			img_alt=image_alt,
+			twitter_card_type="summary_large_image",
+			twitter_handle="minamarkham",
+			name="Mina Markham",
+			comments=false,
+			locale = "en_us",
+			css=["/assets/styles/404.css"]
+		%}
+
+		{# If ELEVENTY_ENV environmental variable isn't set to "production", hide this page from search engines #}
+		{% if (index == false) %}
+			<meta name="robots" content="noindex,nofollow">
+		{% endif %}
+
+		<script>document.getElementById("path").innerHTML = window.location.href;</script>
+	</head>
+
+	<body>
+		<main>
+			<p class="homedir">~/404</p>
+			<p class="input">find <span id="path">/whatever-youre-looking-for/</span></p>
+			<p>> Searching for requested resource&hellip;<br/>
+			> Yeah, that didn't work. Try one of these:</p>
+
+			<p>🧁<br/>
+			├── <a href="/about/">/about/</a><br/>
+			├── <a href="/projects/">/projects/</a><br/>
+			│   └─ &hellip;<br/>
+			├── <a href="/posts/">/posts/</a><br/>
+			│   └─ &hellip;<br/>
+			├── <a href="/speaking/">/speaking/</a><br/>
+			├── <a href="/press-kit/">/press-kit/</a><br/>
+			├── <a href="/say-hi/">/say-hi/</a><br/>
+			├── <a href="/hire-me/">/hire-me/</a><br/>
+			└── <a href="/">/home/</a></p>
+
+			<p>That's all I got. Go look at something else.</p>
+		</main>
+	</body>
 </html>
