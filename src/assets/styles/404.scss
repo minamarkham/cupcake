@@ -5,14 +5,14 @@
 
 body {
 	background: #1c1c1c;
-	color: var(--color--foreground);
+	color: var(--color-foreground);
 	font-size: 2vw;
 	line-height: 1em;
 	font-family: var(--font-family-monospace);
 	display: flex;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    padding: 4vw;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	padding: 4vw;
 }
 
 p {
@@ -23,15 +23,15 @@ p {
 		width: 0.5em;
 		height: 1em;
 		margin-left: 5px;
-		background: var(--color--foreground);
+		background: var(--color-foreground);
 		animation: cursor-blink 1.25s steps(1) infinite;
 		content: '';
 	}
 }
 
-a { color: var(--color--primary); }
+a { color: var(--color-primary); }
 
-.homedir { color: var(--color--accent); }
+.homedir { color: var(--color-accent); }
 
 .input::before { content: '$ '; }
 

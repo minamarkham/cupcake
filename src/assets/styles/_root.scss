@@ -1,34 +1,31 @@
 :root {
-	--pink: #f37;
-    --teal: #008080;
-	--white: #fff;
-	--black: #000;
-	--off-black: #1c1c1c;
-
-	--background: #f2f2f2;
-	--color--primary: var(--pink);
-	--color--accent: var(--teal);
-	--color--background: var(--white);
-	--color--foreground: #bdbdbd;
-	--color--text: var(--off-black);
-	--color--link: var(--color--primary);
-
-	// Type scale
-	// Good tool: http://type-scale.com/
-	--base-size: 1em;
-	--type-scale: 1.25;
-	--line-height: 1.45;
-	--h6: calc(var(--base-size) * var(--type-scale));
-	--h5: calc(var(--base-size) * var(--type-scale));
-	--h4: calc(var(--h5) * var(--type-scale));
-	--h3: calc(var(--h4) * var(--type-scale));
-	--h2: calc(var(--h3) * var(--type-scale));
-	--h1: calc(var(--h2) * var(--type-scale));
-
-	--spacer: 1rem;
-	--background--pattern: radial-gradient(var(--color--foreground) 1px, var(--color--background) 1px);
 	--font-family-sans-serif: 'TT Chocolates', sans-serif;
 	--font-family-monospace: 'Dank Mono', monospace;
 	--font-family-system: system-ui, -apple-system, sans-serif;
 
+	--pink: #f37;
+	--teal: #008080;
+	--white: #fff;
+	--black: #000;
+	--off-white: #f2f2f2;
+	--off-black: #1c1c1c;
+	--fuschia: #ff0081;
+	--dark-fuschia: #e60074;
+
+	--color-primary: var(--pink);
+	--color-accent: var(--teal);
+	--color-background: var(--white);
+	--color-foreground: #cbcccd; // bdbdbd
+	--color-text: var(--off-black);
+	--color-link: var(--color-primary);
+
+	--button-bg: var(--fuschia);
+	--button-bg-active: var(--dark-fuschia);
+
+	--spacer: 1rem;
+	--background-pattern: radial-gradient(var(--color-foreground) 1px, var(--color-background) 1px);
+
+	--kbd-color-background: #f7f7f7;
+	--kbd-color-border: #cbcccd;
+	--kbd-color-text: #222325;
 }
