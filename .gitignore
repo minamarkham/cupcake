@@ -1,5 +1,6 @@
 # build artefacts
 www/
+src/content/posts/_drafts
 
 # secrets and errors
 .env
