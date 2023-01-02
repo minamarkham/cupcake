@@ -2,6 +2,16 @@
 
 _Wow, this is an absolutely delicious, I mean really just scrumptious, personal site for the Oakland-based UX engineer Mina Markham._
 
+<p>
+  Previous flavors:
+  <a href="https://github.com/minamarkham/cupcake/tree/6.0%E2%80%94banana-creme">banana creme</a>,
+  <a href="https://github.com/minamarkham/cupcake/tree/5.0%E2%80%94red-velvet" target="_blank">red velvet</a>,
+  <a href="https://github.com/minamarkham/cupcake/tree/4.0%E2%80%94lemon" target="_blank">lemon</a>,
+  <a href="https://github.com/minamarkham/cupcake/tree/3.0%E2%80%94strawberry" target="_blank">strawberry</a>,
+  <a href="https://github.com/minamarkham/cupcake/tree/2.0%E2%80%94chocolate" target="_blank">chocolate</a>,
+  and <a href="https://github.com/minamarkham/cupcake/tree/1.0%E2%80%94vanilla" target="_blank">vanilla</a>.
+</p>
+
 ## Development
 
 #### 0. **Ensure** you're using correct version of node.
