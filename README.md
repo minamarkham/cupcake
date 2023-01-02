@@ -67,12 +67,17 @@ The site is auto-deployed on [Netlify][netlify] from the `main` branch on GitHub
  │       └── partials/              * layout partials
  ├── tweets/                        * minamarkham/twitter-archive submodule
  ├── www/                           * output directory a.k.a. complied site
+ ├── .browserslistrc                * define target browsers
  ├── .editorconfig                  * helps define and maintain consistent coding styles between different editors and IDEs
  ├── .eleventy.js                   * main mainfest file
  ├── .eleventyignore                * defines files to ignore during site generation
+ ├── .env-sample                    * example environment variables
  ├── .eslintrc.js                   * ecmascript linting configuration file
  ├── .gitignore                     * contains files that are ignored from git
  ├── .nvmrc                         * define which version of Node.js is required
+ ├── .prettierignore                * don't run prettier on these files
+ ├── .prettierrc                    * prettier configuration file
+ ├── .stylelintrc                   * stylelint configuration file
  ├── LICENSE                        * licensing information
  ├── netlify.toml                   * netlify configuration
  ├── package-lock.json              * stores an exact, versioned dependency tree
