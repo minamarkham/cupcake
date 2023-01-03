@@ -1,0 +1,19 @@
+[
+	{
+		"words": "Micro",
+		"bio": "<p>Mina Markham is a Senior Engineer at Slack, a conference speaker and organizer, podcast guest and lover of design systems.</p>"
+	},
+	{
+		"words": "Short",
+		"bio": "<p>Mina Markham is a Senior Engineer at Slack. She’s a lover of design systems and speaker, having been featured at many events, including <a href=\"cssdevconf.com\">CSS Dev Conf</a>, <a href=\"http://fluentconf.com/\">Fluent</a>, and Future of Web Design. Mina also co-organizes <a href=\"http://frontporch.io\">Front Porch Conference</a>.</p><p>Previously at <a href=\"https://www.hillaryclinton.com\">Hillary for America</a>, her work on the <a href=\"medium.com/git-out-the-vote/pantsuit-the-hillary-clinton-ui-pattern-library-238e9bf06b54\">Pantsuit</a> pattern library has been spotlighted in WIRED, Fast Company, and Communication Arts. Mina likes ampersands, Oreos, traveling, cupcakes, and the color pink. She lives in Oakland, California.</p>",
+		"open": true
+	},
+	{
+		"words": "Medium",
+		"bio": "<p>Mina Markham is a front-end architect, conference speaker and organizer and lover of design systems. She writes code for a living, currently for the Growth & Marketing Team within Slack.</p><p>Previously a senior engineer at <a href=\"https://www.hillaryclinton.com\">Hillary for America</a>, her work on the <a href=\"medium.com/git-out-the-vote/pantsuit-the-hillary-clinton-ui-pattern-library-238e9bf06b54\">Pantsuit</a> pattern library has been spotlighted in WIRED, Fast Company, and Communication Arts.</p>\n<p>Over the years, Mina has been a featured speaker at many events, including <a href=\"cssdevconf.com\">CSS Dev Conf</a>, <a href=\"http://fluentconf.com/\">Fluent</a>, and Future of Web Design. In addition, she’s the co-organizer of <a href=\"http://frontporch.io\">Front Porch Conference</a>.</p><p>Mina likes ampersands, Oreos, traveling, cupcakes, and the color pink.  When she's not crafting sites or teaching others, she is probably in her kitchen baking something chocolatey. Mina has a Bachelor of Arts in Women’s Studies and Graphic Arts from Syracuse University. She lives in Oakland, California.</p>"
+	},
+	{
+		"words": "Long",
+		"bio": "<p>Mina Markham is a Sass-lovin' front-end architect in Brooklyn, NY. She's actively involved in the tech community, founding the Dallas chapter <a href=\"http://girldevelopit.com\">Girl Develop It</a>, teaching for <a href=\"http://blackgirlscode.com\">Black Girls Code</a> and organizing <a href=\"http://frontporch.io\">Front Porch</a>. As a developer at <a href=\"https://www.hillaryclinton.com/open-jobs/engineering/\">Hillary for America</a>, she specializes in building responsive applications and modular CSS architecture. Mina has presented at various conferences and events, including <a href=\"http://frontenddesignconference.com\">Front-End Design Conference</a>, <a href=\"http://distill.engineyard.com\">Distill</a>, <a href=\"http://fluentconf.com/\">O'Reilly Fluent</a> and <a href=\"http://collisionconf.com/\">Collision</a>. When she's not crafting sites or teaching others, Mina is probably in her kitchen baking something chocolatey.</p>"
+	}
+]

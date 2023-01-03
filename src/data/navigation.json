@@ -1,0 +1,27 @@
+[
+	{
+		"title": "Projects",
+		"url": "/projects/",
+		"external": false
+	},
+	{
+		"title": "Speaking",
+		"url": "/speaking/",
+		"external": false
+	},
+	{
+		"title": "Posts",
+		"url": "/posts/",
+		"external": false
+	},
+	{
+		"title": "About",
+		"url": "/about/",
+		"external": false
+	},
+	{
+		"title": "Say Hi",
+		"url": "/say-hi/",
+		"external": false
+	}
+]
