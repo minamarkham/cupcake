@@ -1,0 +1,98 @@
+/* External links */
+a[href^="http://"],
+a[href^="https://"],
+a[href^="//"] {
+	text-decoration-color: var(--color-link);
+}
+a[href^="//"]::after, a[href^="http://"]::after, a[href^="https://"]::after {
+	content: '↗';
+	font-family: system-ui, -apple-system, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	color: var(--color-link);
+	padding-left: 2px;
+	line-height: 0.75;
+	font-size: 0.8em;
+}
+/* External link hovers */
+a[href^="http://"]:hover,
+a[href^="https://"]:hover,
+a[href^="//"]:hover {
+	text-decoration-color: inherit;
+}
+a[href^="http://"]:hover::after,
+a[href^="https://"]:hover::after,
+a[href^="//"]:hover::after {
+	color: inherit;
+}
+
+/* CSS-only favicons https://www.zachleat.com/web/external-link-favicons/ */
+a[href^="https://www.11ty.dev"]::before,
+a[href^="https://www.netlify.com"]::before,
+a[href^="https://docs.netlify.com"]::before,
+a[href^="https://www.twitter.com"]::before,
+a[href^="https://www.instagram.com"]::before,
+a[href^="https://www.youtube.com"]::before,
+a[href^="https://youtube.com"]::before,
+a[href^="https://github.com"]::before,
+a[href^="https://gitlab.com"]::before,
+a[href^="https://wikipedia.org"]::before,
+a[href^="https://en.wikipedia.org"]::before {
+	content: "";
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 1em;
+	height: 1em;
+	margin: 0 .2em;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+a[href^="https://www.11ty.dev"]::after,
+a[href^="https://www.netlify.com"]::after,
+a[href^="https://docs.netlify.com"]::after,
+a[href^="https://www.twitter.com"]::after,
+a[href^="https://www.instagram.com"]::after,
+// a[href^="https://www.linkedin.com"]::after,
+a[href^="https://youtube.com"]::after,
+a[href^="https://www.youtube.com"]::after,
+a[href^="https://github.com"]::after,
+a[href^="https://gitlab.com"]::after,
+a[href^="https://wikipedia.org"]::after,
+a[href^="https://en.wikipedia.org"]::after {
+	display: none;
+}
+
+a[href^="https://www.11ty.dev"]::before {
+	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fwww.11ty.dev%2F/");
+}
+a[href^="https://www.netlify.com"]::before,
+a[href^="https://docs.netlify.com"]::before {
+	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fwww.netlify.com%2F/");
+}
+a[href^="https://youtube.com"]::before,
+a[href^="https://www.youtube.com"]::before {
+	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fwww.youtube.com%2F/");
+}
+a[href^="https://github.com"]::before {
+	border-radius: 0.3125em; /* 5px /16 */
+	border: .5px solid var(--white);
+	background-color: var(--white);
+	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fgithub.com%2F/");
+}
+a[href^="https://gitlab.com"]::before {
+	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fabout.gitlab.com%2F/");
+}
+a[href^="https://wikipedia.org"]::before,
+a[href^="https://en.wikipedia.org"]::before {
+	border: 0.0625em solid rgba(0,0,0,.3); /* 1px /16 */
+	border-radius: 0.125em; /* 2px /16 */
+	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fwww.wikipedia.org%2F/");
+}
+
+a[href^="https://www.twitter.com"]::before {
+	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fwww.twitter.com%2f/");
+}
+
+a[href^="https://www.instagram.com"]::before {
+	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fwww.instagram.com%2f/");
+}

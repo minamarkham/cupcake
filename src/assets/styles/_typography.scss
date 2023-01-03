@@ -1,0 +1,148 @@
+a {
+	color: var(--color-link);
+	cursor: pointer;
+	word-break: break-word;
+	text-decoration: none;
+	&:visited::after {}
+}
+
+blockquote {
+	margin: 2rem 0;
+	padding: 0;
+	position: relative;
+	min-width: 400px;
+	max-width: 820px;
+	font-size: 1.25vw;
+	line-height: 1.4;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-fon-smoothing: grayscale;
+
+	@media screen and (max-width: 1600px) {
+		font-size: 2vw;
+	}
+
+	@media all and (max-width: 1200px) {
+		font-size: 2.5vw;
+	}
+
+	@media all and (max-width: 600px) {
+		font-size: 18px;
+		width: 100%;
+		min-width: 100%;
+	}
+
+	p {
+		&:first-of-type:before {
+			content: '\201c';
+			position: absolute;
+			left: -.5em;
+		}
+		&:last-of-type:after {
+			content: '\201d';
+			position: absolute;
+		}
+	}
+	footer {
+		position: relative;
+		margin-top: 1rem;
+		text-transform: uppercase;
+		font-size: 1em;
+		letter-spacing: 1px;
+		font-weight: 700;
+		@include screen(768px) { font-size: .6em; }
+		&::before {
+			content: '–';
+			position: absolute;
+			left: -.6em;
+		}
+	}
+}
+
+li {
+	padding-left: 15px;
+	&::marker {
+		color: var(--color-primary);
+	}
+}
+
+ul {
+	list-style: square;
+	padding-left: 0;
+	margin-left: 20px;
+}
+
+ol {
+	counter-reset: number;
+	list-style: decimal-leading-zero;
+	padding-left: 0;
+	margin-left: 35px;
+}
+
+.pullquote {
+	max-width: 620px;
+	margin: 2rem auto 4rem;
+	position: relative;
+
+	p {
+		font-family: var(--font-family-sans-serif);
+		position: relative;
+		color: var(--color-primary);
+		font-size: 1.25rem;
+		font-weight: 500;
+		font-style: italic;
+		line-height: 1.2;
+		margin: 0;
+		border: 2px solid #fff;
+		border: solid 2px;
+		border-radius: 20px;
+		padding: 25px;
+		&::after {
+			content: '';
+			position: absolute;
+			border: 2px solid var(--color-primary);
+			border-radius: 0 50px 0 0;
+			width: 60px;
+			height: 20px;
+			bottom: -20px;
+			left: 50px;
+			border-bottom: none;
+			border-left: none;
+			z-index: 3;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			width: 80px;
+			border: 6px solid #fff;
+			bottom: -3px;
+			left: 50px;
+			z-index: 2;
+		}
+	}
+
+	cite {
+		position: absolute;
+		left: 144px;
+		bottom: -30px;
+		&::before {
+			content: '—';
+			margin-right: 10px;
+		}
+		&:first-letter {
+			margin-left: -12px;
+		}
+	}
+}
+
+.page-title {
+	font-family: var(--font-family-monospace);
+	font-style: italic;
+	font-size: clamp(2rem,4vw,4rem);
+	letter-spacing: -4px;
+	&::before {
+		content: '/';
+		color: var(--color-primary);
+	}
+}
