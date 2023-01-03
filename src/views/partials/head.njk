@@ -1,0 +1,35 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	{# Favicon #}
+	<link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.png">
+
+	{# RSS Feed #}
+	<link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}">
+
+	{# metagen plugin output #}
+	{% metagen
+		title = title or docTitle or metadata.title + "| Mina Markham",
+		desc = desc or subtitle,
+		url = site.url + page.url,
+		img=image_src,
+		img_alt=image_alt,
+		twitter_card_type="summary_large_image",
+		twitter_handle="minamarkham",
+		name="Mina Markham",
+		comments=false,
+		locale = "en_us",
+		css=["https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css", "/assets/styles/styles.css"]
+	%}
+
+	{# If ELEVENTY_ENV environmental variable isn't set to "production", hide this page from search engines #}
+	{% if (index == false) %}
+		<meta name="robots" content="noindex,nofollow">
+	{% endif %}
+
+	{% if page.url == '/' %}
+	{% set bodyClass = 'cover' %}
+	{% endif %}
+
+</head>

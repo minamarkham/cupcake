@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+
+<div class="header">
+    <h1 class="page-title">{{ title }}</h1>
+    <p>{{ subtitle }}</p>
+</div>
+
+<div class="{% if not fullWidth %}page-content{% endif %}">
+    {{ layoutContent | safe }}
+</div>

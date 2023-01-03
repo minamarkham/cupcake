@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mina Markham</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
-  </head>
-  <body>
-    <main tabindex="-1">
-      {{ content | safe }}
-    </main>
-  </body>
+<!--
+	 _          _   _
+	| |        | | | |      |
+	| |     _  | | | |  __  |
+	|/ \   |/  |/  |/  /  \_|
+	|   |_/|__/|__/|__/\__/ o
+
+	look at you, being nosy.
+	View the source here: {{ site.repo }}
+-->
+	{% include "partials/head.njk" %}
+	<body class="{% if bodyClass %}{{ bodyClass }}{% endif %}">
+		<a class="visually-hidden" href="#main">Skip to content</a>
+		{% include "partials/header.njk" %}
+		<main class="{% if templateClass %}{{ templateClass }}{% endif %}" tabindex="-1">
+			{{ content | safe }}
+		</main>
+		{% include "partials/footer.njk" %}
+		{% include "partials/scripts.njk" %}
+	</body>
 </html>
