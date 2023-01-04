@@ -6,7 +6,7 @@ layout: base.njk
 	<a href="'/posts/'}">← back to /posts/</a>
 </nav>
 
-<article class="page-content post-content">
+<article class="post">
 	<time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
 	<h1>{{ title }}</h1>
 	{% if canonical %}<p>Originally published on <a href="{{ canonical.url }}">{{ canonical.title }}</a></p>{% endif %}
@@ -34,7 +34,7 @@ layout: base.njk
 {%- set previousPost = collection | getPreviousCollectionItem %}
 
 {%- if nextPost or previousPost%}
-<section id="itemPagination" class="item-pagination item-pagination--prev-next">
+<section class="post-pagination pagination--prev-next">
 	{% if 'vibe check' in tags %}
 	{% include "partials/more-vibes.njk" %}
 	{% else %}
@@ -44,26 +44,26 @@ layout: base.njk
 	<nav>
 		{%- if previousPost %}
 		<a href="{{ previousPost.url | url }}" class="pagination-link pagination-link--prev">
-			<div class="pagination-icon icon icon--stroke">
-				<svg class="caret-left-icon--small" viewBox="0 0 9 16"><polyline fill="none" stroke-miterlimit="10" points="7.3,14.7 2.5,8 7.3,1.2"></polyline></svg>
-			</div>
-			<span class="pagination-title-wrapper">
-				<div class="visually-hidden">Previous</div>
-				<div class="pagination-prev-next">Previous</div>
-				<h2 class="pagination-title">{{ previousPost.data.title }}</h2>
-			</span>
+		<div class="pagination-icon">
+			<svg class="caret-left-icon--small" viewBox="0 0 9 16"><polyline fill="none" stroke-miterlimit="10" points="7.3,14.7 2.5,8 7.3,1.2"></polyline></svg>
+		</div>
+		<span class="pagination-title-wrapper">
+			<div class="visually-hidden">Previous</div>
+			<div class="pagination-prev-next">Previous</div>
+			<h2 class="pagination-title">{{ previousPost.data.title }}</h2>
+		</span>
 		</a>
 		{% endif %}
 		{%- if nextPost %}
 		<a href="{{ nextPost.url | url }}" class="pagination-link pagination-link--next">
-			<div class="pagination-title-wrapper">
-				<div class="visually-hidden">Next</div>
-				<div class="pagination-prev-next">Next</div>
-				<h2 class="pagination-title">{{ nextPost.data.title }}</h2>
-			</div>
-			<div class="pagination-icon icon icon--stroke">
-				<svg class="caret-right-icon--small" viewBox="0 0 9 16"><polyline fill="none" stroke-miterlimit="10" points="1.6,1.2 6.5,7.9 1.6,14.7"></polyline></svg>
-			</div>
+		<div class="pagination-title-wrapper">
+			<div class="visually-hidden">Next</div>
+			<div class="pagination-prev-next">Next</div>
+			<h2 class="pagination-title">{{ nextPost.data.title }}</h2>
+		</div>
+		<div class="pagination-icon">
+			<svg class="caret-right-icon--small" viewBox="0 0 9 16"><polyline fill="none" stroke-miterlimit="10" points="1.6,1.2 6.5,7.9 1.6,14.7"></polyline></svg>
+		</div>
 		</a>
 		{% endif %}
 	</nav>

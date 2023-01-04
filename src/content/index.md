@@ -2,9 +2,11 @@
 layout: base.njk
 title: "Home"
 permalink: /
+templateClass: home
 ---
 
-{% include "partials/hello.njk" %}
-### I turn concepts (and caffeine) into code.
+<div>
+	{% include "partials/hello.njk" %}
 
-I am a UX engineer, public speaker, and writer specializing in CSS architecture & design systems. Based in Oakland. Currently @ [Slack](http://www.slack.com)
+	I am an engineer, designer, [speaker](/speaking/), and [writer](/posts/) specializing in CSS architecture & design systems. Based in Oakland. Currently @ [Slack](http://www.slack.com).
+</div>

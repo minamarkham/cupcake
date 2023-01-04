@@ -8,8 +8,8 @@ const env = {
 };
 
 module.exports = {
-	title: "Mina Markham. Engineer. Designer. Speaker.",
-	description: "",
+	title: "Mina Markham — engineer. designer. writer. speaker.",
+	description: "An engineer, designer, writer, and speaker who specializes in creating exceptional digital experiences.",
 	url: "https://mina.codes", // Don't end with a slash /
 	env: process.env.ELEVENTY_ENV,
 	branch: process.env.BRANCH,
@@ -19,10 +19,15 @@ module.exports = {
 		name: "Mina Markham",
 		email: "mina@mina.codes",
 		github: "https://github.com/minamarkham",
-		twitter: "@minamarkham",
+		handle: "minamarkham",
 	},
-	cover: "",
-	faviconPath: "/assets/icons/favicon.png",
+	image: {
+		src: "/social-card.jpg",
+		alt: "An engineer, designer, writer, and speaker.",
+	},
+	themeColor: "#ff3377",
+	backgroundColor: "#ffffff",
+	faviconPath: "/favicon.png",
 	googleverification: "",
 	keywords: [],
 	lang: "en",

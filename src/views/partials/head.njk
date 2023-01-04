@@ -2,33 +2,40 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	{# Favicon #}
-	<link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.png">
+	<link rel="icon" href="/favicon.png" type="image/svg+xml">
+	<link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+	<link rel="icon" href="/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+	<link rel="manifest" href="/manifest.webmanifest">
 
 	{# RSS Feed #}
 	<link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}">
 
 	{# metagen plugin output #}
 	{% metagen
-		title = title or docTitle or metadata.title + "| Mina Markham",
-		desc = desc or subtitle,
+		title = title or docTitle + " " + site.title,
+		desc = site.desc,
 		url = site.url + page.url,
-		img=image_src,
-		img_alt=image_alt,
-		twitter_card_type="summary_large_image",
-		twitter_handle="minamarkham",
-		name="Mina Markham",
-		comments=false,
+		img = site.image.src,
+		img_alt = site.image.alt,
+		twitter_card_type = "summary_large_image",
+		twitter_handle = site.author.handle,
+		name = site.author.name,
+		comments = false,
 		locale = "en_us",
-		css=["https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css", "/assets/styles/styles.css"]
+		css = ["https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css", "/assets/styles/main.css"]
 	%}
 
+	{% if page.url === '/styleguide/' %}
+	<link rel="stylesheet" href="{{ '/assets/styles/styleguide.css' | url }}">
+	{% endif %}
+
 	{# If ELEVENTY_ENV environmental variable isn't set to "production", hide this page from search engines #}
-	{% if (index == false) %}
+	{% if (index === false) %}
 		<meta name="robots" content="noindex,nofollow">
 	{% endif %}
 
-	{% if page.url == '/' %}
+	{% if page.url === '/' %}
 	{% set bodyClass = 'cover' %}
 	{% endif %}
 
