@@ -21,3 +21,6 @@ node_modules/
 
 # deployment Files
 .netlify
+
+# random thoughts
+.notes.txt
