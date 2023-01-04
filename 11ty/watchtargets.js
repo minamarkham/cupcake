@@ -8,7 +8,7 @@ module.exports = {
 	 * Watch for changes to files in the assets directory
 	 */
 	assets: function () {
-		let config = './src/assets';
+		const config = './src/assets';
 
 		// Return the config to .eleventy.js
 		return config;
