@@ -4,7 +4,10 @@ header, .site-footer {
 	position: relative;
 	z-index: 1000;
 	line-height: 1;
-	p { font-size: 1rem; }
+
+	p {
+		font-size: 1rem;
+	}
 }
 
 header {
@@ -13,6 +16,7 @@ header {
 	background-image: var(--background-pattern);
 	background-size: 20px 20px;
 	background-attachment: fixed;
+
 	&::before {
 		content: '';
 		height: 10px;
@@ -26,7 +30,10 @@ header {
 }
 
 @include screen(md) {
-	main { padding: 0 6vw;}
+	main {
+		padding: 0 6vw;
+	}
+
 	header, .site-footer {
 		text-align: left;
 		display: grid;
@@ -89,15 +96,18 @@ header {
 		height: unset;
 		color: var(--color-text);
 		background-color: transparent;
-	  }
-	  &:hover {
+	}
+
+	&:hover {
 		opacity: 1;
-		&:before {
-		  transform: translateX(0);
-		  opacity: 1;
+
+		&::before {
+			transform: translateX(0);
+			opacity: 1;
 		}
 	}
-	&:before {
+
+	&::before {
 		font-size: 0.75rem;
 		text-transform: uppercase;
 		opacity: 0;
@@ -108,6 +118,7 @@ header {
 			content: 'Press (Shift + D)';
 		}
 	}
+
 	svg {
 		width: 1.5rem;
 		color: inherit;
@@ -115,12 +126,17 @@ header {
 
 	.theme--light {
 		display: none;
-		[dark] & { display: block; }
-	}
-	.theme--dark {
-		[dark] & { display: none; }
+
+		[dark] & {
+			display: block;
+		}
 	}
 
+	.theme--dark {
+		[dark] & {
+			display: none;
+		}
+	}
 }
 
 .menu__title {
@@ -133,10 +149,12 @@ header {
 	display: inline-flex;
 	align-items: center;
 	text-transform: lowercase;
+
 	&::before {
 		content: "[";
 		margin-right: 4px;
 	}
+
 	&::after {
 		content: "]";
 		margin-left: 4px;
@@ -144,9 +162,14 @@ header {
 
 	a {
 		margin-left: 2px;
-		&.active { color: var(--color-text); }
+
+		&.active {
+			color: var(--color-text);
+		}
+
 		&:not(:first-child) {
 			margin-right: 2px;
+
 			&::before {
 				content: "::";
 				margin-right: 2px;
@@ -160,6 +183,7 @@ header {
 	position: relative;
 	text-transform: lowercase;
 	font-size: 1.15rem;
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -172,9 +196,11 @@ header {
 		transition: transform 0.3s cubic-bezier(0.2,1,0.8,1);
 		transform-origin: 0 0;
 	}
+
 	&:hover::after, &--current::after {
 		transform: scale3d(1,1,1);
 	}
+
 	&:first-child::after {
 		left: 0;
 		width: 100%;

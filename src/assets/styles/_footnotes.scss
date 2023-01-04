@@ -25,7 +25,7 @@ article {
 	content: '[' counter(footnotes) ']'; // 1
 	vertical-align: super; // 2
 	font-size: 0.75em; // 3
-	margin-left: 2px; //4
+	margin-left: 2px; // 4
 	color: var(--color-primary); // 5
 	text-decoration: none; // 5
 	cursor: pointer; // 5
@@ -46,6 +46,7 @@ article {
 	color: #696969;
 	padding: 1rem;
 	margin: 2rem 0;
+
 	&::before {
 		content: 'Footnotes';
 		text-transform: uppercase;
@@ -57,7 +58,7 @@ article {
 	}
 
 	:target {
-		background: rgba(255, 51, 119, 0.5);
+		background: rgb(255 51 119 / 50%);
 	}
 
 	ol {
@@ -78,6 +79,7 @@ article {
 		position: relative;
 		overflow: hidden;
 		text-overflow: ellipsis;
+
 		&::after {
 			content: counter(list);
 			left: -1em;

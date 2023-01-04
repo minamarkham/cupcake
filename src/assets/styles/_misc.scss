@@ -14,9 +14,6 @@
 	margin: 0 1vw;
 	font-weight: 900;
 	line-height: 1;
-
-	&:hover,
-	&:focus {}
 }
 
 .scroll {
@@ -48,10 +45,15 @@ blockquote.twitter-tweet {
 	background-repeat: no-repeat;
 	background-position: 1rem 1rem;
 	background-size: 4rem 4rem;
+
 	p {
 		line-height: 1.5;
-		&:first-of-type:before { display: none; }
+
+		&:first-of-type::before {
+			display: none;
+		}
 	}
+
 	>*+* {
 		margin-top: var(--gap);
 	}
@@ -70,6 +72,7 @@ blockquote.twitter-tweet {
 	background: none;
 	border: none;
 	cursor: pointer;
+
 	&:hover,
 	&:active,
 	&:focus {
@@ -86,4 +89,6 @@ blockquote.twitter-tweet {
 	animation-iteration-count: infinite;
 }
 
-.hidden { display: none }
+.hidden {
+	display: none;
+}

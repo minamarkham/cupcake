@@ -2,6 +2,7 @@
 
 @import 'root';
 @import 'reset';
+@import 'fonts';
 
 body {
 	background: #1c1c1c;
@@ -17,6 +18,7 @@ body {
 
 p {
 	margin-bottom: 2rem;
+
 	&:last-child::after {
 		display: inline-block;
 		vertical-align: -0.15em;
@@ -29,16 +31,28 @@ p {
 	}
 }
 
-a { color: var(--color-primary); }
-
-.homedir { color: var(--color-accent); }
-
-.input::before { content: '$ '; }
-
-@keyframes cursor-blink {
-	0% { opacity: 0; }
-	50% { opacity: 1; }
-	100% { opacity: 0; }
+a {
+	color: var(--color-primary);
 }
 
-@import '_fonts';
+.homedir {
+	color: var(--color-accent);
+}
+
+.input::before {
+	content: '$ ';
+}
+
+@keyframes cursor-blink {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

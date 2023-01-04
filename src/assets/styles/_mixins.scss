@@ -1,0 +1,23 @@
+@use 'sass:map';
+
+$breakpoints: (
+	sm: 37.5rem,
+	md: 56rem,
+	lg: 75rem
+);
+
+@mixin screen($breakpoint) {
+	@if map.has-key($breakpoints, $breakpoint) {
+		$breakpoint: map.get($breakpoints, $breakpoint);
+	} @else {
+		$breakpoint: $breakpoint;
+	}
+
+	@media screen and (min-width: $breakpoint) {
+		@content;
+	}
+}
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+	transition: $property $duration $ease;
+}

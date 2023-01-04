@@ -3,13 +3,15 @@
 	outline-offset: 0.25rem;
 }
 
-html { scroll-behavior: smooth; }
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	color: var(--color-text);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
+	text-rendering: optimizelegibility;
 	font-family: var(--font-family-sans-serif);
 	display: flex;
 	min-height: 100vh;
@@ -28,13 +30,16 @@ main {
 	margin-top: 10rem;
 	flex: 1;
 	position: relative;
-	&:focus { outline: none; }
+
+	&:focus {
+		outline: none;
+	}
 }
 
 %button {
 	text-transform: uppercase;
 	outline: 0;
-	background: rgba(0, 0, 0, 0);
+	background: rgb(0 0 0 / 0%);
 	transition: all 0.3 ease;
 	cursor: pointer;
 	padding: 0.5rem 1rem;
@@ -61,6 +66,7 @@ a[download] {
 	font-family: inherit;
 	width: 23rem;
 	height: auto;
+
 	.circle {
 		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
 		position: relative;
@@ -71,6 +77,7 @@ a[download] {
 		border-radius: 1.625rem;
 		border: 1px solid var(--color-primary);
 	}
+
 	.icon {
 		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
 		position: absolute;
@@ -78,12 +85,14 @@ a[download] {
 		bottom: 0;
 		margin: auto;
 		background: var(--color-primary);
+
 		&.arrow {
 			@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
 			left: 0.35rem;
 			width: 1.125rem;
 			height: 0.125rem;
 			background: none;
+
 			&::before {
 				position: absolute;
 				content: '';
@@ -97,6 +106,7 @@ a[download] {
 			}
 		}
 	}
+
 	.button-text {
 		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
 		position: absolute;
@@ -110,18 +120,22 @@ a[download] {
 		text-align: center;
 		text-transform: uppercase;
 	}
+
 	&:hover,
 	&:focus {
-		background: none;;
+		background: none;
+
 		.circle {
 			width: 100%;
 		}
+
 		.icon {
 			&.arrow {
 				background: var(--color-primary);
 				transform: translate(0.7rem, 0);
 			}
 		}
+
 		.button-text {
 			color: var(--color-primary);
 		}
@@ -133,13 +147,12 @@ a[download] {
 	@extend %button;
 	font-size: 1em;
 	padding: 0.5rem 1rem;
-	-webkit-appearance: none;
 	appearance: none;
 	cursor: pointer;
 	position: relative;
 	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 
-	&:before, &:after{
+	&::before, &::after {
 		position: absolute;
 		content: '';
 		display: block;
@@ -151,7 +164,7 @@ a[download] {
 		background-repeat: no-repeat;
 	}
 
-	&:before{
+	&::before {
 		display: none;
 		top: -75%;
 		background-image:
@@ -167,7 +180,7 @@ a[download] {
 		background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 	}
 
-	&:after{
+	&::after {
 		display: none;
 		bottom: -75%;
 		background-image:
@@ -185,17 +198,18 @@ a[download] {
 		color: var(--white);
 		transform: scale(0.9);
 		background-color: var(--button-bg-active);
-		box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+		box-shadow: 0 2px 25px rgb(255 0 130 / 20%);
 	}
 
 	&.animate {
 		&::before {
 			display: block;
-			animation: topBubbles ease-in-out 0.75s forwards;
+			animation: top-bubbles ease-in-out 0.75s forwards;
 		}
+
 		&::after {
 			display: block;
-			animation: bottomBubbles ease-in-out 0.75s forwards;
+			animation: bottom-bubbles ease-in-out 0.75s forwards;
 		}
 	}
 }
@@ -227,7 +241,10 @@ details {
 		padding: 0 20px;
 		line-height: 1.5;
 
-		> p { flex: 1; }
+		> p {
+			flex: 1;
+		}
+
 		> img {
 			align-self: flex-start;
 			max-width: 100%;
@@ -235,11 +252,16 @@ details {
 		}
 	}
 
-	p { margin: 1rem; }
+	p {
+		margin: 1rem;
+	}
 
 
 	&[open] {
-		> summary { color: var(--color-primary); }
+		> summary {
+			color: var(--color-primary);
+		}
+
 		> div {
 			@include screen(768px) {
 				> p {
@@ -268,7 +290,10 @@ table {
 	border-spacing: 0;
 	width: 100%;
 	table-layout: fixed;
-	br { display: none; }
+
+	br {
+		display: none;
+	}
 }
 
 thead {
@@ -301,7 +326,11 @@ td {
 	display: block;
 	text-align: left;
 	min-height: 40px;
-	&:last-child { border-bottom: 0; }
+
+	&:last-child {
+		border-bottom: 0;
+	}
+
 	&::before {
 		content: attr(data-label);
 		float: left;
@@ -313,7 +342,10 @@ td {
 @media screen and (min-width: 768px) {
 	table {
 		border: 1px solid #ebeaeb;
-		br { display: inherit; }
+
+		br {
+			display: inherit;
+		}
 	}
 }
 
@@ -344,10 +376,11 @@ img {
 	display: block;
 	position: relative;
 	min-height: 50px;
+
 	&::after {
 		content: '🚫' ' Broken Image of ' attr(alt);
 		font-size: 16px;
-		color: rgb(100, 100, 100);
+		color: rgb(100 100 100);
 		display: flex;
 		position: absolute;
 		z-index: 2;
@@ -372,10 +405,10 @@ figcaption {
 dialog::backdrop {
 	background: repeating-linear-gradient(
 		45deg,
-		rgba(0, 0, 0, 0.2),
-		rgba(0, 0, 0, 0.2) 1px,
-		rgba(0, 0, 0, 0.3) 1px,
-		rgba(0, 0, 0, 0.3) 20px
+		rgb(0 0 0 / 20%),
+		rgb(0 0 0 / 20%) 1px,
+		rgb(0 0 0 / 30%) 1px,
+		rgb(0 0 0 / 30%) 20px
 	);
 	backdrop-filter: blur(3px);
 }
@@ -406,20 +439,12 @@ pre[class*="language-"] {
 	word-spacing: normal;
 	word-break: normal;
 	line-height: 1.5;
-	-moz-tab-size: 2;
-	-o-tab-size: 2;
 	tab-size: 2;
-	-webkit-hyphens: none;
-	-ms-hyphens: none;
 	hyphens: none;
 }
 
 kbd {
 	font-family: var(--font-family-monospace);
-	background-color: #f7f7f7;
-	border-radius: 0.25rem;
-	border: 1px solid #cbcccd;
-	box-shadow: 0 2px 0 1px #cbcccd;
 	background-color: var(--kbd-color-background);
 	color: var(--kbd-color-text);
 	border-radius: 0.25rem;
@@ -439,7 +464,9 @@ kbd {
 	}
 }
 
-samp, tt { font-family: var(--font-family-monospace); }
+samp, tt {
+	font-family: var(--font-family-monospace);
+}
 
 hr {
 	line-height: 1em;
@@ -450,7 +477,8 @@ hr {
 	text-align: center;
 	height: 1.5em;
 	opacity: 0.5;
-	&:before {
+
+	&::before {
 		content: '';
 		background: linear-gradient(to right, transparent, #818078, transparent);
 		position: absolute;
@@ -459,11 +487,11 @@ hr {
 		width: 100%;
 		height: 1px;
 	}
-	&:after {
+
+	&::after {
 		content: attr(data-content);
 		position: relative;
 		display: inline-block;
-		color: var(--black);
 		padding: 0 0.5em;
 		line-height: 1.5em;
 		color: #818078;

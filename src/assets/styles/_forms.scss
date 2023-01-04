@@ -8,7 +8,10 @@ input,
 textarea {
 	border: 0;
 	padding: 15px;
-	&:active { outline-color: var(--color-primary); }
+
+	&:active {
+		outline-color: var(--color-primary);
+	}
 }
 
 fieldset {

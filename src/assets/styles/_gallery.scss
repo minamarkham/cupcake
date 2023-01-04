@@ -19,24 +19,70 @@
 	display: flex;
 	flex-direction: column;
 
-    &:nth-child(1) { grid-area: 1 / 1 / 4 / 10; }
-	&:nth-child(2) { grid-area: 1 / 10 / 4 / 16; }
-	&:nth-child(3) { grid-area: 4 / 1 / 7 / 10; }
-	&:nth-child(4) { grid-area: 4 / 10 / 8 / 16; }
-	&:nth-child(5) { grid-area: 7 / 1 / 11 / 8; }
-	&:nth-child(6) { grid-area: 8 / 8 / 13 / 16; }
-	&:nth-child(7) { grid-area: 11 / 1 / 16 / 8; }
-	&:nth-child(8) { grid-area: 13 / 8 / 17 / 16; }
+	&:nth-child(1) {
+		grid-area: 1 / 1 / 4 / 10;
+	}
+
+	&:nth-child(2) {
+		grid-area: 1 / 10 / 4 / 16;
+	}
+
+	&:nth-child(3) {
+		grid-area: 4 / 1 / 7 / 10;
+	}
+
+	&:nth-child(4) {
+		grid-area: 4 / 10 / 8 / 16;
+	}
+
+	&:nth-child(5) {
+		grid-area: 7 / 1 / 11 / 8;
+	}
+
+	&:nth-child(6) {
+		grid-area: 8 / 8 / 13 / 16;
+	}
+
+	&:nth-child(7) {
+		grid-area: 11 / 1 / 16 / 8;
+	}
+
+	&:nth-child(8) {
+		grid-area: 13 / 8 / 17 / 16;
+	}
 
 	@include screen(45em) {
-        &:nth-child(1) { grid-area: 1 / 1 / 5 / 9; }
-		&:nth-child(2) { grid-area: 2 / 9 / 5 / 15; }
-		&:nth-child(3) { grid-area: 5 / 1 / 8 / 6; }
-		&:nth-child(4) { grid-area: 5 / 6 / 9 / 14; }
-		&:nth-child(5) { grid-area: 8 / 2 / 10 / 6; }
-		&:nth-child(6) { grid-area: 9 / 6 / 14 / 16; }
-		&:nth-child(7) { grid-area: 10 / 1 / 16 / 6; }
-		&:nth-child(8) { grid-area: 14 / 6 / 19 / 15; }
+		&:nth-child(1) {
+			grid-area: 1 / 1 / 5 / 9;
+		}
+
+		&:nth-child(2) {
+			grid-area: 2 / 9 / 5 / 15;
+		}
+
+		&:nth-child(3) {
+			grid-area: 5 / 1 / 8 / 6;
+		}
+
+		&:nth-child(4) {
+			grid-area: 5 / 6 / 9 / 14;
+		}
+
+		&:nth-child(5) {
+			grid-area: 8 / 2 / 10 / 6;
+		}
+
+		&:nth-child(6) {
+			grid-area: 9 / 6 / 14 / 16;
+		}
+
+		&:nth-child(7) {
+			grid-area: 10 / 1 / 16 / 6;
+		}
+
+		&:nth-child(8) {
+			grid-area: 14 / 6 / 19 / 15;
+		}
 	}
 }
 
@@ -44,6 +90,7 @@
 	flex: 1;
 	position: relative;
 	overflow: hidden;
+
 	&:hover .photo__grid-item-img {
 		transform: scale3d(1.1,1.1,1);
 	}
@@ -59,11 +106,12 @@
 
 .photo__grid-item-title {
 	margin: 0;
-	padding: 0.5rem 0 0 0;
+	padding: 0.5rem 0 0;
 	font-size: 1rem;
 	color: #444;
 	font-weight: 400;
 	z-index: 999;
+
 	strong {
 		color: #000;
 	}
