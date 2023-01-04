@@ -88,4 +88,29 @@ module.exports = {
 		// Add the plugin to the Eleventy config
 		eleventyConfig.addPlugin(syntaxHighlight, config);
 	},
+
+	/**
+	 * HTML base plugin
+	 * https://www.11ty.dev/docs/plugins/html-base/
+	 */
+	htmlbase: function (eleventyConfig) {
+		// Require dependencies
+		const { EleventyHtmlBasePlugin } = require('@11ty/eleventy');
+
+		// Add the plugin to the Eleventy config
+		eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+	},
+
+	/**
+	 * RSS plugin
+	 * https://www.11ty.dev/docs/plugins/rss/
+	 */
+	rss: function (eleventyConfig) {
+		// Require dependencies
+		const pluginRss = require('@11ty/eleventy-plugin-rss')
+
+		// Add the plugin to the Eleventy config
+		eleventyConfig.addPlugin(pluginRss);
+	},
+
 };
