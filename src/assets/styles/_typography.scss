@@ -146,3 +146,15 @@ ol {
 		color: var(--color-primary);
 	}
 }
+
+.inline-list {
+	margin: 0;
+	li {
+		display: inline-block;
+		padding: 0;
+		&::before { display: none; }
+		&:not(:last-child)::after {
+			content: ", ";
+		 }
+	}
+}

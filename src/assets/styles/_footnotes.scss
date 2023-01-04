@@ -41,11 +41,6 @@ article {
 	font-size: 0.8em;
 }
 
-// Highlight target note
-.c-footnotes :target {
-	background: rgba(255, 51, 119, 0.5);
-}
-
 .c-footnotes {
 	background-color: var(--color-background);
 	color: #696969;
@@ -60,36 +55,39 @@ article {
 		display: block;
 		margin: 0 0 0.5rem;
 	}
-}
 
-.c-footnotes ol {
-	margin: 0;
-	padding: 0;
-}
+	:target {
+		background: rgba(255, 51, 119, 0.5);
+	}
 
-.c-footnotes li {
-	font-weight: 400;
-	line-height: 1.429;
-	letter-spacing: 0;
-	margin-top: 0;
-	font-size: 0.875rem;
-	margin-bottom: 0;
-	padding-left: 2em;
-	counter-increment: list;
-	list-style-type: none;
-	position: relative;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
+	ol {
+		margin: 0;
+		padding: 0;
+	}
 
-.c-footnotes li::after {
-	content: counter(list);
-	left: -1em;
-	position: absolute;
-	text-align: right;
-	top: 0;
-	width: 2em;
-	font-weight: 700;
+	li {
+		font-weight: 400;
+		line-height: 1.429;
+		letter-spacing: 0;
+		margin-top: 0;
+		font-size: 0.875rem;
+		margin-bottom: 0;
+		padding-left: 2em;
+		counter-increment: list;
+		list-style-type: none;
+		position: relative;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		&::after {
+			content: counter(list);
+			left: -1em;
+			position: absolute;
+			text-align: right;
+			top: 0;
+			width: 2em;
+			font-weight: 700;
+		}
+	}
 }
 
 .c-footnotes__anchor {

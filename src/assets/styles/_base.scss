@@ -268,7 +268,53 @@ table {
 	border-spacing: 0;
 	width: 100%;
 	table-layout: fixed;
-	border: 1px solid #ebeaeb;
+	br { display: none; }
+}
+
+thead {
+	border: none;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+th {
+	background-color: inherit;
+	color: #454245;
+	text-align: left;
+	padding: 0.5rem 1rem;
+}
+
+tr {
+	border-bottom: 1px solid #ebeaeb;
+	display: block;
+	margin-bottom: 1rem;
+}
+
+td {
+	padding: 0.5rem 1rem;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	text-align: left;
+	min-height: 40px;
+	&:last-child { border-bottom: 0; }
+	&::before {
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		margin-right: 1rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	table {
+		border: 1px solid #ebeaeb;
+		br { display: inherit; }
+	}
 }
 
 caption {
@@ -276,29 +322,18 @@ caption {
 	margin-bottom: 1rem;
 }
 
-tr {
-	border-bottom: 1px solid #ebeaeb;
-}
-
-td,
-th {
-	padding: 0.5rem 1rem;
-	background-color: var(--white);
-}
-
-th {
-	background-color: inherit;
-	color: #454245;
-	text-align: left;
-}
-
 embed,
 iframe,
 img,
+video,
 object {
+	aspect-ratio: var(--aspect-ratio);
 	max-width: 100%;
 	width: 100%;
-	height: auto;
+	height: auto; // 100%
+	&[width][height] {
+		aspect-ratio: attr(width) / attr(height);
+	}
 }
 
 img {
@@ -308,7 +343,6 @@ img {
 	height: auto;
 	display: block;
 	position: relative;
-	// margin: 1em 0;
 	min-height: 50px;
 	&::after {
 		content: '🚫' ' Broken Image of ' attr(alt);

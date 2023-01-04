@@ -1,0 +1,39 @@
+form {
+	position: relative;
+	z-index: 1;
+	margin: 2rem 0;
+}
+
+input,
+textarea {
+	border: 0;
+	padding: 15px;
+	&:active { outline-color: var(--color-primary); }
+}
+
+fieldset {
+	border: none;
+	margin: 0 0 1rem;
+	padding: 0;
+}
+
+label, legend {
+	display: block;
+	margin: 0 0 10px;
+	color: var(--black);
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+input[type='text'],
+input[type='email'],
+textarea,
+select {
+	border: none;
+	width: 100%;
+	background-color: var(--off-white);
+	margin-bottom: 1rem;
+}
