@@ -24,12 +24,12 @@
 					"include",
 					"content",
 					"return",
-					"tailwind",
 					"apply",
 					"responsive",
 					"variants",
 					"screen",
-					"function"
+					"function",
+					"use"
 				]
 			}
 		],
@@ -45,7 +45,7 @@
 		"block-closing-brace-newline-before": "always",
 		"block-opening-brace-newline-after": "always",
 		"block-opening-brace-space-before": "always",
-		"color-named": "always-where-possible",
+		"color-named": "never",
 		"custom-property-pattern": null,
 		"declaration-block-no-redundant-longhand-properties": [
 			true,
@@ -58,10 +58,10 @@
 		"declaration-block-trailing-semicolon": "always",
 		"declaration-colon-newline-after": null,
 		"declaration-empty-line-before": null,
-		"declaration-no-important": true,
+		"declaration-no-important": null,
 		"font-family-name-quotes": "always-where-required",
 		"function-url-no-scheme-relative": true,
-		"indentation": 2,
+		"indentation": "tab",
 		"max-line-length": null,
 		"media-feature-name-no-vendor-prefix": true,
 		"no-descending-specificity": null,
@@ -74,6 +74,7 @@
 		"selector-max-empty-lines": 0,
 		"selector-no-vendor-prefix": true,
 		"shorthand-property-no-redundant-values": true,
+		"selector-class-pattern": null,
 		"value-list-comma-newline-after": null,
 		"value-no-vendor-prefix": true
 	}
