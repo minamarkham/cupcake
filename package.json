@@ -15,7 +15,14 @@
 		"start": "npm run-s dev & npm run watch:sass",
 		"serve": "npm run-s dev & npm run watch:sass",
 		"build": "npm run build:sass & npm run-s production",
-		"clean": "rimraf www"
+		"clean": "rimraf www",
+		"prepare": "husky install",
+		"lint": "npm-run-all lint:*",
+		"lint:fix": "npm-run-all --parallel lint:*:fix",
+		"lint:css": "stylelint \"src/**/*.scss\"",
+		"lint:css:fix": "stylelint --fix \"src/**/*.scss\"",
+		"lint:js": "eslint --cache \"**/*.js\"",
+		"lint:js:fix": "eslint --cache --fix \"**/*.js\""
 	},
 	"repository": {
 		"type": "git",
@@ -57,6 +64,8 @@
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-n": "^15.6.0",
 		"eslint-plugin-promise": "^6.1.1",
+		"husky": "^8.0.0",
+		"lint-staged": "^13.1.0",
 		"luxon": "^2.3.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "2.8.1",
@@ -69,5 +78,14 @@
 		"stylelint-config-prettier-scss": "0.0.1",
 		"stylelint-config-standard": "^29.0.0",
 		"stylelint-config-standard-scss": "^6.1.0"
+	},
+	"husky": {
+		"hooks": {
+		  "pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": "npm run lint:js:fix",
+		"*.scss": "npm run lint:css:fix"
 	}
 }
