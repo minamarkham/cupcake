@@ -24,8 +24,14 @@ module.exports = {
 		return config;
 	},
 
-	icons: function () {
-		const config = { 'src/assets/icons': 'assets/icons' };
+	meta: function () {
+		const config = {
+			"src/assets/images/meta/apple-touch-icon.png" : "apple-touch-icon.png",
+			"src/assets/images/meta/favicon.ico" : "favicon.ico",
+			"src/assets/images/meta/favicon.png" : "favicon.png",
+			"src/assets/images/meta/icon.svg" : "icon.svg",
+			"src/assets/images/meta/social-share.jpg" : "social-share.jpg",
+		}
 		return config;
 	},
 };

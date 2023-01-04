@@ -23,6 +23,13 @@ module.exports = {
 		});
 	},
 
+	events: function (eleventyConfig) {
+		const events = require("../src/data/events.js")
+		eleventyConfig.addCollection('events', function () {
+			return events;
+		});
+	},
+
 	talks: function (eleventyConfig) {
 		eleventyConfig.addCollection('talks', function (collectionApi) {
 			return collectionApi.getFilteredByGlob('src/content/talks/*.md');

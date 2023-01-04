@@ -21,7 +21,6 @@ module.exports = {
 	 * https://github.com/Snapstromegon/eleventy-plugin-rollup
 	 */
 	rollup: function (eleventyConfig) {
-		// Require dependencies
 		const plugin = require('eleventy-plugin-rollup');
 		const { terser } = require('rollup-plugin-terser');
 		const { nodeResolve } = require('@rollup/plugin-node-resolve');
@@ -30,17 +29,13 @@ module.exports = {
 		const image = require('@rollup/plugin-image');
 
 		const config = {
-			// Set a more descriptive shortcode
 			shortcode: 'script',
-			// Configure the output
 			rollupOptions: {
 				output: {
 					format: 'esm',
 					sourcemap: true,
 					dir: 'www/assets/scripts',
 				},
-
-				// Configure the plugins
 				plugins: [
 					replace({
 						preventAssignment: true,
@@ -58,14 +53,10 @@ module.exports = {
 		eleventyConfig.addPlugin(plugin, config);
 	},
 
-	// Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
-	navigation: function (eleventyConfig) {
-		// Require dependencies
-		const plugin = require('@11ty/eleventy-navigation');
-		// Add the plugin to the Eleventy config
-		eleventyConfig.addPlugin(plugin);
-	},
-
+	/**
+	 * Syntax highlighting plugin
+	 * https://github.com/11ty/eleventy-plugin-syntaxhighlight
+	 */
 	syntaxHighlight: function (eleventyConfig) {
 		// Require dependencies
 		const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');

@@ -21,7 +21,7 @@ module.exports = {
 		const Image = require('@11ty/eleventy-img');
 
 		function imageShortcode(src, alt = '', className = '', style = '', sizes = '') {
-			let options = {
+			const options = {
 				widths: [null],
 				formats: [null],
 				urlPath: '/assets/images/',
@@ -29,12 +29,12 @@ module.exports = {
 			};
 
 			// Prepend the src directory
-			let srcPlusPath = './src/' + src;
+			const srcPlusPath = './src/' + src;
 
 			// generate images, while this is async we don’t wait
 			Image(srcPlusPath, options);
 
-			let imageAttributes = {
+			const imageAttributes = {
 				class: className,
 				style,
 				alt,
@@ -43,10 +43,30 @@ module.exports = {
 				decoding: 'async',
 			};
 			// get metadata even the images are not fully generated
-			let metadata = Image.statsSync(srcPlusPath, options);
+			const metadata = Image.statsSync(srcPlusPath, options);
 			return Image.generateHTML(metadata, imageAttributes);
 		}
 
 		eleventyConfig.addNunjucksShortcode('image', imageShortcode);
+	},
+
+	/**
+	 * Custom layout blocks
+	 * https://github.com/11ty/eleventy/issues/853
+	 */
+	makeBlock: function (eleventyConfig) {
+		function makeBlock(content, name) {
+			if (!this.page.layoutblock) this.page.layoutblock = {};
+			this.page.layoutblock[name] = content;
+			return '';
+		}
+		eleventyConfig.addPairedShortcode('layoutblock', makeBlock);
+	},
+
+	renderBlock: function (eleventyConfig) {
+		function renderBlock(name) {
+			return (this.page.layoutblock || {})[name] || '';
+		}
+		eleventyConfig.addShortcode('renderlayoutblock', renderBlock);
 	},
 };

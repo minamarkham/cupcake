@@ -18,4 +18,19 @@ module.exports = {
 			return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd');
 		});
 	},
+	dateToISO: function (eleventyConfig) {
+		eleventyConfig.addFilter('dateToISO', (date) => {
+			return DateTime.fromJSDate(date, { zone: 'utc' }).toISO({
+				includeOffset: false,
+				suppressMilliseconds: true
+			})
+		});
+	},
+	dateToFormat: function (eleventyConfig) {
+		eleventyConfig.addFilter('dateToFormat', (date, format) => {
+			return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat(
+				String(format)
+			);
+		});
+	},
 };
