@@ -1,0 +1,34 @@
+@charset 'utf-8';
+
+/*!
+ * Cupcake 7.0.0 (Funfetti)
+ * Copyright 2023 Mina Markham
+ * https://mina.codes
+ * Licensed under MIT https://github.com/minamarkham/cupcake/blob/main/LICENSE
+ * Released under the MIT License
+ */
+
+@import '_mixins';
+@import 'root';
+@import 'reset';
+@import 'base';
+@import 'typography';
+
+// Components
+@import 'accordion';
+@import 'external-links';
+@import 'footnotes';
+@import 'forms';
+@import 'gallery';
+@import 'header';
+@import 'misc';
+@import 'pagination';
+@import 'posts';
+@import 'projects';
+
+// Page-specific styles
+@import 'home';
+
+// Tooling
+@import 'animation';
+@import 'fonts';

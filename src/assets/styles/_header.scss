@@ -1,3 +1,128 @@
+header, .site-footer {
+	padding: 3rem 5vw;
+	text-align: center;
+	position: relative;
+	z-index: 1000;
+	line-height: 1;
+	p { font-size: 1rem; }
+}
+
+header {
+	position: fixed;
+	background-color: var(--color-background);
+	background-image: var(--background-pattern);
+	background-size: 20px 20px;
+	background-attachment: fixed;
+	&::before {
+		content: '';
+		height: 10px;
+		background-color: var(--color-primary);
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 1000;
+	}
+}
+
+@include screen(md) {
+	main { padding: 0 6vw;}
+	header, .site-footer {
+		text-align: left;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		padding: 2.5rem 6vw;
+		grid-template-rows: auto;
+	}
+
+	header {
+		grid-template-columns: 50% 50%;
+	}
+
+	.site-footer {
+		grid-template-columns: 75% 25%;
+		margin-top: 3rem;
+	}
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
+.theme-toggle {
+	position: absolute;
+	top: 2rem;
+
+	@include screen(sm) {
+		position: relative;
+		font-size: 1.5rem;
+		z-index: 3000;
+		top: 0;
+		right: 0.5rem;
+		bottom: 0.5rem;
+		cursor: pointer;
+		transition: opacity 0.1s;
+		display: flex;
+		align-items: center;
+		opacity: 0.2;
+		color: var(--color-background);
+		border: 0;
+		border-radius: 100%;
+		filter: grayscale(1);
+		background-color: var(--color-text);
+		margin-right: 1rem;
+	}
+	@include screen(md) {
+		font-size: 2rem;
+		right: 1rem;
+		bottom: 3rem;
+		width: unset;
+		height: unset;
+		color: var(--color-text);
+		background-color: transparent;
+	  }
+	  &:hover {
+		opacity: 1;
+		&:before {
+		  transform: translateX(0);
+		  opacity: 1;
+		}
+	}
+	&:before {
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		opacity: 0;
+		transform: translateX(2rem);
+		margin-right: 0.5rem;
+		transition: all 0.2s ease;
+		@include screen(md) {
+			content: 'Press (Shift + D)';
+		}
+	}
+	svg {
+		width: 1.5rem;
+		color: inherit;
+	}
+
+	.theme--light {
+		display: none;
+		[dark] & { display: block; }
+	}
+	.theme--dark {
+		[dark] & { display: none; }
+	}
+
+}
+
 .menu__title {
 	font-size: 1rem;
 	margin: 0 0 1rem;
