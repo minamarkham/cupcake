@@ -45,45 +45,40 @@ The site is auto-deployed on [Netlify][netlify] from the `main` branch on GitHub
 
 ## Project Structure
 
-```
- .
- ├── 11ty/                          * 11ty configuration file
- ├── node_modules/                  * contains dependencies pulled from npm
- ├── src/                           * input directory a.k.a. source files
- │   ├── assets/                    * static assets such as images, icons, fonts
- │   │   ├── files/                 * downloaded files
- │   │   ├── fonts/                 * font assets
- │   │   ├── icons/                 * favicons and the like
- │   │   ├── images/                * all site images
- │   │   ├── media/                 * non-image media files
- │   │   ├── scripts/               * external javascript files are placed here
- │   │   └── styles/                * styles folder
- │   │       ├── partials/          * place all the sass partial stylesheets in this folder
- │   │       └── styles.scss        * the main stylesheet for the project which gets compiled to CSS
- │   ├── content/                   * where the content resides
- │   ├── data/                      * global data files
- │   └── views/                     * template files including files, extends files, partials, or macros
- │       ├── layouts/               * defined page layouts
- │       └── partials/              * layout partials
- ├── tweets/                        * minamarkham/twitter-archive submodule
- ├── www/                           * output directory a.k.a. complied site
- ├── .browserslistrc                * define target browsers
- ├── .editorconfig                  * helps define and maintain consistent coding styles between different editors and IDEs
- ├── .eleventy.js                   * main mainfest file
- ├── .eleventyignore                * defines files to ignore during site generation
- ├── .env-sample                    * example environment variables
- ├── .eslintrc.js                   * ecmascript linting configuration file
- ├── .gitignore                     * contains files that are ignored from git
- ├── .nvmrc                         * define which version of Node.js is required
- ├── .prettierignore                * don't run prettier on these files
- ├── .prettierrc                    * prettier configuration file
- ├── .stylelintrc                   * stylelint configuration file
- ├── LICENSE                        * licensing information
- ├── netlify.toml                   * netlify configuration
- ├── package-lock.json              * stores an exact, versioned dependency tree
- ├── package.json                   * contains all the npm scripts for building, running, deploying etc. and contains all the dependencies
- └── README.md                      * Readme file for the repository
-```
+`├──` [`11ty/`](./11ty/) — 11ty configuration files <br/>
+`├──` [`src/`](./src/) — input directory a.k.a. source files <br/>
+`│   ├──` [`admin/`](./src/admin/) — [Netlify][netlify] CMS <br/>
+`│   ├──` [`assets/`](./src/assets/) — static assets such as images, icons, fonts <br/>
+`│   │   ├──` [`files/`](./src/assets/files/) — downloaded files <br/>
+`│   │   ├──` [`fonts/`](./src/assets/fonts/) — font assets <br/>
+`│   │   ├──` [`icons/`](./src/assets/icons/) — favicons and the like <br/>
+`│   │   ├──` [`images/`](./src/assets/images/) — all site images <br/>
+`│   │   ├──` [`media/`](./src/assets/media/) — non-image media files <br/>
+`│   │   ├──` [`scripts/`](./src/assets/scripts/) — external javascript files are placed here <br/>
+`│   │   └──` [`styles/`](./src/assets/styles/) — styles folder <br/>
+`│   │       └──` [`styles.scss`](./src/assets/styles/main.scss) — the main stylesheet for the project which gets compiled to CSS <br/>
+`│   ├──` [`content/`](./src/content/) — where the content resides <br/>
+`│   ├──` [`data/`](./src/data/) — global data files <br/>
+`│   └──` [`views/`](./src/views/) — template files including files, extends files, partials, or macros <br/>
+`│       ├──` [`layouts/`](./src/views/layouts/) — defined page layouts <br/>
+`│       └──` [`partials/`](./src/views/partials/) — layout partials <br/>
+`├──` [`tweets/`](./tweets/) — minamarkham/twitter-archive submodule <br/>
+`├──` [`www/`](./www/) — output directory a.k.a. complied site <br/>
+`├──` [`.browserslistrc`](.browserslistrc) — define target browsers <br/>
+`├──` [`.eleventy.js`](.eleventy.js) — main mainfest file <br/>
+`├──` [`.eleventyignore`](.eleventyignore) — defines files to ignore during site generation <br/>
+`├──` [`.env-sample`](.env-sampl) — example environment variables <br/>
+`├──` [`.eslintrc.js`](.eslintrc.js) — ecmascript linting configuration file <br/>
+`├──` [`.gitignore`](.gitignore) — contains files that are ignored from git <br/>
+`├──` [`.nvmrc`](.nvmrc) — define which version of Node.js is required <br/>
+`├──` [`.prettierignore`](.prettierignore) — don't run prettier on these files <br/>
+`├──` [`.prettierrc`](.prettierrc) — prettier configuration file <br/>
+`├──` [`.stylelintrc`](.stylelintrc) — stylelint configuration file <br/>
+`├──` [`LICENSE`](LICENSE) — licensing information <br/>
+`├──` [`netlify.toml`](netlify.toml) — [Netlify][netlify] configuration <br/>
+`├──` [`package-lock.json`](package-lock.json) — stores an exact, versioned dependency tree <br/>
+`├──` [`package.json`](package.json) — contains all the npm scripts for building, running, deploying etc. and contains all the dependencies <br/>
+`└──` [`README.md`](README.md) — this file <br/>
 
 ## Roadmap
 
