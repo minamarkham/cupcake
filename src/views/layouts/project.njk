@@ -1,0 +1,106 @@
+---
+layout: base.njk
+---
+
+<article class="project">
+	{% if image_url %}
+	<div class="project__featured-image-wrapper">
+		<img src="{{ image_url }}" alt="{{ image_alt }}" class="project__featured-image">
+	</div>
+	{% endif %}
+	<div class="project__intro">
+		<div class="project__intro-row project__intro-row--main">
+			<div class="project__intro-inner">
+				<h1 class="project__title"><span>{{ name }}</span> {{ headline }}</h1>
+			</div>
+		</div>
+		<div class="project__intro-row project__intro-row--details">
+			<div class="project__intro-inner">
+				<p class="project__excerpt">{{ excerpt }}</p>
+				<nav class="table-of-contents">
+					<ol class="table-of-contents__list">
+					{% for item in toc %}
+						<li class="table-of-contents__list-item">
+							<a href="#{{ item | slugify }}" class="table-of-contents__link"> {{ item }} </a>
+						</li>
+					{% endfor %}
+					</ol>
+				</nav>
+
+				<div class="project__info">
+					{% if link %}
+					<a href="{{ link }}" class="project__live-link">View Live Project</a>
+					{% else %}
+					<p class="project__live-link">Project Offline</p>
+					{% endif %}
+					<h5>Type</h5>
+					<p>{{ clientType }}</p>
+					<h5>When</h5>
+					<p>{{ when }}</p>
+					<h5>Role(s)</h5>
+					<ul class="inline-list">
+					{% for role in roles %}
+						<li>{{ role }}</li>
+					{% endfor %}
+					</ul>
+					{% if canonical %}
+					<h5>For</h5>
+					<p><a href="{{ canonical.url }}">{{ canonical.title }}</a></p>
+					{% endif %}
+					{% if github %}
+					<h5>Source</h5>
+					<p><a href="{{ github }}">View Repo</a></p>
+					{% endif %}
+					{% if credits %}
+					<h5>Collaborators</h5>
+					{% for section in credits %}
+					<ul class="inline-list">
+						{% for person in section.people %}
+						<li><a href="{{ person.url }}">{{ person.name }}</a>, {{ person.title }}</li>
+						{% endfor %}
+					</ul>
+					{% endfor %}
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% for item in toc %}
+	{%- set section =  item | slugify %}
+	<div class="project__section">
+		<h2 id="{{ section }}" class="project__section-head">
+			<a href="#{{ section }}" class="project__section-anchor">⚓️</a>
+			<a href="#{{ section }}" class="project__section-anchor" id="{{ section }}"></a> {{ item }}
+		</h2>
+		<div class="project__contents">
+			{% renderlayoutblock section %}
+		</div>
+	</div>
+	{% endfor %}
+
+	<a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve"><polygon points="43.886,16.221 42.697,17.687 26.5,4.731 10.303,17.688 9.114,16.221 26.5,2.312"></polygon></svg></a>
+
+	{%- set nextProject = collections.projects | getNextCollectionItem %}
+	{%- if not nextProject %}
+	{% set nextProject = collections.projects | first %}
+	{%- endif %}
+
+	<footer class="next-case-study projectlist">
+		<p><span>Next case study</span></p>
+		<article class="next-case-study__link t-{{ nextProject.data.title | slugify }}">
+			<div class="project__item next-case-study__article">
+				<h3 class="project__item-link next-case-study__title"><a href="{{ nextProject.url | url }}">{{ nextProject.data.title }}</a></h3>
+				{% if nextProject.data.image_url %}<img class="project__item-img" src="{{ nextProject.data.image_url }}" alt="{{ nextProject.data.image_alt }}"/>{% endif %}
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>{{ nextProject.data.title }}</span>
+						<span>{{ nextProject.data.title }}</span>
+						<span>{{ nextProject.data.title }}</span>
+						<span>{{ nextProject.data.title }}</span>
+					</div>
+				</div>
+			</div>
+		</article>
+	</footer>
+</article>

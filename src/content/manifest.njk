@@ -1,0 +1,16 @@
+---
+permalink: '/manifest.webmanifest'
+eleventyExcludeFromCollections: true
+---
+{
+	"name": "{{ site.title }}",
+	"short_name": "{{ site.author.name }}",
+	"icons": [
+		{ "src": "/192.png", "type": "image/png", "sizes": "192x192" },
+		{ "src": "/512.png", "type": "image/png", "sizes": "512x512" }
+	],
+	"theme_color": "{{ site.themeColor }}",
+	"background_color": "{{ site.backgroundColor }}",
+	"display": "standalone",
+	"start_url": "/"
+}
