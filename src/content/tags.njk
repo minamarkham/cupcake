@@ -1,0 +1,39 @@
+---
+layout: 'base.njk'
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag | slugify }}/
+eleventyComputed:
+  title: "Tagged “{{ tag }}”"
+---
+
+{% if tag === 'vibe check' %}
+{% include "partials/more-vibes.njk" %}
+{% else %}
+<div class="header">
+	<h1 class="page-title">{{ title }}</h1>
+	<p>{{ subtitle }}</p>
+</div>
+{% endif %}
+
+{% set taglist = collections[ tag ] %}
+
+<div class="page-content">
+	<ol reversed class="postlist">
+	{% for post in taglist | reverse %}
+	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+		<div class="postlist-wrap">
+			<a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}<span aria-hidden="true"></span></a>
+			<time class="postlist-date" datetime="{{ post.date | machineDate }}">{{ post.date | readableDate }}</time>
+			{% for tag in post.data.tags %}
+			{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+			<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+			{% endfor %}
+		</div>
+		{% if post.data.canonical %}<p class="postlist-canonical">Originally published for <a href="{{ post.data.canonical.url }}">{{ post.data.canonical.title }}</a></p>{% endif %}
+	</li>
+	{% endfor %}
+	</ol>
+</div>

@@ -51,19 +51,16 @@ The site is auto-deployed on [Netlify][netlify] from the `main` branch on GitHub
 `│   ├──` [`assets/`](./src/assets/) — static assets such as images, icons, fonts <br/>
 `│   │   ├──` [`files/`](./src/assets/files/) — downloaded files <br/>
 `│   │   ├──` [`fonts/`](./src/assets/fonts/) — font assets <br/>
-`│   │   ├──` [`icons/`](./src/assets/icons/) — favicons and the like <br/>
 `│   │   ├──` [`images/`](./src/assets/images/) — all site images <br/>
 `│   │   ├──` [`media/`](./src/assets/media/) — non-image media files <br/>
 `│   │   ├──` [`scripts/`](./src/assets/scripts/) — external javascript files are placed here <br/>
 `│   │   └──` [`styles/`](./src/assets/styles/) — styles folder <br/>
-`│   │       └──` [`styles.scss`](./src/assets/styles/main.scss) — the main stylesheet for the project which gets compiled to CSS <br/>
+`│   │       └──` [`main.scss`](./src/assets/styles/main.scss) — the main stylesheet which gets compiled to CSS <br/>
 `│   ├──` [`content/`](./src/content/) — where the content resides <br/>
 `│   ├──` [`data/`](./src/data/) — global data files <br/>
 `│   └──` [`views/`](./src/views/) — template files including files, extends files, partials, or macros <br/>
 `│       ├──` [`layouts/`](./src/views/layouts/) — defined page layouts <br/>
 `│       └──` [`partials/`](./src/views/partials/) — layout partials <br/>
-`├──` [`tweets/`](./tweets/) — minamarkham/twitter-archive submodule <br/>
-`├──` [`www/`](./www/) — output directory a.k.a. complied site <br/>
 `├──` [`.browserslistrc`](.browserslistrc) — define target browsers <br/>
 `├──` [`.eleventy.js`](.eleventy.js) — main mainfest file <br/>
 `├──` [`.eleventyignore`](.eleventyignore) — defines files to ignore during site generation <br/>
@@ -77,7 +74,7 @@ The site is auto-deployed on [Netlify][netlify] from the `main` branch on GitHub
 `├──` [`LICENSE`](LICENSE) — licensing information <br/>
 `├──` [`netlify.toml`](netlify.toml) — [Netlify][netlify] configuration <br/>
 `├──` [`package-lock.json`](package-lock.json) — stores an exact, versioned dependency tree <br/>
-`├──` [`package.json`](package.json) — contains all the npm scripts for building, running, deploying etc. and contains all the dependencies <br/>
+`├──` [`package.json`](package.json) — npm scripts for building, running, deploying etc. and dependencies <br/>
 `└──` [`README.md`](README.md) — this file <br/>
 
 ## Roadmap

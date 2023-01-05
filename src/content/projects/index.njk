@@ -1,0 +1,25 @@
+---
+layout: page.njk
+title: "selected-works"
+subtitle: A non-chronological list of select projects covering front-end development and design work.
+permalink: /projects/
+eleventyExcludeFromCollections: true
+fullWidth: true
+---
+
+<nav class="projectlist">
+	{% for project in collections.projects %}
+	<div class="project__item t-{{ project.data.title | slugify }}">
+		<a href="{{ project.url }}" class="project__item-link">{{ project.data.name }}</a>
+		{% if project.data.image_url %}<img class="project__item-img" src="{{ project.data.image_url }}" alt="{{ project.data.image_alt }}"/>{% endif %}
+		<div class="marquee">
+			<div class="marquee__inner" aria-hidden="true">
+				<span>{{ project.data.name }}</span>
+				<span>{{ project.data.name }}</span>
+				<span>{{ project.data.name }}</span>
+				<span>{{ project.data.name }}</span>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</nav>

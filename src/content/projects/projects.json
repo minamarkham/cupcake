@@ -1,0 +1,4 @@
+{
+	"layout": "project.njk",
+	"permalink": "/projects/{{ title | slugify }}/"
+}
