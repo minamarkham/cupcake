@@ -1,71 +1,55 @@
 ---
 layout: base.njk
 ---
-
-<nav>
-	<a href="/posts/">← back to /posts/</a>
-</nav>
-
-<article class="post">
-	<time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
-	<h1>{{ title }}</h1>
-	{% if canonical %}<p>Originally published on <a href="{{ canonical.url }}">{{ canonical.title }}</a></p>{% endif %}
-	{{ layoutContent | safe }}
-	<footer>
-		{% if tags %}
-			<span>Filed under</span>
-			<ul class="inline-list">
-			{% for tag in tags %}
-				{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-				<li><a href="{{ tagUrl }}" class="post-tag" rel="tag">{{ tag }}</a></li>
-			{% endfor %}
-			</ul>
-		{% endif %}
-	</footer>
-</article>
-
 {% if 'vibe check' in tags %}
 {%- set collection = collections['vibe check'] %}
 {% else %}
 {%- set collection = collections.posts %}
 {% endif %}
 
-{%- set nextPost = collection | getNextCollectionItem %}
-{%- set previousPost = collection | getPreviousCollectionItem %}
+{%- set randomPosts = collection | randomLimit(3, page.url) %}
 
-{%- if nextPost or previousPost%}
+<nav>
+	<a href="/posts/">← back to /posts/</a>
+</nav>
+
+<article class="post">
+	<div class="post-header">
+		{% if tags %}
+		<small class="tags">
+			<span>Filed under</span>
+			{% for tag in tags %}
+				{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+				<a href="{{ tagUrl }}" class="post-tag" rel="tag">{{ tag }}</a>
+			{% endfor %}
+		</small>
+		{% endif %}
+		<h1>{{ title }}</h1>
+		<h2>{{ subtitle }}</h2>
+		<p>Published on <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
+		{% if canonical %}— for <a href="{{ canonical.url }}">{{ canonical.title }}</a>{% endif %}</p>
+	</div>
+	{{ layoutContent | safe }}
+</article>
+
 <section class="post-pagination pagination--prev-next">
 	{% if 'vibe check' in tags %}
 	{% include "partials/more-vibes.njk" %}
 	{% else %}
 	{% include "partials/keep-reading.njk" %}
 	{% endif %}
-
-	<nav>
-		{%- if previousPost %}
-		<a href="{{ previousPost.url | url }}" class="pagination-link pagination-link--prev">
-		<div class="pagination-icon">
-			<svg class="caret-left-icon--small" viewBox="0 0 9 16"><polyline fill="none" stroke-miterlimit="10" points="7.3,14.7 2.5,8 7.3,1.2"></polyline></svg>
-		</div>
-		<span class="pagination-title-wrapper">
-			<div class="visually-hidden">Previous</div>
-			<div class="pagination-prev-next">Previous</div>
-			<h2 class="pagination-title">{{ previousPost.data.title }}</h2>
-		</span>
-		</a>
-		{% endif %}
-		{%- if nextPost %}
-		<a href="{{ nextPost.url | url }}" class="pagination-link pagination-link--next">
-		<div class="pagination-title-wrapper">
-			<div class="visually-hidden">Next</div>
-			<div class="pagination-prev-next">Next</div>
-			<h2 class="pagination-title">{{ nextPost.data.title }}</h2>
-		</div>
-		<div class="pagination-icon">
-			<svg class="caret-right-icon--small" viewBox="0 0 9 16"><polyline fill="none" stroke-miterlimit="10" points="1.6,1.2 6.5,7.9 1.6,14.7"></polyline></svg>
-		</div>
-		</a>
-		{% endif %}
-	</nav>
+	<ol class="postlist">
+		{% for post in randomPosts %}
+		<li class="postlist-item">
+			<div class="postlist-wrap">
+				<a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}<span aria-hidden="true"></span></a>
+				<time class="postlist-date" datetime="{{ post.date | machineDate }}">{{ post.date | readableDate }}</time>
+				{% for tag in post.data.tags %}
+				{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+				<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+				{% endfor %}
+			</div>
+		</li>
+		{% endfor %}
+	</ol>
 </section>
-{%- endif %}

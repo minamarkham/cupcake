@@ -50,6 +50,18 @@ module.exports = {
 		eleventyConfig.addNunjucksShortcode('image', imageShortcode);
 	},
 
+	figure: function (eleventyConfig) {
+		eleventyConfig.addPairedShortcode(
+			'figure',
+			(content, caption) => `
+			<figure>
+				${content}
+				<figcaption>${caption}</figcaption>
+			</figure>
+			`
+		);
+	},
+
 	/**
 	 * Custom layout blocks
 	 * https://github.com/11ty/eleventy/issues/853

@@ -33,4 +33,16 @@ module.exports = {
 			);
 		});
 	},
+	randomLimit: function (eleventyConfig) {
+		eleventyConfig.addFilter('randomLimit', (arr, limit, currPage) => {
+			// Filters out current page
+			const pageArr = arr.filter((page) => page.url !== currPage);
+
+			// Randomizes remaining items
+			pageArr.sort(() => { return 0.5 - Math.random(); });
+
+			// Returns array items up to limit
+			return pageArr.slice(0, limit);
+		});
+	}
 };
