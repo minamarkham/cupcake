@@ -46,9 +46,6 @@
 	{% endif %}
 
 	<script>
-		if (localStorage.getItem('darkMode') === 'true')
-		document.documentElement.setAttribute('dark', true);
-		if (localStorage.getItem('theme'))
-		document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+		{% include "partials/init-theme.njk" %}
 	</script>
 </head>

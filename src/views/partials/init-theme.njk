@@ -1,0 +1,6 @@
+const html = document.documentElement;
+const theme = localStorage.getItem('theme');
+const darkMode = localStorage.getItem('darkMode');
+
+theme && html.setAttribute('data-theme', theme);
+darkMode && html.setAttribute('dark', true);
