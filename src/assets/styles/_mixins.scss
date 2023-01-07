@@ -1,9 +1,23 @@
 @use 'sass:map';
 
+// 20rem / 320px
+// 30rem / 480px
+// 37.5rem / 600px
+// 45rem / 720px
+// 48rem / 768px
+// 56rem / 896px
+// 58.75 / 940px
+// 60rem / 960px
+// 64rem / 1024px
+// 75rem / 1200px
+// 90rem / 1440px
+// 100rem / 1600px
+// 116.25 / 1860px
+
 $breakpoints: (
-	sm: 37.5rem,
-	md: 56rem,
-	lg: 75rem
+	sm: 37.5rem, // 600px
+	md: 56rem, // 896px
+	lg: 75rem // 1200px
 );
 
 @mixin screen($breakpoint) {

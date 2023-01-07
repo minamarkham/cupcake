@@ -3,7 +3,7 @@ layout: base.njk
 ---
 
 <nav>
-	<a href="'/posts/'}">← back to /posts/</a>
+	<a href="/posts/">← back to /posts/</a>
 </nav>
 
 <article class="post">
@@ -17,7 +17,7 @@ layout: base.njk
 			<ul class="inline-list">
 			{% for tag in tags %}
 				{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-				<li><a href="{{ tagUrl }}" class="tag" rel="tag">{{ tag }}</a></li>
+				<li><a href="{{ tagUrl }}" class="post-tag" rel="tag">{{ tag }}</a></li>
 			{% endfor %}
 			</ul>
 		{% endif %}

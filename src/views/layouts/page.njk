@@ -3,7 +3,7 @@ layout: base.njk
 ---
 
 <div class="header">
-    <h1 class="page-title">{{ title }}</h1>
+    <h1 class="page-title">{{ title | lower | slugify }}</h1>
     <p>{{ subtitle }}</p>
 </div>
 

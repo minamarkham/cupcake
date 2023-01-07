@@ -1,8 +1,9 @@
 ---
-title: posts
-subtitle: Infrequent writing on design, development, conferences, and other things tangentially related.
+title: Posts
+subtitle: Infrequent musings on tech, design, and other tangentially related things.
 permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}"
 layout: page.njk
+fullWidth: true
 eleventyExcludeFromCollections: true
 pagination:
   data: collections.posts

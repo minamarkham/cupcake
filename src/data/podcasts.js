@@ -1,9 +1,12 @@
-[
+const { DateTime } = require("luxon");
+
+module.exports = [
 	{
 		"url": "https://responsivewebdesign.com/podcast/mina-markham/",
 		"title": "Spotlight: Mina Markham",
-		"host": "Hanselminutes by Scott Hanselman",
+		"host": "Responsive Web Design Podcast",
 		"date": "Jan 27 2017",
+		"datetime": DateTime.fromFormat('01-27-2017', 'MM-dd-yyyy').toJSDate(),
 		"time": "30 mins"
 	},
 	{
@@ -11,6 +14,7 @@
 		"title": "Building Pantsuit: The Hillary Clinton UI Pattern Library with Mina Markham",
 		"host": "Hanselminutes by Scott Hanselman",
 		"date": "Jan 27 2017",
+		"datetime": DateTime.fromFormat('11-27-2017', 'MM-dd-yyyy').toJSDate(),
 		"time": "30 mins"
 	},
 	{
@@ -18,6 +22,7 @@
 		"title": "Revision Path № 118",
 		"host": "with Maurice Cherry",
 		"date": "December 24, 2015",
+		"datetime": DateTime.fromFormat('12-24-2015', 'MM-dd-yyyy').toJSDate(),
 		"time": "42 mins"
 	},
 	{
@@ -26,28 +31,15 @@
 		"host": "with Chris Coyier and Dave Rupert",
 		"description": "I was at CSS Dev Conf when Chris and Dave asked me about the conference and work things.",
 		"date": "October 30, 2015",
+		"datetime": DateTime.fromFormat('10-30-2015', 'MM-dd-yyyy').toJSDate(),
 		"time": "63 mins"
-	},
-	{
-		"url": "https://itunes.apple.com/us/podcast/grumpy-developer-podcast-tech/id1006525170",
-		"title": "The Grumpy Developer Podcast № 31",
-		"description": ""
 	},
 	{
 		"url": "http://shoptalkshow.com/episodes/097-mina-markham/",
 		"title": "ShopTalk, № 48",
 		"host": "with Chris Coyier and Dave Rupert",
 		"date": "December 26, 2013",
+		"datetime": DateTime.fromFormat('12-26-2013', 'MM-dd-yyyy').toJSDate(),
 		"time": "63 mins"
-	},
-	{
-		"url": "http://word-break.com/episode/episode-04-with-mina-markham/",
-		"title": "Word-Break Show № 3",
-		"date": "December 3, 2014",
-		"time": "42 mins"
-	},
-	{
-		"url": "http://technologyandfriends.com/SubText/archive/2014/10/13/tf339.aspx",
-		"title": "Technology and Friends"
 	}
 ]

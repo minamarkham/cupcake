@@ -1,5 +1,4 @@
 // Initialiazing a footnotes counter on the wrapper
-
 article {
 	counter-reset: footnotes;
 }
@@ -41,16 +40,17 @@ article {
 	font-size: 0.8em;
 }
 
-.c-footnotes {
+.footnotes {
 	background-color: var(--color-background);
-	color: #696969;
+	color: var(--color-text);
 	padding: 1rem;
 	margin: 2rem 0;
+	border: 1px solid var(--color-text);
 
 	&::before {
 		content: 'Footnotes';
 		text-transform: uppercase;
-		color: var(--black);
+		color: var(--color-text);
 		font-size: 0.7rem;
 		letter-spacing: 0.1rem;
 		display: block;
@@ -58,7 +58,12 @@ article {
 	}
 
 	:target {
-		background: rgb(255 51 119 / 50%);
+		background: rgba(255, 51, 119, 0.5);
+	}
+
+	&__anchor {
+		position: absolute;
+		top: -200px;
 	}
 
 	ol {
@@ -90,9 +95,4 @@ article {
 			font-weight: 700;
 		}
 	}
-}
-
-.c-footnotes__anchor {
-	position: absolute;
-	top: -200px;
 }

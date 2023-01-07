@@ -2,30 +2,37 @@
 	--font-family-sans-serif: 'TT Chocolates', sans-serif;
 	--font-family-monospace: 'Dank Mono', monospace;
 	--font-family-system: system-ui, -apple-system, sans-serif;
-	--pink: #f37;
+	--pink: #F37;
 	--teal: #008080;
-	--cyan: #48ded4;
-	--white: #fff;
+	--cyan: #48DED4;
+	--white: #FFF;
 	--black: #000;
-	--off-white: #f2f2f2;
-	--off-black: #1c1c1c;
-	--magenta: #e82c75;
-	--fuschia: #ff0081;
-	--dark-fuschia: #e60074;
+	--off-white: #F2F2F2;
+	--off-black: #1C1C1C;
+	--magenta: #E82C75;
+	--fuschia: #FF0081;
+	--dark-fuschia: #E60074;
 	--color-gray-90: #333;
 	--color-primary: var(--pink);
 	--color-accent: var(--teal);
 	--color-background: var(--white);
-	--color-foreground: #cbcccd; // bdbdbd
+	--color-foreground: #CBCCCD; // bdbdbd
 	--color-text: var(--off-black);
 	--color-link: var(--color-primary);
-	--code-bg: #0f1c23;
+	--code-bg: #0F1C23;
 	--button-bg: var(--fuschia);
 	--button-bg-active: var(--dark-fuschia);
-	--spacer: 1rem;
 	--background-pattern: radial-gradient(var(--color-foreground) 1px, var(--color-background) 1px);
-	--kbd-color-background: #f7f7f7;
-	--kbd-color-border: #cbcccd;
+	--kbd-color-background: #F7F7F7;
+	--kbd-color-border: #CBCCCD;
 	--kbd-color-text: #222325;
 	--aspect-ratio: 16 / 9;
+
+	// @media (prefers-color-scheme: dark)
+	&[dark] {
+		--color-gray-90: #DAD8D8;
+		--color-text: #CCC;
+		--color-background: var(--off-black);
+		--color-foreground: #222;
+	}
 }

@@ -5,7 +5,7 @@ module.exports = [
 		"name": "Source Up!",
 		"url": "https://sourceup.co.za/",
 		"datetime": DateTime.fromFormat('03-11-2019', 'MM-dd-yyyy').toJSDate(),
-		"location": "Cape Town, South Africa",
+		"where": "Cape Town, South Africa",
 		"onsale": {
 			"url": "https://tickets.sourceup.co.za/"
 		},
@@ -135,7 +135,7 @@ module.exports = [
 		"name": "Clarity 2017",
 		"url": "https://www.clarityconf.com/2017",
 		"datetime": DateTime.fromFormat('11-28-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "San Francisco, California",
+		"where": "San Francisco, California",
 		"video": "https://www.youtube.com/watch?v=YBLHB8LWhqg",
 		"talk": true
 	},
@@ -143,7 +143,7 @@ module.exports = [
 		"name": "beyond tellayard 2017",
 		"url": "https://beyondtellerrand.com/events/berlin-2017/speakers",
 		"datetime": DateTime.fromFormat('11-06-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Berlin, Germany",
+		"where": "Berlin, Germany",
 		"video": "https://vimeo.com/241705921",
 		"talk": true
 	},
@@ -151,70 +151,70 @@ module.exports = [
 		"name": "Girl Develop It Leadership Summit",
 		"url": "https://www.girldevelopit.com/summit",
 		"datetime": DateTime.fromFormat('10-21-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Denver, Colorado",
+		"where": "Denver, Colorado",
 		"talk": true
 	},
 	{
 		"name": "Adobe Max 2017",
 		"url": "https://2017.max.adobe.com/",
 		"datetime": DateTime.fromFormat('10-18-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Las Vegas, Nevada",
+		"where": "Las Vegas, Nevada",
 		"talk": true
 	},
 	{
 		"name": "CSS Dev Conference",
 		"url": "https://www.cssdevconf.com/",
 		"datetime": DateTime.fromFormat('10-11-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "New Orleans, LA",
+		"where": "New Orleans, LA",
 		"keynote": true
 	},
 	{
 		"name": "IBM FEDucation",
 		"url": "https://www.ibm.com/design/",
 		"datetime": DateTime.fromFormat('10-04-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Austin, Texas",
+		"where": "Austin, Texas",
 		"online": true
 	},
 	{
 		"name": "Write/Speak/Code 2017",
 		"url": "https://2017.writespeakcode.com/index.html",
 		"datetime": DateTime.fromFormat('08-23-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Portland, Oregon",
+		"where": "Portland, Oregon",
 		"keynote": true
 	},
 	{
 		"name": "Kitbash: Netflix Enterprise Design Showcase",
 		"url": "https://www.meetup.com/Kitbash-Enterprise-Design-Showcase/",
 		"datetime": DateTime.fromFormat('06-28-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "San Francisco, California",
+		"where": "San Francisco, California",
 		"talk": true
 	},
 	{
 		"name": "Salesforce UX Mentorship Night @ SF Design Week",
 		"url": "",
 		"datetime": DateTime.fromFormat('06-19-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "San Francisco, California",
+		"where": "San Francisco, California",
 		"talk": true
 	},
 	{
 		"name": "Respond Melbourne",
 		"url": "http://www.webdirections.com/respond",
 		"datetime": DateTime.fromFormat('05-08-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Melbourne, Australia",
+		"where": "Melbourne, Australia",
 		"talk": true
 	},
 	{
 		"name": "Respond Sydney",
 		"url": "http://www.webdirections.com/respond",
 		"datetime": DateTime.fromFormat('05-04-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Sydney, Australia",
+		"where": "Sydney, Australia",
 		"talk": true
 	},
 	{
 		"name": "Generate New York",
 		"url": "https://www.generateconf.com/new-york",
 		"datetime": DateTime.fromFormat('04-27-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "New York, NY",
+		"where": "New York, NY",
 		"video": "https://www.youtube.com/watch?v=Mjg8qQM_R5c&t=1s",
 		"talk": true
 	},
@@ -222,7 +222,7 @@ module.exports = [
 		"name": "FITC Toronto",
 		"url": "http://fitc.ca/event/to17/",
 		"datetime": DateTime.fromFormat('04-23-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Toronto, Canada",
+		"where": "Toronto, Canada",
 		"video": "https://www.youtube.com/watch?v=oGLzyytGOVg",
 		"talk": true
 	},
@@ -230,7 +230,7 @@ module.exports = [
 		"name": "Render Conf",
 		"url": "http://renderconf.com",
 		"datetime": DateTime.fromFormat('03-30-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Oxford, England",
+		"where": "Oxford, England",
 		"video": "https://www.youtube.com/watch?v=dwMhn2OKHkk",
 		"talk": true
 	},
@@ -238,21 +238,21 @@ module.exports = [
 		"name": "Google Women Techmakers: International Women's Day",
 		"url": "http://sites.google.com/site/iwd2017nyc/",
 		"datetime": DateTime.fromFormat('03-04-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "New York, NY",
+		"where": "New York, NY",
 		"panel": true
 	},
 	{
 		"name": "DevTO's Annual International Women's Day Talks",
 		"url": "http://iwd.devto.ca/",
 		"datetime": DateTime.fromFormat('03-06-2017', 'MM-dd-yyyy').toJSDate(),
-		"location": "Toronto, Canada",
+		"where": "Toronto, Canada",
 		"talk": true
 	},
 	{
 		"name": "Future of Web Design, NYC",
 		"url": "https://futureofwebdesign.com/nyc-2015/",
 		"datetime": DateTime.fromFormat('11-02-2015', 'MM-dd-yyyy').toJSDate(),
-		"location": "New York, NY",
+		"where": "New York, NY",
 		"talk": true,
 		"title": "SMACSS Your Sass Up",
 		"slides": "https://speakerdeck.com/minamarkham/smacss-your-sass-up"
@@ -261,7 +261,7 @@ module.exports = [
 		"name": "CSS Dev Conf",
 		"url": "http://2015.cssdevconf.com",
 		"datetime": DateTime.fromFormat('10-26-2015', 'MM-dd-yyyy').toJSDate(),
-		"location": "Long Beach, CA",
+		"where": "Long Beach, CA",
 		"talk": true,
 		"title": "SMACSS Your Sass Up",
 		"video": "https://www.youtube.com/watch?v=bTDXdtjU078",
@@ -271,7 +271,7 @@ module.exports = [
 		"name": "Fusion Day",
 		"url": "https://ti.to/antifusion/fusion-day",
 		"datetime": DateTime.fromFormat('09-03-2015', 'MM-dd-yyyy').toJSDate(),
-		"location": "Charlotte, NC",
+		"where": "Charlotte, NC",
 		"talk": true,
 		"title": "Finding Your Tribe",
 	},
@@ -279,14 +279,14 @@ module.exports = [
 		"name": "Collision Conference",
 		"url": "http://collisionconf.com/",
 		"datetime": DateTime.fromFormat('05-05-2015', 'MM-dd-yyyy').toJSDate(),
-		"location": "Las Vegas, NV",
+		"where": "Las Vegas, NV",
 		"fireside": true
 	},
 	{
 		"name": "O'Reilly Fluent Conference",
 		"url": "http://fluentconf.com/",
 		"datetime": DateTime.fromFormat('04-20-2015', 'MM-dd-yyyy').toJSDate(),
-		"location": "San Francisco, CA",
+		"where": "San Francisco, CA",
 		"talk": true,
 		"title": "SMACSS Your Sass Up",
 		"slides": "https://speakerdeck.com/minamarkham/smacss-your-sass-up"
@@ -295,7 +295,7 @@ module.exports = [
 		"name": "Converge SE",
 		"url": "http://convergese.com/",
 		"datetime": DateTime.fromFormat('04-15-2015', 'MM-dd-yyyy').toJSDate(),
-		"location": "Columbia, SC",
+		"where": "Columbia, SC",
 		"talk": true,
 		"title": "SMACSS Your Sass Up",
 		"slides": "https://speakerdeck.com/minamarkham/smacss-your-sass-up"
@@ -304,7 +304,7 @@ module.exports = [
 		"name": "Camp Sass",
 		"url": "http://campsass.com/",
 		"datetime": DateTime.fromFormat('04-04-2015', 'MM-dd-yyyy').toJSDate(),
-		"location": "Atlanta, GA",
+		"where": "Atlanta, GA",
 		"talk": true,
 		"title": "Finding Your Tribe",
 	},
@@ -312,7 +312,7 @@ module.exports = [
 		"name": "Squares Conference",
 		"url": "http://squaresconference.com/",
 		"datetime": DateTime.fromFormat('03-25-2015', 'MM-dd-yyyy').toJSDate(),
-		"location": "Grapevine, TX",
+		"where": "Grapevine, TX",
 		"workshop": true
 	},
 
@@ -320,14 +320,14 @@ module.exports = [
 		"name": "Sass Summit",
 		"url": "http://environmentsforhumans.com/2014/sass-summit/",
 		"datetime": DateTime.fromFormat('11-06-2014', 'MM-dd-yyyy').toJSDate(),
-		"location": "Online",
+		"where": "Online",
 		"talk": true
 	},
 	{
 		"name": "Front Porch",
 		"url": "http://frontporch.io",
 		"datetime": DateTime.fromFormat('10-07-2014', 'MM-dd-yyyy').toJSDate(),
-		"location": "Dallas, TX",
+		"where": "Dallas, TX",
 		"talk": true,
 		"title": "SMACSS Your Sass Up",
 		"slides": "https://speakerdeck.com/minamarkham/smacss-your-sass-up",
@@ -337,14 +337,14 @@ module.exports = [
 		"name": "That Conference",
 		"url": "http://thatconference.com/",
 		"datetime": DateTime.fromFormat('08-11-2014', 'MM-dd-yyyy').toJSDate(),
-		"location": "Wisconsin Dells, WI",
+		"where": "Wisconsin Dells, WI",
 		"talk": true
 	},
 	{
 		"name": "Distill",
 		"url": "http://distill.engineyard.com/",
 		"datetime": DateTime.fromFormat('08-07-2014', 'MM-dd-yyyy').toJSDate(),
-		"location": "San Francisco, CA",
+		"where": "San Francisco, CA",
 		"talk": true,
 		"slides": "https://speakerdeck.com/minamarkham/sweet-and-sassy-responsive-design-distill-2014",
 		"video": "http://vimeo.com/105594351"
@@ -353,7 +353,7 @@ module.exports = [
 		"name": "Midwest.io",
 		"url": "http://midwest.io/",
 		"datetime": DateTime.fromFormat('07-14-2014', 'MM-dd-yyyy').toJSDate(),
-		"location": "Kansas City, MO",
+		"where": "Kansas City, MO",
 		"talk": true,
 		"title": "SMACSS Your Sass Up",
 		"slides": "https://speakerdeck.com/minamarkham/smacss-your-sass-up",
@@ -363,7 +363,7 @@ module.exports = [
 		"name": "Front End Design Conference",
 		"url": "http://frontenddesignconference.com",
 		"datetime": DateTime.fromFormat('07-11-2014', 'MM-dd-yyyy').toJSDate(),
-		"location": "St. Petersburg, FL",
+		"where": "St. Petersburg, FL",
 		"talk": true,
 		"title": "SMACSS Your Sass Up",
 		"slides": "https://speakerdeck.com/minamarkham/smacss-your-sass-up"
@@ -372,7 +372,7 @@ module.exports = [
 		"name": "Passion Project's Public Speaking Workshop",
 		"url": "http://passion-projects.is/",
 		"datetime": DateTime.fromFormat('02-20-2014', 'MM-dd-yyyy').toJSDate(),
-		"location": "San Francisco, CA",
+		"where": "San Francisco, CA",
 		"talk": true,
 		"slides": "https://speakerdeck.com/minamarkham/the-art-of-proposing"
 	},
@@ -380,14 +380,14 @@ module.exports = [
 		"name": "Front Porch",
 		"url": "http://frontporch.io",
 		"datetime": DateTime.fromFormat('10-08-2013', 'MM-dd-yyyy').toJSDate(),
-		"location": "Dallas, TX",
+		"where": "Dallas, TX",
 		"talk": true
 	},
 	{
 		"name": "Front End Design Conference",
 		"url": "http://frontenddesignconference.com",
 		"datetime": DateTime.fromFormat('06-21-2013', 'MM-dd-yyyy').toJSDate(),
-		"location": "St. Petersburg, FL",
+		"where": "St. Petersburg, FL",
 		"talk": true
 	}
 ];

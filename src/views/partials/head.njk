@@ -11,9 +11,15 @@
 	{# RSS Feed #}
 	<link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}">
 
+	{% if metatitle %}
+	{% set pageTitle = metatitle %}
+	{% else %}
+	{% set pageTitle = title %}
+	{% endif %}
+
 	{# metagen plugin output #}
 	{% metagen
-		title = title or docTitle + " " + site.title,
+		title = pageTitle + " | " + site.title,
 		desc = site.desc,
 		url = site.url + page.url,
 		img = site.url + site.image.src,

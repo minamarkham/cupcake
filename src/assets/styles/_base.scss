@@ -66,6 +66,7 @@ a[download] {
 	font-family: inherit;
 	width: 23rem;
 	height: auto;
+	font-size: 1rem;
 
 	.circle {
 		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
@@ -280,17 +281,9 @@ summary {
 	border-bottom: 1px solid;
 	user-select: none;
 }
-
 table {
-	font-weight: 400;
-	line-height: 1.2857;
-	letter-spacing: normal;
-	margin: 1rem 0;
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-	table-layout: fixed;
-
+	border: 0;
+	font-size: 1rem;
 	br {
 		display: none;
 	}
@@ -307,45 +300,67 @@ thead {
 	width: 1px;
 }
 
-th {
-	background-color: inherit;
-	color: #454245;
-	text-align: left;
-	padding: 0.5rem 1rem;
-}
-
 tr {
-	border-bottom: 1px solid #ebeaeb;
+	border: 1px solid #DDD;
 	display: block;
-	margin-bottom: 1rem;
+	margin-bottom: .625em;
 }
 
 td {
-	padding: 0.5rem 1rem;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #DDD;
 	display: block;
-	text-align: left;
-	min-height: 40px;
-
-	&:last-child {
-		border-bottom: 0;
-	}
-
+	min-height: 30px;
+	text-align: right;
+	padding: 0.25em 0.5em;
 	&::before {
 		content: attr(data-label);
 		float: left;
 		font-weight: bold;
-		margin-right: 1rem;
+	}
+
+	&:last-child {
+		border-bottom: 0;
 	}
 }
 
-@media screen and (min-width: 768px) {
+@include screen(800px) {
 	table {
-		border: 1px solid #ebeaeb;
-
+		border-collapse: collapse;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		table-layout: fixed;
 		br {
-			display: inherit;
+			display: block;
 		}
+	}
+	thead {
+		position: static;
+		text-align: left;
+		display: table-header-group;
+	}
+
+	caption {
+		margin: .5em 0 .75em;
+	}
+
+	tr {
+		border: 0;
+		border-bottom: 1px solid #DDD;
+		padding: .35em;
+		margin: 0;
+		display: table-row;
+	}
+
+	td { border: none; }
+
+	td::before { display: none; }
+
+	th,
+	td {
+		padding: .625em;
+		text-align: left;
+		display: table-cell;
 	}
 }
 
@@ -359,13 +374,10 @@ iframe,
 img,
 video,
 object {
-	aspect-ratio: var(--aspect-ratio);
 	max-width: 100%;
 	width: 100%;
 	height: auto; // 100%
-	&[width][height] {
-		aspect-ratio: attr(width) / attr(height);
-	}
+	object-fit: cover;
 }
 
 img {
@@ -380,7 +392,7 @@ img {
 	&::after {
 		content: '🚫' ' Broken Image of ' attr(alt);
 		font-size: 16px;
-		color: rgb(100 100 100);
+		color: #646464;
 		display: flex;
 		position: absolute;
 		z-index: 2;
@@ -389,7 +401,7 @@ img {
 		width: 100%;
 		height: 100%;
 		background-color: var(--white);
-		border: 1px dashed #ddd;
+		border: 1px dashed #DDD;
 		align-items: center;
 		justify-content: center;
 	}
@@ -414,9 +426,9 @@ dialog::backdrop {
 }
 
 code {
-	background: #d8dee9;
+	background: #D8DEE9;
 	border-radius: 0.3em;
-	color: #343d46!important;
+	color: #343D46 !important;
 	font-size: .875em;
 	font-weight: 600;
 	padding: 0.1em 0.5em;
@@ -495,6 +507,6 @@ hr {
 		padding: 0 0.5em;
 		line-height: 1.5em;
 		color: #818078;
-		background-color: #fcfcfa;
+		background-color: #FCFCFA;
 	}
 }
