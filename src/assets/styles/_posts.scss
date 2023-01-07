@@ -1,5 +1,6 @@
 .post {
-	width: clamp(15rem,90vw,70rem);
+	width: clamp(15rem, 90vw, 70rem);
+	max-width: 50rem;
 }
 
 .postlist {
@@ -12,10 +13,11 @@
 	line-height: 1.8;
 	font-size: 1.8rem;
 	margin-bottom: 0.5rem;
+	.post-pagination & { line-height: 1; }
 }
 
 .postlist-date {
-	font-size: 0.8125em; // 13px /16
+	font-size: 0.8125em;
 	color: var(--color-gray-90);
 	word-spacing: -0.5px;
 }
@@ -50,14 +52,26 @@
 			content: "✓";
 		}
 	}
+	.post-pagination & { span { top: 1.8rem; } }
+}
+
+.post-header {
+	margin-bottom: 5vw;
+	width: 80%;
+
+	h1 + h2 {
+		margin-top: 0;
+		font-weight: 300;
+		font-style: italic;
+	}
 }
 
 .post-tag {
 	text-transform: uppercase;
-	font-size: 0.75em; // 12px /16
-	margin-left: 0.6667em; // 8px /12
-	margin-top: 0.5em; // 6px /12
-	margin-bottom: 0.5em; // 6px /12
+	font-size: 01rem;
+	margin-left: 0.6667em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	color: inherit;
 	line-height: 1.8;
 
@@ -75,4 +89,10 @@
 	font-size: 1rem;
 	display: block;
 	margin-top: -10px;
+}
+
+.tags {
+	text-transform: uppercase;
+	font-size: 1rem;
+	margin-top: 2rem;
 }

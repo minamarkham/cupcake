@@ -25,7 +25,7 @@ a[href^="//"]:hover::after {
 	color: inherit;
 }
 
-// CSS-only favicons https://www.zachleat.com/web/external-link-favicons/
+/* @link https://www.zachleat.com/web/external-link-favicons/ */
 a[href^="https://www.11ty.dev"]::before,
 a[href^="https://www.netlify.com"]::before,
 a[href^="https://docs.netlify.com"]::before,

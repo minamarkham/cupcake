@@ -28,6 +28,13 @@
 }
 
 .post-pagination {
+	h3 {
+		line-height: 1;
+		font-size: 1rem;
+		margin-bottom: -6rem;
+		opacity: .3;
+	}
+
 	svg {
 		width: 20vw;
 	}
