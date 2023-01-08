@@ -26,7 +26,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizelegibility;
-	font-family: var(--font-family-sans-serif);
+	font-family: var(--font-family-sans-serif) !important;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
@@ -37,6 +37,7 @@ body {
 	position: relative;
 	font-weight: 400;
 	overflow-x: hidden;
+	margin-top: 10px !important;
 }
 
 header {
@@ -44,6 +45,7 @@ header {
 	background-image: var(--background-pattern);
 	background-size: 20px 20px;
 	background-attachment: fixed;
+	height: 66px !important;
 
 	&::before {
 		content: '';
@@ -57,7 +59,19 @@ header {
 	}
 }
 
-h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif); }
+[class*="EditorContainer"],
+[class*="ToolbarContainer"] {
+	background-color: var(--color-background);
+	background-image: var(--background-pattern);
+	background-size: 20px 20px;
+	background-attachment: fixed;
+}
+
+[class*="ToolbarContainer"] {
+	top: 10px !important;
+}
+
+h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !important; }
 
 [class*="active"], :active, :focus, :hover {
 	color: var(--color-primary);
@@ -65,18 +79,18 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif); }
 
 .css-1hu7ve8-button-dropdownItem-StyledMenuItem:hover,
 .css-1fh4556-ViewControlsButton-button {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 
 .css-1hu7ve8-button-dropdownItem-StyledMenuItem:hover,
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:hover,
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:active,
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink.sidebar-active {
-	background-color: rgba(255, 51, 119, .1);
+	background-color: rgba(255, 51, 119, .1) !important;
 }
 
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:hover,
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:active,
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink.sidebar-active {
-	border-left-color: rgb(72, 99, 198);
+	border-left-color: var(--color-primary) !important;
 }
