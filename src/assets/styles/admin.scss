@@ -76,6 +76,8 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !importan
 	color: var(--color-primary) !important;
 }
 
+.css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton.header-link-active .ei6fm2r1,
+.css-1wgdcls-ToolbarToggleLabel-ToolbarToggleLabel,
 .css-19jgu1s-ToolbarToggleLabel-ToolbarToggleLabel,
 .css-1hu7ve8-button-dropdownItem-StyledMenuItem:hover,
 .css-1fh4556-ViewControlsButton-button {
@@ -105,4 +107,9 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !importan
 	background-image: var(--background-pattern);
 	background-size: 20px 20px;
 	background-attachment: fixed;
+}
+
+.css-fkrj39-ToolbarButton-button-default-buttonMargin-noOverflow-SaveButton-lightBlue-disabled {
+	background-color: rgba(255, 51, 119, .1) !important;
+	color: var(--color-primary) !important;
 }
