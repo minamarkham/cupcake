@@ -76,6 +76,23 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !importan
 	color: var(--color-primary) !important;
 }
 
+[role="button"]:not(.css-1u4rgvb-AvatarDropdownButton.e1cy7qi00),
+.css-bn4qgs-CollectionTopNewButton-button-default-gray {
+    box-shadow: none !important;
+    background: transparent !important;
+    color: var(--color-primary) !important;
+    border: 1px solid var(--color-primary) !important;
+}
+
+.css-5cj8zr-ToolbarDropdownWrapper.e169jtoy1 [role="button"] {
+	border: none !important;
+}
+
+.css-d6cj8l-StyledDropdownButton-button-default-caret-caretDown-AppHeaderQuickNewButton-button-medium-gray:hover {
+	background-color: transparent !important;
+}
+
+.css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton:hover .ei6fm2r1,
 .css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton.header-link-active .ei6fm2r1,
 .css-1wgdcls-ToolbarToggleLabel-ToolbarToggleLabel,
 .css-19jgu1s-ToolbarToggleLabel-ToolbarToggleLabel,
