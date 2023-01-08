@@ -59,8 +59,7 @@ header {
 	}
 }
 
-[class*="EditorContainer"],
-[class*="ToolbarContainer"] {
+.css-2oej7z-ToolbarContainer {
 	background-color: var(--color-background);
 	background-image: var(--background-pattern);
 	background-size: 20px 20px;
@@ -77,9 +76,14 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !importan
 	color: var(--color-primary) !important;
 }
 
+.css-19jgu1s-ToolbarToggleLabel-ToolbarToggleLabel,
 .css-1hu7ve8-button-dropdownItem-StyledMenuItem:hover,
 .css-1fh4556-ViewControlsButton-button {
 	color: var(--color-primary) !important;
+}
+
+.css-1uwwzhh-ToggleBackground {
+	background-color: var(--color-primary) !important;
 }
 
 .css-1hu7ve8-button-dropdownItem-StyledMenuItem:hover,
