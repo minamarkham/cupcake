@@ -34,4 +34,9 @@ module.exports = {
 		}
 		return config;
 	},
+
+	admin: function () {
+		const config = { 'src/admin': 'admin' };
+		return config;
+	},
 };
