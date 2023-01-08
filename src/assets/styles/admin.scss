@@ -15,6 +15,7 @@
 :focus {
 	outline: 2px dashed var(--color-primary);
 	outline-offset: 0.25rem;
+	box-shadow: var(--color-primary) 0px 0px 0px 2px inset !important;
 }
 
 html {
@@ -45,7 +46,6 @@ header {
 	background-image: var(--background-pattern);
 	background-size: 20px 20px;
 	background-attachment: fixed;
-	height: 66px !important;
 
 	&::before {
 		content: '';
@@ -74,7 +74,7 @@ header {
 h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !important; }
 
 [class*="active"], :active, :focus, :hover {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 
 .css-1hu7ve8-button-dropdownItem-StyledMenuItem:hover,
@@ -93,4 +93,12 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !importan
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:active,
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink.sidebar-active {
 	border-left-color: var(--color-primary) !important;
+}
+
+.css-f3a0ud-NoPreviewContainer-card-splitPane {
+	background-color: transparent;
+	background-color: var(--color-background);
+	background-image: var(--background-pattern);
+	background-size: 20px 20px;
+	background-attachment: fixed;
 }
