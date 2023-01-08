@@ -1,17 +1,19 @@
-# Netlify CMS Configuration File
-
 backend:
   name: git-gateway
   branch: main
 publish_mode: editorial_workflow
+site_url: https://cupcake-funfetti.netlify.app
 media_folder: 'src/assets/images'
 public_folder: "/assets/images"
+local_backend: true # npx netlify-cms-proxy-server
 collections:
   - name: "blog"
     label: "Blog"
     folder: "src/content/posts"
     create: true
     slug: "---"
+    editor:
+      preview: false
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
