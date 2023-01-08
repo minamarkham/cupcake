@@ -1,6 +1,21 @@
 .post {
 	width: clamp(15rem, 90vw, 70rem);
 	max-width: 50rem;
+
+	h1 {
+		&::before, &::after {
+			color: #ccc;
+		}
+		&::before {
+			content: '/*';
+			margin-left: calc(-2rem - 10px);
+			margin-right: 10px;
+		}
+		&::after {
+			content: '*/';
+			margin-left: 10px;
+		}
+	}
 }
 
 .postlist {
@@ -30,8 +45,11 @@
 	position: relative;
 	display: inline-block;
 
-	&:visited span::after {
-		color: var(--color-primary);
+	&:visited {
+		&, * { color: #AAA; }
+		span::before {
+			color: var(--color-background);
+		}
 	}
 
 	.postlist-item-active & {
@@ -40,16 +58,12 @@
 
 	span {
 		position: absolute;
-		left: -1.2rem;
-		top: 3.3rem;
+		left: -15px;
+		top: -8px;
 
-		&::after {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			width: 0.5rem;
-			color: var(--color-background);
-			content: "✓";
+		&::before {
+			color: var(--color-primary);
+			content: "\2217";
 		}
 	}
 	.post-pagination & { span { top: 1.8rem; } }

@@ -16,7 +16,7 @@ pagination:
 	{% for post in postslist %}
 	<li class="postlist-item">
 		<div class="postlist-wrap">
-			<a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}<span aria-hidden="true"></span></a>
+			<a href="{{ post.url | url }}" class="postlist-link"><span aria-hidden="true"></span>{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
 			<time class="postlist-date" datetime="{{ post.date | machineDate }}">{{ post.date | readableDate }}</time>
 			{% for tag in post.data.tags %}
 			{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}

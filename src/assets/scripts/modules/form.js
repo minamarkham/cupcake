@@ -11,8 +11,6 @@ export function animateButton(e) {
 }
 
 export function handleSubmit(e) {
-	e.preventDefault();
-
 	const myForm = e.target;
 	const formData = new FormData(myForm);
 

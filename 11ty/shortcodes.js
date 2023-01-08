@@ -62,6 +62,23 @@ module.exports = {
 		);
 	},
 
+	youtube: function (eleventyConfig) {
+		eleventyConfig.addShortcode("youtube", (videoURL, title) => {
+		  const url = new URL(videoURL);
+		  const id = url.searchParams.get("v");
+		  return `<div class="embed"><iframe src="https://www.youtube.com/embed/${id}?controls=0" title="YouTube video player${
+			title ? ` for ${title}` : ""}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
+		});
+	},
+
+	vimeo: function (eleventyConfig) {
+		eleventyConfig.addShortcode("vimeo", (videoURL) => {
+			const url = new URL(videoURL);
+			const id = url.pathname.replace('/', '');
+			return `<div class="embed"><iframe src="https://player.vimeo.com/video/${id}?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
+		});
+	},
+
 	/**
 	 * Custom layout blocks
 	 * https://github.com/11ty/eleventy/issues/853

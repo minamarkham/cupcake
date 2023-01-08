@@ -1,14 +1,14 @@
 .photo__grid {
 	--gap: 3vw;
 	position: relative;
-	width: 90vw;
+	// width: 90vw;
 	display: grid;
 	grid-gap: var(--gap);
 	grid-auto-rows: calc((1700px / 20) - var(--gap));
 	grid-auto-columns: calc((90vw / 15) - var(--gap));
 
 	@include screen(60em) {
-		width: 63vw;
+		// width: 63vw;
 		grid-auto-rows: calc((1700px / 20) - var(--gap));
 		grid-auto-columns: calc((63vw / 15) - var(--gap));
 	}
@@ -36,18 +36,14 @@
 	}
 
 	&:nth-child(5) {
-		grid-area: 7 / 1 / 11 / 8;
-	}
-
-	&:nth-child(6) {
 		grid-area: 8 / 8 / 13 / 16;
 	}
 
-	&:nth-child(7) {
+	&:nth-child(6) {
 		grid-area: 11 / 1 / 16 / 8;
 	}
 
-	&:nth-child(8) {
+	&:nth-child(7) {
 		grid-area: 13 / 8 / 17 / 16;
 	}
 
@@ -69,18 +65,14 @@
 		}
 
 		&:nth-child(5) {
-			grid-area: 8 / 2 / 10 / 6;
-		}
-
-		&:nth-child(6) {
 			grid-area: 9 / 6 / 14 / 16;
 		}
 
-		&:nth-child(7) {
+		&:nth-child(6) {
 			grid-area: 10 / 1 / 16 / 6;
 		}
 
-		&:nth-child(8) {
+		&:nth-child(7) {
 			grid-area: 14 / 6 / 19 / 15;
 		}
 	}
