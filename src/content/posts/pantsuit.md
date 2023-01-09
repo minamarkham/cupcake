@@ -101,15 +101,10 @@ KSS-node parses the comments in the code and generates markup based on the actua
 
 ```scss
 // Button
-
 // Buttons can and should be clicked. Buttons come in two sizes, small and large. To create a large button, add a class of \`c-button-large\`. To create a link that looks like a button, add the \`c-button-link\` class.
-
 // .secondary — Use to indicate a secondary call-to-action.
-
 // Markup:
-
 // buttons.html
-
 // Styleguide 5.button
 ```
 

@@ -8,16 +8,15 @@ const Page = createClass({
     const entry = this.props.entry;
 
     return html`
-      <div class="header">
-        <h1 class="page-title">${entry.getIn(["data", "title"], null)}</h1>
-        <p>${entry.getIn(["data", "subtitle"], null)}</p>
-      </div>
-
-      <div class="page-content">
-      ${this.props.widgetFor("body")}
-      </div>
-
-    `;
+        <main>
+            <div class="header">
+                <h1 class="page-title">${entry.getIn(["data", "title"], null)}</h1>
+                <p>${entry.getIn(["data", "subtitle"], null)}</p>
+            </div>
+            <div class="page-content">
+                ${this.props.widgetFor("body")}
+            </div>
+        </main>`;
   }
 });
 

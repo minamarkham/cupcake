@@ -9,30 +9,32 @@ const Post = createClass({
         const entry = this.props.entry;
 
         return html
-            `<article class="post">
-                <div class="post-header">
-                    <small class="tags">
-                        <span>Filed under</span>
-                        ${
-                            entry.getIn(["data", "tags"], []).map(
-                              tag =>
-                                html`
-                                  <a href="#" class="post-tag" rel="tag">${tag}</a>
-                                `
+            `<main>
+                <article class="post">
+                    <div class="post-header">
+                        <small class="tags">
+                            <span>Filed under</span>
+                            ${
+                                entry.getIn(["data", "tags"], []).map(
+                                tag =>
+                                    html`
+                                    <a href="#" class="post-tag" rel="tag">${tag}</a>
+                                    `
+                                )
+                            }
+                        </small>
+                        <h1>${entry.getIn(["data", "title"], null)}</h1>
+                        <h2>${entry.getIn(["data", "subtitle"], null)}</h2>
+                        <p>Published on <time>${
+                            format(
+                            entry.getIn(["data", "date"], new Date()),
+                            "dd MMM, yyyy"
                             )
-                          }
-                    </small>
-                    <h1>${entry.getIn(["data", "title"], null)}</h1>
-                    <h2>${entry.getIn(["data", "subtitle"], null)}</h2>
-                    <p>Published on <time>${
-                        format(
-                          entry.getIn(["data", "date"], new Date()),
-                          "dd MMM, yyyy"
-                        )
-                      }</time></p>
-                </div>
-                ${this.props.widgetFor("body")}
-            </article>`;
+                        }</time></p>
+                    </div>
+                    ${this.props.widgetFor("body")}
+                </article>
+            </main>`;
     }
 });
 
