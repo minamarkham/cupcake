@@ -6,7 +6,6 @@ canonical:
     url: https://24ways.org/2017/refactoring-your-way-to-a-design-system/
     title: 24 Ways
     domain: https://24ways.org
-ShowRelatedPost: true
 tags:
     - design systems
     - css

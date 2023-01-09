@@ -1,6 +1,6 @@
 ---
 date: 2016-09-01T01:43:53.544Z
-date_updated: 2016-09-01T06:19:49.690Z
+updated: 2016-09-01T06:19:49.690Z
 title: 'Pantsuit: The Hillary Clinton UI pattern library'
 subtitle: Building a (presidential) design system
 summary: The post that launched 1,000 tweets. I built Hillary Clinton's design system, and this is how I did it.

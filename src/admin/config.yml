@@ -7,20 +7,93 @@ media_folder: 'src/assets/images'
 public_folder: "/assets/images"
 local_backend: true # npx netlify-cms-proxy-server
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "post"
+    label: "Posts"
     folder: "src/content/posts"
+    slug: "{{slug}}"
+    preview_path: "posts/{{slug}}"
     create: true
-    slug: "---"
-    editor:
-      preview: false
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
       - { label: "updated", name: "updated", widget: "date", format: 'YYYY-MM-DD', required: false}
-      - { label: "intro", name: "intro", widget: "string" }
-      - { label: "canonical", name: "canonical", widget: "string", required: false }
-      - { label: "publication", name: "publication", widget: "string", required: false }
+      - { label: "subtitle", name: "subtitle", widget: "string" }
+      - { label: "summary", name: "summary", widget: "string" }
+      - label: "canonical"
+        name: "canonical"
+        collapse: true
+        widget: "object"
+        fields:
+          - {label: 'url', name: 'url', widget: 'string', required: false}
+          - {label: 'title', name: 'title', widget: 'string', required: false}
+          - {label: 'domain', name: 'domain', widget: 'string', required: false}
       - { label: "permalink", name: "permalink", widget: "string" }
       - { label: "tags", name: "tags", widget: "list" }
       - { label: "body", name: "body", widget: "markdown" }
+  - name: "projects"
+    label: "Projects"
+    folder: "src/content/projects"
+    slug: "{{slug}}"
+    preview_path: "projects/{{slug}}"
+    create: true
+    fields:
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "name", name: "name", widget: "string" }
+      - { label: "metatitle", name: "metatitle", widget: "string" }
+      - { label: "category", name: "category", widget: "string" }
+      - { label: "description", name: "description", widget: "string" }
+      - { label: "link", name: "link", widget: "string" }
+      - { label: "headline", name: "headline", widget: "string" }
+      - { label: "excerpt", name: "excerpt", widget: "string" }
+      - { label: "clientType", name: "clientType", widget: "string" }
+      - { label: "when", name: "when", widget: "string" }
+      - { label: "order", name: "order", widget: "number" }
+      - { label: "roles", name: "roles", widget: "string" }
+      - { label: "github", name: "github", widget: "string" }
+      - { label: "sections", name: "sections", widget: "list" }
+      - label: Credits
+        name: credits
+        widget: list
+        fields:
+          - label: Section
+            name: key
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: URL, name: url, widget: string}
+      - label: Press
+        name: press
+        widget: list
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Publication, name: publication, widget: string}
+          - {label: URL, name: url, widget: string}
+      - label: Footnotes
+        name: footnotes
+        widget: list
+        fields:
+          - {label: Key, name: key, widget: string}
+          - {label: Note, name: note, widget: string}
+      - label: Praise
+        name: praise
+        widget: list
+        fields:
+          - {label: Quote, name: quote, widget: string}
+          - {label: Name, name: name, widget: string}
+      - { label: "permalink", name: "permalink", widget: "string" }
+      - { label: "tags", name: "tags", widget: "list" }
+      - { label: "body", name: "body", widget: "markdown" }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "site/content/pages/about.md"
+        slug: "about"
+        preview_path: "about"
+        fields:
+          - { label: "title", name: "title", widget: "string" }
+          - { label: "name", name: "name", widget: "string" }
+          - { label: "metatitle", name: "metatitle", widget: "string" }
+          - { label: "body", name: "body", widget: "markdown" }
