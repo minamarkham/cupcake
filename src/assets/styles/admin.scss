@@ -2,7 +2,7 @@
 
 /*!
  * Cupcake 7.0.0 (Funfetti)
- * Admin tweaks 1.0.3
+ * Netlify CMS 2.9.3 Tweaks
  * Copyright 2023 Mina Markham
  * https://mina.codes
  * Licensed under MIT https://github.com/minamarkham/cupcake/blob/main/LICENSE
@@ -139,4 +139,12 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !importan
 .css-fkrj39-ToolbarButton-button-default-buttonMargin-noOverflow-SaveButton-lightBlue-disabled {
 	background-color: rgba(255, 51, 119, .1) !important;
 	color: var(--color-primary) !important;
+}
+
+
+button.css-1jhr3xj-LoginButton-button-default-gray-disabled.e4hp3ji4 {
+	background: transparent;
+	color: var(--color-primary);
+	border: 1px solid;
+	box-shadow: none;
 }
