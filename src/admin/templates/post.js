@@ -9,11 +9,7 @@ const Post = createClass({
         const entry = this.props.entry;
 
         return html
-            `<nav>
-                <a href="/posts/">← back to /posts/</a>
-            </nav>
-
-            <article class="post">
+            `<article class="post">
                 <div class="post-header">
                     <small class="tags">
                         <span>Filed under</span>
@@ -33,11 +29,10 @@ const Post = createClass({
                           entry.getIn(["data", "date"], new Date()),
                           "dd MMM, yyyy"
                         )
-                      }</time>
+                      }</time></p>
                 </div>
                 ${this.props.widgetFor("body")}
-            </article>
-        `;
+            </article>`;
     }
 });
 
