@@ -7,7 +7,7 @@ media_folder: 'src/assets/images/uploads'
 public_folder: "/assets/images"
 local_backend: true # npx netlify-cms-proxy-server
 collections:
-  - name: "post"
+  - name: "posts"
     label: "Posts"
     folder: "src/content/posts"
     slug: "{{slug}}"
