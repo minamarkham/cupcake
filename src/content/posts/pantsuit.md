@@ -95,7 +95,7 @@ Of course there’s still work to be done, but the [initial feedback](https://ww
 
 A design system is only as good as its documentation, so it was really important that I created a site that was both easy for my team to use and for me to keep updated. We use a combination of [assemble](https://github.com/assemble/assemble), [kss-node](https://github.com/kss-node/kss-node) and [nunjucks](https://github.com/mozilla/nunjucks) to document Pantsuit.
 
-![](https://cdn-images-1.medium.com/max/1600/1*w7G52xHHslBw7tJLUj1Vcg.png)
+{% image "/assets/images/pantsuit/1w7G52xHHslBw7tJLUj1Vcg.png", "" %}
 
 KSS-node parses the comments in the code and generates markup based on the actual styles of your system. As the styles are updated, so is the documentation.
 

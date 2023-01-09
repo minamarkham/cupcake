@@ -15,10 +15,10 @@ collections:
     create: true
     fields:
       - { label: "title", name: "title", widget: "string" }
-      - { label: "date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
-      - { label: "updated", name: "updated", widget: "date", format: 'YYYY-MM-DD', required: false}
-      - { label: "subtitle", name: "subtitle", widget: "string" }
-      - { label: "summary", name: "summary", widget: "string" }
+      - { label: "date", name: "date", widget: "datetime", format: 'YYYY-MM-DD' }
+      - { label: "updated", name: "updated", widget: "datetime", format: 'YYYY-MM-DD', required: false}
+      - { label: "subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "summary", name: "summary", widget: "string", required: false }
       - label: "canonical"
         name: "canonical"
         collapse: true
@@ -27,7 +27,7 @@ collections:
           - {label: 'url', name: 'url', widget: 'string', required: false}
           - {label: 'title', name: 'title', widget: 'string', required: false}
           - {label: 'domain', name: 'domain', widget: 'string', required: false}
-      - { label: "permalink", name: "permalink", widget: "string" }
+      - { label: "permalink", name: "permalink", widget: "string", required: false }
       - { label: "tags", name: "tags", widget: "list" }
       - { label: "body", name: "body", widget: "markdown" }
   - name: "projects"
