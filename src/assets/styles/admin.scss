@@ -87,18 +87,30 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !importan
 
 .css-5cj8zr-ToolbarDropdownWrapper.e169jtoy1 [role="button"] {
 	border: none !important;
+	color: inherit !important;
 }
 
 .css-d6cj8l-StyledDropdownButton-button-default-caret-caretDown-AppHeaderQuickNewButton-button-medium-gray:hover {
 	background-color: transparent !important;
 }
 
+.css-1blbyw7-SearchInput:focus {
+	box-shadow: var(--color-primary) 0px 0px 0px 2px inset !important;
+}
+
+.css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton:hover,
+.css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton:active,
+.css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton:focus,
+.css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:hover,
+.css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:active,
+.css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink.sidebar-active,
+.css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton.header-link-active,
 .css-1glyzdz-ButtonRound-button-EditorToggle,
 .css-1u78kww-StyledWrapper-ToolbarDropdown-buttonMargin .ei6fm2r1,
 .css-1ftfnv3-PreviewButtonContainer a,
 .css-1ftfnv3-PreviewButtonContainer .ei6fm2r1,
 .css-1mw5ae4-SuggestionItem:hover,
-.css-1mw5ae4-SuggestionItem:active,
+.css-1mw5ae4-SuggestionItem-active,
 .css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton:hover .ei6fm2r1,
 .css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton.header-link-active .ei6fm2r1,
 .css-104dqk8-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton:hover .ei6fm2r1,
@@ -114,7 +126,7 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !importan
 }
 
 .css-1mw5ae4-SuggestionItem:hover,
-.css-1mw5ae4-SuggestionItem:active,
+.css-1mw5ae4-SuggestionItem-active,
 .css-1hu7ve8-button-dropdownItem-StyledMenuItem:hover,
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:hover,
 .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:active,
@@ -147,4 +159,26 @@ button.css-1jhr3xj-LoginButton-button-default-gray-disabled.e4hp3ji4 {
 	color: var(--color-primary);
 	border: 1px solid;
 	box-shadow: none;
+}
+
+.css-isnoua {
+	font-family: var(--font-family-monospace) !important;
+}
+
+.css-188efjc {
+	border: 2px solid var(--color-primary) !important;
+}
+
+.css-1vur7zs-FieldLabel-fieldLabel.e1j7dp4t0 {
+	background-color: var(--color-primary) !important;
+}
+
+.css-1hvrgvd-CollectionTopContainer-card-cardTop,
+.css-1gj57a0-SidebarContainer-card {
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
+.css-1gj57a0-SidebarContainer-card {
+	padding: 0 !important;
 }
