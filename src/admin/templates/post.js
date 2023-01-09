@@ -5,44 +5,40 @@ const html = htm.bind(h);
 
 // Preview component for a Post
 const Post = createClass({
-  render() {
-    const entry = this.props.entry;
+    render() {
+        const entry = this.props.entry;
 
-    return html`
-      <main>
-        <article>
-          <h1>${entry.getIn(["data", "title"], null)}</h1>
-          <p>
-            <small>
-              <time
-                >${
-                  format(
-                    entry.getIn(["data", "date"], new Date()),
-                    "dd MMM, yyyy"
-                  )
-                }</time
-              >
-              ${" by Author"}
-            </small>
-          </p>
+        return html
+            `<nav>
+                <a href="/posts/">← back to /posts/</a>
+            </nav>
 
-          <p>${entry.getIn(["data", "summary"], "")}</p>
-
-          ${this.props.widgetFor("body")}
-          <p>
-            ${
-              entry.getIn(["data", "tags"], []).map(
-                tag =>
-                  html`
-                    <a href="#" rel="tag">${tag}</a>
-                  `
-              )
-            }
-          </p>
-        </article>
-      </main>
-    `;
-  }
+            <article class="post">
+                <div class="post-header">
+                    <small class="tags">
+                        <span>Filed under</span>
+                        ${
+                            entry.getIn(["data", "tags"], []).map(
+                              tag =>
+                                html`
+                                  <a href="#" class="post-tag" rel="tag">${tag}</a>
+                                `
+                            )
+                          }
+                    </small>
+                    <h1>${entry.getIn(["data", "title"], null)}</h1>
+                    <h2>${entry.getIn(["data", "subtitle"], null)}</h2>
+                    <p>Published on <time>${
+                        format(
+                          entry.getIn(["data", "date"], new Date()),
+                          "dd MMM, yyyy"
+                        )
+                      }</time>
+                </div>
+                ${this.props.widgetFor("body")}
+            </article>
+        `;
+    }
 });
 
 export default Post;
