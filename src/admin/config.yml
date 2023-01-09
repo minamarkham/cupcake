@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: 7.0—funfetti
 publish_mode: editorial_workflow
-site_url: https://cupcake-funfetti.netlify.app
-media_folder: 'src/assets/images'
+site_url: https://cupcake-liner.netlify.app/
+media_folder: 'src/assets/images/uploads'
 public_folder: "/assets/images"
 local_backend: true # npx netlify-cms-proxy-server
 collections:

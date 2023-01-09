@@ -2,6 +2,7 @@
 
 /*!
  * Cupcake 7.0.0 (Funfetti)
+ * Admin tweaks 1.0.3
  * Copyright 2023 Mina Markham
  * https://mina.codes
  * Licensed under MIT https://github.com/minamarkham/cupcake/blob/main/LICENSE
@@ -12,11 +13,15 @@
 @import 'root';
 @import 'reset';
 
-:focus {
-	outline: 2px dashed var(--color-primary);
-	outline-offset: 0.25rem;
-	box-shadow: var(--color-primary) 0px 0px 0px 2px inset !important;
-}
+// :focus {
+// 	outline: 2px dashed var(--color-primary);
+// 	outline-offset: 0.25rem;
+// 	box-shadow: var(--color-primary) 0px 0px 0px 2px inset !important;
+// }
+
+// [class*="active"], :active, :focus, :hover {
+// 	color: var(--color-primary) !important;
+// }
 
 html {
 	scroll-behavior: smooth;
@@ -72,10 +77,6 @@ header {
 
 h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !important; }
 
-[class*="active"], :active, :focus, :hover {
-	color: var(--color-primary) !important;
-}
-
 [role="button"]:not(.css-1u4rgvb-AvatarDropdownButton.e1cy7qi00),
 .css-bn4qgs-CollectionTopNewButton-button-default-gray {
     box-shadow: none !important;
@@ -92,6 +93,10 @@ h1, h2, h3, h4, h5, h6, p { font-family: var(--font-family-sans-serif) !importan
 	background-color: transparent !important;
 }
 
+.css-1glyzdz-ButtonRound-button-EditorToggle,
+.css-1u78kww-StyledWrapper-ToolbarDropdown-buttonMargin .ei6fm2r1,
+.css-1ftfnv3-PreviewButtonContainer a,
+.css-1ftfnv3-PreviewButtonContainer .ei6fm2r1,
 .css-1mw5ae4-SuggestionItem:hover,
 .css-1mw5ae4-SuggestionItem:active,
 .css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton:hover .ei6fm2r1,

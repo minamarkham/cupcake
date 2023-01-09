@@ -67,6 +67,7 @@
 		"husky": "^8.0.0",
 		"lint-staged": "^13.1.0",
 		"luxon": "^2.3.0",
+		"netlify-cms-app": "^2.9.7",
 		"npm-run-all": "^4.1.5",
 		"prettier": "2.8.1",
 		"rimraf": "^3.0.2",
@@ -81,7 +82,7 @@
 	},
 	"husky": {
 		"hooks": {
-		  "pre-commit": "lint-staged"
+			"pre-commit": "lint-staged"
 		}
 	},
 	"lint-staged": {

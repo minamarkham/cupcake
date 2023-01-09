@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="dns-prefetch" href="https://unpkg.com">
+	<link rel="dns-prefetch" href="https://identity.netlify.com">
 	<title>Content Manager</title>
 	<link rel="stylesheet" href="/assets/styles/admin.css">
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -10,16 +12,21 @@
 <body>
 	<!-- Include the script that builds the page and powers Netlify CMS -->
 	<script src="https://unpkg.com/netlify-cms@^2.9.3/dist/netlify-cms.js"></script>
+	<script type="module" src="/admin/index.js"></script>
 	<script>
-	  if (window.netlifyIdentity) {
-		  window.netlifyIdentity.on("init", user => {
-			  if (!user) {
-				  window.netlifyIdentity.on("login", () => {
-					  document.location.href = "/admin/";
-				  });
-			  }
-		  });
-	  }
-	  </script>
+		if (window.netlifyIdentity) {
+			window.netlifyIdentity.on("init", user => {
+			if (!user) {
+				window.netlifyIdentity.on("login", () => {
+					document.location.href = "/admin/";
+				});
+			} else {
+				window.netlifyIdentity.on("logout", () => {
+					document.location.href = "/admin/";
+				});
+			}
+			});
+		}
+	</script>
 </body>
 </html>
