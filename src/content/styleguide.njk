@@ -1,0 +1,352 @@
+---
+layout: base.njk
+title: 'Styleguide'
+permalink: /styleguide/
+footnotes:
+- key: name-change
+  note: '<a href="https://www.boston.com/ae/celebrity/articles/2009/12/23/beyonce_knowles_name_change/">Beyoncé Knowles’ name change"</a>. The Boston Globe. December 23, 2009.'
+- key: influential
+  note: 'Fram, Eric (November 20, 2018). <a href="https://www.npr.org/2018/11/20/668372321/turning-the-tables-your-list-of-the-21st-centurys-most-influential-women-musicia">"Turning the Tables: Your List Of The 21st Century’s Most Influential Women Musicians"</a>. NPR.'
+- key: queen-bey
+  note: '<a href="https://www.theguardian.com/music/2016/jun/27/beyonce-star-formation-destinys-child-queen-bey-tour">"Beyoncé’s star formation: from Destiny’s Child to Queen Bey"</a>. The Guardian. June 27, 2016.'
+scroll: 'Dangerously In Love • B’Day • I Am… Sasha Fierce • 4 • Beyoncé • Lemonade • Everything Is Love • Homecoming: The Live Album • The Lion King: The Gift • Renaissance'
+themes: ['cupcake', 'renaissance', 'lemonade', 'beychella1', 'beychella2']
+fonts:
+- name: TTChocolates
+  style: Extra Light
+- name: TTChocolates
+  style: Extra Light Italic
+- name: TTChocolates
+  style: Light
+- name: TTChocolates
+  style: Light Italic
+- name: TTChocolates
+  style: Regular
+- name: TTChocolates
+  style: Italic
+- name: TTChocolates
+  style: Medium
+- name: TTChocolates
+  style: Medium Italic
+- name: TTChocolates
+  style: Demi Bold
+- name: TTChocolates
+  style: Demi Bold Italic
+- name: TTChocolates
+  style: Bold
+- name: TTChocolates
+  style: Bold Italic
+- name: TTChocolates
+  style: Extra Bold
+- name: TTChocolates
+  style: Extra Bold Italic
+- name: DankMono
+  style: Regular
+- name: DankMono
+  style: Italic
+---
+
+<div class="header">
+	<h1 class="page-title">styleguide</h1>
+</div>
+
+<article class="styleguide">
+	<section class="colors">
+		<h6>colors</h6>
+		<div class="color-row">
+			{% for i in range(0, themes.length) %}
+			<div class="color-block color-{{ i }}">
+				<div class="color-swatch"></div>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+
+	<section class="typography">
+		<h6>typography</h6>
+		<div class="font-family">
+			{% for font in fonts %}<div class="font-family-{{ font.name | slugify }}-{{ font.style | slugify }}"><h1>Aa</h1><span class="label">{{ font.name }}, {{ font.style }}</span></div>{% endfor %}
+		</div>
+		<div class="font-example">
+			<div class="font-example__headline">
+				<small class="subheader">Headlines</small>
+				<h1 class="page-title">slay</h1>
+				<span class="label">Dank Mono Italic 64px</span>
+				<h1>Unique! Hypersonic, sex erotic. Cozy with who I am. Drip intravenous.</h1>
+				<span class="label">TT Chocolates 48px</span>
+				<h2>Always stay gracious, best revenge is your paper</h2>
+				<span class="label">TT Chocolates 39px</span>
+				<h3>Hang one night with Yoncé, I’ll make you famous</h3>
+				<span class="label">TT Chocolates 31px</span>
+				<h4>What's worse, lookin' jealous or crazy?</h4>
+				<span class="label">TT Chocolates 25px</span>
+			</div>
+ 			<div class="font-example__bodytext">
+				<small class="subheader">Body Text</small>
+				<p>Fan me off, my wrist goes click / Dimples on my hip, stretch marks on my tits / Drinking my water, minding my biz / Monday, I’m overrated, Tuesday, on my dick / Flip-flop, flippy, flip-flop and ass bitch / Fan me off, watch my wrist go click.</p>
+				<p><strong>I break chains all by myself / Won't let my freedom rot in hell / I'mma keep runnin' because a winner don't quit on themselves.</strong></p>
+				<p><em>Remember those walls I built? / Well, baby, they're tumblin' down / And they didn't even put up a fight / They didn't even make a sound / I found a way to let you win / But I never really had a doubt / Standin' in the light of your halo / I got my angel now</em></p>
+				<small class="subheader">Lists</small>
+				<ul>
+					<li>Ivy Park</li>
+					<li>Parkwood Entertainment</li>
+					<li>Formation Scholars</li>
+					<li>Survivor Foundation
+				</ul>
+				<ol>
+					<li>2018 Coachella Music Festival</li>
+					<li>2016 MTV Video Music Awards</li>
+					<li>2016 BET Awards</li>
+					<li>2011 MTV Video Music Awards</li>
+				</ol>
+				<small class="subheader">Quotes</small>
+				<blockquote>
+					<p>I don’t like to gamble, but if there’s one thing I’m willing to bet on, it’s myself.</p>
+					<footer>Beyoncé Knowles</footer>
+				</blockquote>
+			</div>
+		</div>
+	</section>
+
+ 	<section class="s-pagination">
+		<h6>Pagination</h6>
+		<nav>
+			<ul class="pagination">
+				<li><a href="" class="is-active" aria-current="page">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+			</ul>
+		</nav>
+	</section>
+
+ 	<section class="animation">
+		<h6>Animation</h6>
+		<svg width="40" viewBox="0 0 50 50" fill="var(--color--text)"><circle cx="25" cy="25" r="20"/></svg>
+	</section>
+
+	<section class="links">
+		<h6>Links</h6>
+		<a href="/" target="_blank">Internal Link</a><br/>
+		<a href="https://www.google.dev/" target="_blank">External Link</a><br/>
+		<a href="https://www.11ty.dev/" target="_blank">11ty</a><br/>
+		<a href="https://www.netlify.com/" target="_blank">Netlify</a><br/>
+		<a href="https://www.twitter.com/" target="_blank">Twitter</a><br/>
+		<a href="https://www.instagram.com/" target="_blank">Instagram</a><br/>
+		<a href="https://www.youtube.com/" target="_blank">Youtube</a><br/>
+		<a href="https://github.com/" target="_blank">Github</a><br/>
+		<a href="https://gitlab.com/" target="_blank">Gitlab</a><br/>
+		<a href="https://wikipedia.org/" target="_blank">Wikipedia</a><br/>
+	</section>
+
+	<section class="buttons">
+		<h6>Buttons</h6>
+		<button id="say-hi" class="special-button" type="button" name="button">Submit</button>
+		<a download href="#">
+			<span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			</span>
+			<span class="button-text">Download Speaker Kit (zip, 232kb)</span>
+		</a>
+	</section>
+
+	<section class="code">
+		<h6>Code Block</h6>
+		<pre class="language-css" tabindex="0" data-language="css"><code class="language-css"><span class="token selector">pre</span> <span class="token punctuation">{</span><br>	<span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span><br>	<span class="token property">padding</span><span class="token punctuation">:</span> 7px<span class="token punctuation">;</span><br>	<span class="token property">background-color</span><span class="token punctuation">:</span> #f5f5f5<span class="token punctuation">;</span><br>	<span class="token property">border</span><span class="token punctuation">:</span> 1px solid #e1e1e8<span class="token punctuation">;</span><br>	<span class="token property">border-radius</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span><br>	<span class="token property">white-space</span><span class="token punctuation">:</span> pre-wrap<span class="token punctuation">;</span><br>	<span class="token property">word-break</span><span class="token punctuation">:</span> break-all<span class="token punctuation">;</span><br>	<span class="token property">font-family</span><span class="token punctuation">:</span> Menlo<span class="token punctuation">,</span> Monaco<span class="token punctuation">;</span><br>	<span class="token property">line-height</span><span class="token punctuation">:</span> 160%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+	</section>
+
+	<section class="social">
+		<h6>Social</h6>
+		<blockquote class="twitter-tweet">
+			<p>One way or another, I’m working with Beyoncé one day.</p>
+			<footer>
+				Mina Markham (@MinaMarkham) <a href="https://twitter.com/MinaMarkham/status/1082308152740196352?ref_src=twsrc%5Etfw">January 7, 2019</a>
+			</footer>
+		</blockquote>
+	</section>
+
+	<section class="forms">
+		<h6>Form</h6>
+		<form enctype="multipart/form-data" method="post" accept-charset="UTF-8" data-netlify="true" action="/thank-you/">
+			<label for="edit-submitted-name">Name <span class="form-required" title="This field is required.">*</span></label>
+			<input required="required" type="text" id="edit-submitted-name" name="submitted[name]" value="" size="60" maxlength="128" class="form-text required">
+			<label for="edit-submitted-email">Email <span class="form-required" title="This field is required.">*</span></label>
+			<input required="required" class="email form-text form-email required" type="email" id="edit-submitted-email" name="submitted[email]" size="60">
+			<label for="edit-submitted-message">Message <span class="form-required" title="This field is required.">*</span></label>
+			<textarea required="required" id="edit-submitted-message" name="submitted[message]" cols="60" rows="5" class="form-textarea required"></textarea>
+			<button id="say-hi" class="special-button" type="submit">Send</button>
+		</form>
+	</section>
+
+	<section class="s-footnotes">
+		<h6>Footnotes</h6>
+		<p><a href="#name-change" aria-describedby="footnote-label" id="name-change-ref">Beyoncé Giselle Knowles-Carter</a> born September 4, 1981 is an American singer, songwriter, and actress. Beyoncé's boundary-pushing artistry and vocals have made her the most influential female musician of the 21st century, according to <a href="#influential" aria-describedby="footnote-label" id="influential-ref">NPR</a>. Her success has led to her becoming a cultural icon and earning her the nickname <a href="#queen-bey" aria-describedby="footnote-label" id="queen-bey-ref">"Queen Bey"</a>.</P>
+		{% include "partials/footnotes.njk" %}
+	</section>
+
+	<section class="marquee-block">
+		<h6>Marquee</h6>
+		<div class="wrap">
+			<nav class="projectlist">
+				<div class="project__item t-yonce">
+					<p class="project__item-link">Yoncé</p>
+					<div class="marquee">
+						<div class="marquee__inner" aria-hidden="true">
+							<span>Yoncé</span>
+							<span>Yoncé</span>
+							<span>Yoncé</span>
+							<span>Yoncé</span>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<p class="scroll">{{ scroll }} •&nbsp;<span aria-hidden="true">{{ scroll }} •&nbsp;</span></p>
+		</div>
+	</section>
+
+	<section class="tables">
+		<h6>Table</h6>
+		<table summary="">
+			<caption>Sample table: Top 10-ish Beyoncé songs, according to me, myself and I (<a href="https://open.spotify.com/playlist/6fZVrveSNLajxvZ8hV8wdf?si=2b2893d179784427">Spotify Playlist</a>)</caption>
+			<thead>
+				<th>Song</th>
+				<th>Album</th>
+				<th>Released</th>
+				<th width="80">Peak*</th>
+				<th width="150">Visuals</th>
+				<th>Notes</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/6g0Orsxv6glTJCt4cHsRsQ?si=98afb2562fa3418f" title="Formation">Formation</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/7dK54iZuOxXFarGhXwEXfF?si=mb4ZbcM5SaeN-GIoBUF4aQ">Lemonade</a></td>
+					<td data-label="Released">February 6, 2016</td>
+					<td data-label="Peak">10</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=WDZJPJV__bQ">Music Video</a></td>
+					<td data-label="Notes"></td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/1xzi1Jcr7mEi9K2RfzLOqS?si=766c84eca69b44a4" title="Cuff It">Cuff It</a> / <a href="https://open.spotify.com/track/0314PeD1sQNonfVWix3B2K?si=a8c6ee41643d4af7" title="Energy">Energy</a> / <a href="https://open.spotify.com/track/5pyoxDZ1PX0KxBxiRVxA4U?si=c548b308d53f40e6" title="Break My Soul">Break My Soul</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/6FJxoadUE4JNVwWHghBwnb?si=YlXw4m3GRE-xEIAzZefwwg">RENAISSANCE</a></td>
+					<td data-label="Released">September 28, 2022<br/>July 29, 2022<br/>June 20, 2022</td>
+					<td data-label="Peak">13<br/>27<br/>1</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=yrtWLyp5gLI">Cuff It</a><br/><a href="https://www.youtube.com/watch?v=O9rk6ldyFkA">Energy</a><br/><a href="https://www.youtube.com/watch?v=yjki-9Pthh0">Break My Soul</a></td>
+					<td data-label="Notes">Is this cheating? Yes. Do I care? No.</td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/02M6vucOvmRfMxTXDUwRXu?si=33efec60f1174b1d" title="7/11">7/11</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/2UJwKSBUz6rtW4QLK74kQu?si=yZI8ezHYQmqoL0pcPADiCA">BEYONCÉ: Platinum Edition</a></td>
+					<td data-label="Released">November 25, 2014</td>
+					<td data-label="Peak">13</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=k4YRWT_Aldo">Music Video</a></td>
+					<td data-label="Notes"></td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/5hgnY0mVcVetszbb85qeDg?si=872e8a22070044d5" title="Partition">Partition</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/2UJwKSBUz6rtW4QLK74kQu?si=yZI8ezHYQmqoL0pcPADiCA">BEYONCÉ: Platinum Edition</a></td>
+					<td data-label="Released">February 25, 2014</td>
+					<td data-label="Peak">23</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=jcF5HtGvX5I">Yoncé</a><br/><a href="https://www.youtube.com/watch?v=pZ12_E5R3qc">Partition</a></td>
+					<td data-label="Notes">Mostly for Yoncé</td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/1z6WtY7X4HQJvzxC4UgkSf?si=96b0fafe4ec84116" title="Love On Top">Love On Top</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/1gIC63gC3B7o7FfpPACZQJ?si=9gXVtIHgSvK798oO2nezdA">4</a></td>
+					<td data-label="Released">September 12, 2011</td>
+					<td data-label="Peak">20</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=Ob7vObnFUJc">Music Video</a></td>
+					<td data-label="Notes"></td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/5IVuqXILoxVWvWEPm82Jxr?si=d2522d53e44947ce" title="Crazy In Love">Crazy In Love</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/6oxVabMIqCMJRYN1GqR3Vf?si=BWYrAxyNTh2j-Nj-p0htow">Dangerously in Love</a></td>
+					<td data-label="Released">May 14, 2003</td>
+					<td data-label="Peak">1</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=ViwtNLUqkMY">Music Video</a></td>
+					<td data-label="Notes"></td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/3W1mdCYUHWewrVXnRsPntM?si=271555fa47634d2e" title="Get Me Bodied">Get Me Bodied - Extended Mix</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/0Zd10MKN5j9KwUST0TdBBB?si=iCZXEFcUQ-ya3LmLONsczA">B’Day Deluxe Edition</a></td>
+					<td data-label="Released">July 10, 2007</td>
+					<td data-label="Peak">46</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=RioOJ7dZxuw">Music Video</a></td>
+					<td data-label="Notes">Extended mix is the only mix</td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/3ERa3mEeOnrh2Mc47qM6T1?si=81a5a2d1cea9481a" title="Halo">Halo</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/23Y5wdyP5byMFktZf8AcWU?si=8qqRqqXtQQ6bgazc-ZrQEw">I Am… Sasha Fierce</a></td>
+					<td data-label="Released">January 20, 2009</td>
+					<td data-label="Peak">5</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=bnVUHWCynig">Music Video</a></td>
+					<td data-label="Notes"></td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/76KTeba6u3LfBL4EsCZaTe?si=d4e4a04baa784be4" title="I Care">I Care</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/1gIC63gC3B7o7FfpPACZQJ?si=9gXVtIHgSvK798oO2nezdA">4</a></td>
+					<td data-label="Released">March 23, 2012</td>
+					<td data-label="Peak">n/a</td>
+					<td data-label="Visuals">n/a</td>
+					<td data-label="Notes">I sing the hell outta this song</td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/7aBxcRw77817BrkdPChAGY?si=52603700afe940f5" title="Freedom">Freedom</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/7dK54iZuOxXFarGhXwEXfF?si=mb4ZbcM5SaeN-GIoBUF4aQ">Lemonade</a></td>
+					<td data-label="Released">September 9, 2016</td>
+					<td data-label="Peak">35</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=7FWF9375hUA">Music Video</a></td>
+					<td data-label="Notes"></td>
+				</tr>
+				<tr>
+					<td data-label="Song"><a href="https://open.spotify.com/track/0E6PsO3ymCfUh7pJQjBgkj?si=9251cbd93cc1449a">APESHIT</a></td>
+					<td data-label="Album"><a href="https://open.spotify.com/album/3hCiP4V5Mu3Y0Z8lb70iDp?si=orE5476ySRWmB5UtePSpiw">EVERYTHING IS LOVE</a></td>
+					<td data-label="Released">June 16, 2018</td>
+					<td data-label="Peak">13</td>
+					<td data-label="Visuals"><a href="https://www.youtube.com/watch?v=kbMqWXnpXcA">Music Video</a></td>
+					<td data-label="Notes">Honorable Mention</td>
+				</tr>
+			</tbody>
+		</table>
+		<small>* US Billboard Hot 100</small>
+	</section>
+
+	<section class="media-card-1">
+		<h6>Figure</h6>
+		{% figure 'Parkwood Entertainment, via beyonce.com' %}
+		{% image "/assets/images/demos/beyonce-1.jpg", "" %}
+		{% endfigure %}
+		<br/>
+		{% figure 'Parkwood Entertainment, via Netflix' %}
+		{% image "/assets/images/demos/beyonce-2.jpg", "" %}
+		{% endfigure %}
+	</section>
+
+	<section class="media-card-2">
+		<h6>Embedded Video</h6>
+		{% youtube "https://www.youtube.com/watch?v=3xUfCUFPL-8" %}
+	</section>
+
+	<section class="media-card-3">
+		<h6>Video Player</h6>
+		<figure>
+			<div class="embed" style="--aspect-ratio: 16/9;">
+				<video controls src="/assets/media/yonce.mp4" poster="/assets/media/yonce.jpg"></video>
+			</div>
+			<figcaption>Lyric video  by<a href="https://www.youtube.com/@patk1ng" target="_blank">@patk1ng</a></figcaption>
+		</figure>
+	</section>
+
+	<section class="media-card-4">
+		<h6>Audio</h6>
+		<div class="audio-section">
+			<audio controls="/assets/media/yonce.mp3">
+				<source src="/assets/media/yonce.mp3" type="" />
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+	</section>
+
+	<section class="media-card-5">
+		<h6>Invalid Src</h6>
+		<img src="none.jpg" alt="img with invalid src" />
+	</section>
+</article>
