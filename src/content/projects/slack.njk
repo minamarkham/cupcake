@@ -1,0 +1,59 @@
+---
+title: "slack"
+name: "Slack"
+metatitle: "Slack | Projects"
+category: "development"
+tags: ["development"]
+description: ""
+url: "/projects/slack/"
+link: https://slack.com
+headline: is the leading channel-based messaging platform.
+excerpt: As a member of the Customer Acquisition team, I am directly responsible for Slack's marketing design system, among other internal tools. My role as a tech lead requires strategic planning, research, cross-functional collaboration, and testing, some details of which I won't discuss publicly.
+clientType: In-House
+when: Since 2017
+roles: ["Development", "Design"]
+order: 0
+sections:
+  - TL;DR
+  - Spacesuit
+  - UI Generator
+  - slack.com
+  - Engineering Blog
+---
+
+{% layoutblock 'tl-dr' %}
+<p>Most of my team at Slack is spent working on the Customer Acquisition team to build, launch and maintain <a href="https://slack.com">slack.com</a>. I  created and oversee Spacesuit, Slack's marketing design system. I also shipped a company rebrand, and a lot of other code that other people may be scared to touch.</p>
+{% endlayoutblock %}
+
+{% layoutblock 'spacesuit' %}
+{% figure '/assets/images/projects/spacesuit.png' %}
+<p>Spacesuit is the marketing design system for Slack. It was initially created in tandem with a <a href="https://slack.engineering/rebuilding-slack-com/">website refresh</a>. This was done to increase brand cohesiveness and enable rapid iteration. Futhermore, Spacesuit encourages innovation by reducing time spent on repeatable patterns.</p>
+<p>Later, I created a custom CMS for documenting all things Spacesuit, including visual style, UI components & patterns, editorial guidelines, coding standards and accessibility requirements.</p>
+{% endlayoutblock %}
+
+{% layoutblock 'ui-generator' %}
+{% figure '/assets/images/projects/ui-generator.png' %}
+<p>UI Generator is an internal tool that allows any employee to create fully localized product UIs to be exported as either images or code. I serve at the technical lead for the project.</p><p>The tool utilizes React/Redux on the frontend, and Hack/XHP on the backend. I was responsible for constructing the data model, creating the API, hooking up the i18n pipeline and building out the experience for core workflows like Image Export, Code Export and Bulk Actions</p>
+<p>In addition, I also served as the primary product designer, creating the UX and UI for the application.</p><p>It's a popular tool across a variety of functions including Marketing, CE, Sales and Customer Success.</p>
+{% endlayoutblock %}
+
+{% layoutblock 'slack-com' %}
+{% figure '/assets/images/projects/slack-dotcom.png' %}
+<p>slack.com is our main marketing property which serves as an entry point for prospects and existing users. It includes several sections powered by a self-serve content management system.</p>
+<ul>
+  <li>Created “SlackPress”, a development environment utilitizing Docker and the Wordpress Rest API</li>
+  <li>Designed a complex architecture and corresponding data model, setting the bar for technical documentation on the team</li>
+  <li>Created a custom REST-based API to expose content entered in Wordpress for the purposes of injesting content into Slack databases</li>
+  <li>Developed several libraries for fetching, formatting and displaying content from database</li>
+  <li>Created a cron-based pipeline that pulls data from the Wordpress API and pushes it to our translation system</li>
+  <li>Modified the Wordpress Admin GUI to enable the multitude of customizations required to enable content editors to enter the data</li>
+</ul>
+<p><span class="arrow">&#10163;</span><a href="https://slack.com">View site</a></p>
+{% endlayoutblock %}
+
+{% layoutblock 'engineering-blog' %}
+{% figure '/assets/images/projects/eng-blog.png' %}
+<p>I redesigned and developed the official Slack engineering blog. This included migrating the content from Medium to Wordpress, and developing a Wordpress theme that followed Slack brand guidelines.</p>
+<p>In addition, I run the <a href="https://twitter.com/SlackEng">@SlackEng</a> Twitter account.</p>
+<p><span class="arrow">&#10163;</span><a href="https://slack.engineering">View site</a></p>
+{% endlayoutblock %}

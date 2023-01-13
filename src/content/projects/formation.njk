@@ -1,0 +1,72 @@
+---
+title: "Formation"
+name: "Formation"
+metatitle: "Formation | Projects"
+category: "development"
+tags: ["development"]
+description: ""
+url: "/projects/formation/"
+link: https://slay.sh
+headline: is a script to set up a macOS laptop for design and development.
+excerpt: After having to setup a new laptop one too many times, I decided to automate the process to make my life easier.
+clientType: Personal Project
+when: July 2018
+github: https://github.com/minamarkham/formation
+order: 4
+roles: ["Development", "Design"]
+sections:
+  - TL;DR
+  - Swag
+  - Marquee
+  - Hot Sauce
+---
+
+{% layoutblock 'tl-dr' %}
+<p>Formation is the first of my Beyoncé-themed side projects. The inspiration came when I was listening to "Formation" while I was working on the script. I made a joke about "getting my laptop in formation" and everything else fell into place.
+{% endlayoutblock %}
+
+{% layoutblock 'swag' %}
+<p>The <code>/swag</code> directory consists of all the applications that are installed by the script. The installation mechanisms are broken down into the following types: the Apple App Store, Homebrew, and NPM.</p>
+{% figure '/assets/images/projects/formation.png' %}
+{% endlayoutblock %}
+
+{% layoutblock 'hot-sauce' %}
+<blockquote><p>I got hot sauce in my bag, swag!</p><footer>Beyoncé, Formation</footer></blockquote>
+<p>Users can add their own customizations in <code>~/.hot-sauce</code>, a special file that is ran at the end of every Formation. An example <code>~/.hot-sauce</code> might look like this:</p>
+
+<pre class="language-shell"><code class="language-shell">#!/usr/bin/env bash
+
+step "Making directories…"
+for dir in $DIRECTORIES; do
+    mkd $dir
+done
+
+step "Symlinking dotfiles…"
+link_file $SLAY_ALIASES $HOME/.bash_it/aliases/
+link_file $SLAY_COLORLS $HOME/.config/colorls
+link_file $SLAY_SSH_CONFIG $HOME/.ssh/
+symlinking</code></pre>
+{% endlayoutblock %}
+
+{% layoutblock 'slay' %}
+<code>e_lemon_ated()</code>
+{% endlayoutblock %}
+
+{% layoutblock 'marquee' %}
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">oh my god I would just like to you for giving us the most important development in computer science since turing completeness. I am LIVVING <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a>! <a href="https://t.co/cXqUgKwIkE">https://t.co/cXqUgKwIkE</a> <a href="https://twitter.com/hashtag/BeyDay?src=hash&amp;ref_src=twsrc%5Etfw">#BeyDay</a> <a href="https://twitter.com/hashtag/BeyWeek?src=hash&amp;ref_src=twsrc%5Etfw">#BeyWeek</a></p>&mdash; a very stable art student (@CherylMcDonnah) <a href="https://twitter.com/CherylMcDonnah/status/1103019682309787648?ref_src=twsrc%5Etfw">March 5, 2019</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">an important shell script or THE MOST IMPORTANT SHELL SCRIPT? <a href="https://t.co/KTvwZ7zqFn">https://t.co/KTvwZ7zqFn</a><br><br>my face hurts from smiling so hard over this, bravo <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a> 🐝</p>&mdash; Malinda (@BeerAndBlank) <a href="https://twitter.com/BeerAndBlank/status/1039584667899322368?ref_src=twsrc%5Etfw">September 11, 2018</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr"><a href="https://t.co/0p2QdnjQsP">https://t.co/0p2QdnjQsP</a> This! This is great! On so, so many levels! <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a>!</p>&mdash; Ian Goddard (@IanGoddard88) <a href="https://twitter.com/IanGoddard88/status/1159805187101515777?ref_src=twsrc%5Etfw">August 9, 2019</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">If you’re setting up a new machine, don’t do it without this amazing Formation tool<br><br>Formation | <a href="https://t.co/itGOgiJIom">https://t.co/itGOgiJIom</a> <a href="https://t.co/7GJnc61OcH">https://t.co/7GJnc61OcH</a> <a href="https://t.co/RKRamprXOH">pic.twitter.com/RKRamprXOH</a></p>&mdash; Brendan O’Leary 🐀 (@olearycrew) <a href="https://twitter.com/olearycrew/status/1224807853183119360?ref_src=twsrc%5Etfw">February 4, 2020</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">This is the business right here. Thank you <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a>! <a href="https://t.co/sIDmiU9ImA">https://t.co/sIDmiU9ImA</a></p>&mdash; new year same meh (@marmalade) <a href="https://twitter.com/marmalade/status/1133736958646247424?ref_src=twsrc%5Etfw">May 29, 2019</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">We love smart scripts — this one for MacOS X gets you setup for design and development! (+ you can add ~./hot-sauce) <a href="https://t.co/sPwekm2Ee5">https://t.co/sPwekm2Ee5</a> <a href="https://twitter.com/hashtag/webdev?src=hash&amp;ref_src=twsrc%5Etfw">#webdev</a> <a href="https://twitter.com/hashtag/slay?src=hash&amp;ref_src=twsrc%5Etfw">#slay</a> <a href="https://twitter.com/hashtag/fed?src=hash&amp;ref_src=twsrc%5Etfw">#fed</a> <a href="https://twitter.com/hashtag/BeyDay?src=hash&amp;ref_src=twsrc%5Etfw">#BeyDay</a> <a href="https://twitter.com/hashtag/BeyWeek?src=hash&amp;ref_src=twsrc%5Etfw">#BeyWeek</a> <a href="https://t.co/X2NKh3H23q">pic.twitter.com/X2NKh3H23q</a></p>&mdash; Plank (@plank) <a href="https://twitter.com/plank/status/1126199981550002180?ref_src=twsrc%5Etfw">May 8, 2019</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">This has saved me hours of setup on a new mac. Get your laptop in Formation with this setup script from <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a>! <a href="https://t.co/kLIiYSABsg">https://t.co/kLIiYSABsg</a> <a href="https://twitter.com/hashtag/BeyDay?src=hash&amp;ref_src=twsrc%5Etfw">#BeyDay</a> <a href="https://twitter.com/hashtag/BeyWeek?src=hash&amp;ref_src=twsrc%5Etfw">#BeyWeek</a></p>&mdash; Kyle Harrison (@apoclyps) <a href="https://twitter.com/apoclyps/status/1138739504108494849?ref_src=twsrc%5Etfw">June 12, 2019</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">I followed the rabbit hole to <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a>&#39;s <a href="https://t.co/wrTHCdIesp">https://t.co/wrTHCdIesp</a>. It customizes via ~/.hot-sauce. I can&#39;t think of another computer-related thing that has made me this happy in a while. <a href="https://twitter.com/hashtag/swag?src=hash&amp;ref_src=twsrc%5Etfw">#swag</a> <a href="https://t.co/JB0bdJV3Ga">https://t.co/JB0bdJV3Ga</a></p>&mdash; jlbec (@jlbec) <a href="https://twitter.com/jlbec/status/1081325589653417984?ref_src=twsrc%5Etfw">January 4, 2019</a></blockquote>
+
+{% endlayoutblock %}

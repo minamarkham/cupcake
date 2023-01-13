@@ -1,0 +1,147 @@
+---
+title: "Hillary for America"
+name: "Hillary for America"
+metatitle: Hillary for America | Projects
+category: "development"
+tags: ["development"]
+description: ""
+url: "/projects/hillaryclinton/"
+headline: started with a tweet, made history, and ended in heartbreak.
+excerpt: I was the first engineer hired, and for 18 months, was the design systems and accessibility lead for the 2016 Democratic Nominee for President of the United States.
+clientType: In-House
+when: June 2015 - November 2016
+roles: ["Development", "Design"]
+order: 1
+credits:
+- key: 1
+  people:
+  - name: "Victor Ng"
+    url: "https://www.victorng.com/hillaryclinton-redesign"
+    title: "Lead Designer"
+- key: 2
+  people:
+  - name: "HFA Design"
+    url: "https://www.hillaryforamericadesign.com/"
+praise:
+- quote: Pantsuit was hands down the best tool we had at our disposal on the campaign.
+  name: Kyle Lucovsky, Engineer
+- quote: Pantsuit may be just one project, but it supported the entire tech team, and we'd have been in a bad place without it. It wasn't just a nice to have, it was a necessity.
+  name: Cheston Lee, Engineering Manager
+- quote: Really impressive work. She really didn't have the chance to bounce ideas off anyone, which made the accomplishment even more impressive.
+  name: Douglas Back, Engineering Manager
+clips:
+- url: https://www.wired.com/2016/09/key-clintons-identity-online-pantsuit/
+  title: The Key to Clinton’s Identity Online? It’s Pantsuit
+  publication: WIRED
+- url: https://www.fastcodesign.com/3063367/hillarys-campaign-named-its-ui-pantsuit-perfectly
+  title: Hillary’s Campaign Named Its UI "Pantsuit," Perfectly
+  publication: Fast Co.Design
+- title: "Making Web Accessibility Great Again: Auditing the US Presidential Candidates Websites for Accessibility"
+  publication: "Lullabot"
+  url: "https://www.lullabot.com/articles/auditing-presidential-websites-for-accessibility"
+- url: https://www.washingtonpost.com/news/grade-point/wp/2016/09/12/clintons-college-calculator-puts-a-fine-point-on-her-higher-education-plan/
+  title: Clinton’s college calculator puts a fine point on her higher education plan
+  publication: Washington Post
+- url: https://www.usnews.com/news/articles/2016-09-12/calculating-savings-under-clintons-college-plan
+  title: Calculating Savings Under Clinton's College Plan
+  publication: US News
+- url: https://www.insidehighered.com/news/2016/09/13/clinton-campaign-promotes-free-college-proposal-release-cost-calculator-tool
+  title: Clinton's College Cost Calculator
+  publication: Inside Higher Ed
+footnotes:
+- key: design-system
+  note: A design system is a collection of reusable components, guided by clear standards, that can be assembled together to build any number of applications.
+sections:
+  - TL;DR
+  - Pantsuit
+  - Marquee
+  - Accessibility
+  - Storytelling
+  - Press
+---
+
+{% layoutblock 'tl-dr' %}
+<blockquote>
+<p>I don't think Mina's value to the campaign could be overstated. She worked on or supported more projects and across teams than anyone else.</p>
+<footer>Kyle Rush, Deputy CTO, Hillary for America</footer>
+</blockquote>
+<p>Working on Secretary Clinton’s historic 2016 campaign was one of the greatest privileges of my life. Though it didn't turn out they way I (and many others) would have liked, I'm extremely proud of the work I did.</p>
+{% endlayoutblock %}
+
+{% layoutblock 'pantsuit' %}
+<p>Pantsuit was Hillary Clinton's <a href="#design-system" aria-describedby="footnote-label" id="design-system-ref">design system</a> and was used in dozens of applications by more than 100 engineers and designers.</p>
+{% figure '/assets/images/projects/hfa-pantsuit-1.png' %}
+<p class="aside">I was charged with establishing a reusable system that could be used to quickly spin-up new projects based on the campaigns needs. In doing so, I quickly took on roles from product management, UX/UI design, and frontend engineering.<p>
+<p>When I joined Hillary for America, the tech team was non-existent. The website was built by a team of contractors working under a tight deadline. Because of that, a ton of code debt and design inconsistency had already been built into her online presence. This made it difficult to create new projects with any cohesion. While it's an understandable position to be for a campaign in its infancy, it soon had to be addressed.</p>
+<p>As the sole engineer on this project, I:</p>
+<ul>
+  <li>Led standardization of CSS architecture and standards across products and agile teams</li>
+  <li>Collaborated with visual and product design teams to ensure UI consistency</li>
+  <li>Created all new UI elements from scratch in HTML and CSS/Sass</li>
+  <li>Refactored old UI elements for modularity and to comply with coding standards</li>
+  <li>Wrote a living style guide with reusable code that was both understandable and accessible for engineers</li>
+</ul>
+<p><span class="arrow">&#10163;</span> You can read more about Pantsuit <a href="https://medium.com/git-out-the-vote/pantsuit-the-hillary-clinton-ui-pattern-library-238e9bf06b54#.ea178qdel">here</a>.</p>
+
+{% for quote in praise %}
+<blockquote>
+	<p>{{ quote.quote }}</p>
+	<footer>{{ quote.name }}</footer>
+</blockquote>
+{% endfor %}
+{% endlayoutblock %}
+
+{% layoutblock 'accessibility' %}
+  <p>I served as accessibility lead for hillaryclinton.com. In this capacity, I researched and complied recommendations to ensure adherence to the Web Content Accessibility Guidelines 2.0.</p>
+  <p>Pantsuit was crucial in ensuring accessibility across our digital products. This included standardizing colors and sizes that offered appropriate contrast for people with low vision, providing keyboard-only page navigation, and tagging content for accurate screen reading.</p>
+  <p>In addition, I enlisted a team of volunteers and supporters with various disabilities to conduct usability studies for our apps. This provided much needed insights into areas for improvement.</p>
+{% endlayoutblock %}
+
+
+{% layoutblock 'storytelling' %}
+{% figure '/assets/images/projects/hfa-issues-nav.jpg' %}
+<p>As a member of the CMS/Storytelling team, I helped create content-driven products and interactive experiences to educate the public on Secretary Clinton's vision for America.</p>
+<p>In this role, I:</p>
+<ul>
+  <li>Implemented initial templates and UI for the re-launch of hillaryclinton.com</li>
+  <li>Developed internal content management features to allow content creators flexibility and creativity</li>
+  <li>Built various microsites aimed at voter persuasion and understanding the impact of campaign policy</li>
+</ul>
+<h6>Microsites</h6>
+<p><strong>The Briefing:</strong> a dedicated site for oppositional and rapid response content.</p>
+<p><strong>College Calculator:</strong> allowed users to calculate how much money you will save under Hillary Clinton’s college plan.</p>
+{% vimeo "https://vimeo.com/182787224" %}
+<p><strong>With Her Because:</strong> featured POTUS, FLOTUS and VPOTUS making the case for Hillary Clinton</p>
+<p><strong>Together for America:</strong> showcased Republican and Independent leaders who have stepped forward to support Hillary Clinton</p>
+
+{% endlayoutblock %}
+
+{% layoutblock 'marquee' %}
+<blockquote class="twitter-tweet marquee__item" data-dnt="true"><p lang="en" dir="ltr">The most important project at the campaign -&gt; “Pantsuit: The Hillary Clinton UI pattern library” by <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a> <a href="https://t.co/2xIaIUKdEk">https://t.co/2xIaIUKdEk</a></p>&mdash; Cheston ⛔️ (@Cheston) <a href="https://twitter.com/Cheston/status/771019912961720320?ref_src=twsrc%5Etfw">August 31, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">The Pantsuit writeup makes such a strong point that its more efficient to think code through in the beginning: <a href="https://t.co/khr5OqgFb2">https://t.co/khr5OqgFb2</a></p>&mdash; Rachel Schallom Lobdell (@rschallom) <a href="https://twitter.com/rschallom/status/771382627639013376?ref_src=twsrc%5Etfw">September 1, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item" data-dnt="true"><p lang="en" dir="ltr">.<a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a> is a goddamn american hero and she named hilz&#39;s design system PANTSUIT. <a href="https://t.co/1Qi8n3ezPS">https://t.co/1Qi8n3ezPS</a></p>&mdash; caroline sinders (@carolinesinders) <a href="https://twitter.com/carolinesinders/status/771025314923315200?ref_src=twsrc%5Etfw">August 31, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">A fascinating look at the Clinton campaign’s web design system, with a hat-tip to <a href="https://twitter.com/lullabot?ref_src=twsrc%5Etfw">@lullabot</a>’s accessibility audit! <a href="https://t.co/OarmwUJJpZ">https://t.co/OarmwUJJpZ</a></p>&mdash; Lullabot (@lullabot) <a href="https://twitter.com/lullabot/status/771385673299423234?ref_src=twsrc%5Etfw">September 1, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">OH MY GOD <a href="https://twitter.com/HillaryClinton?ref_src=twsrc%5Etfw">@HillaryClinton</a> WEB TEAM RELEASED THEIR PATTERN LIBRARY AND IT&#39;S CALLED PANTSUIT. <a href="https://t.co/DDrpxuFhvo">https://t.co/DDrpxuFhvo</a> Awesome, <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a>!</p>&mdash; Brad Frost (@brad_frost) <a href="https://twitter.com/brad_frost/status/771122932542210049?ref_src=twsrc%5Etfw">August 31, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">Absolutely love <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a>’s deep dive into “Pantsuit,” the pattern library used by <a href="https://twitter.com/HFA?ref_src=twsrc%5Etfw">@HFA</a>: <a href="https://t.co/rRQ3d5KUbc">https://t.co/rRQ3d5KUbc</a></p>&mdash; Responsive Design (@RWD) <a href="https://twitter.com/RWD/status/771027899021426688?ref_src=twsrc%5Etfw">August 31, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">Meet Pantsuit, <a href="https://twitter.com/HillaryClinton?ref_src=twsrc%5Etfw">@HillaryClinton</a>&#39;s online design system created by <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a> <a href="https://t.co/zFfF3yfesG">https://t.co/zFfF3yfesG</a> <a href="https://t.co/Fpbdz1ApF4">pic.twitter.com/Fpbdz1ApF4</a></p>&mdash; Michael Bierut (@michaelbierut) <a href="https://twitter.com/michaelbierut/status/772102452795494400?ref_src=twsrc%5Etfw">September 3, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">the work of the brilliant <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw">@MinaMarkham</a>, the very first engineer to accept an offer to join <a href="https://twitter.com/hashtag/hfatech?src=hash&amp;ref_src=twsrc%5Etfw">#hfatech</a> <a href="https://t.co/8BJs0dNALy">https://t.co/8BJs0dNALy</a></p>&mdash; twephanie (@twephanie) <a href="https://twitter.com/twephanie/status/771020063780573184?ref_src=twsrc%5Etfw">August 31, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">.<a href="https://twitter.com/HillaryClinton?ref_src=twsrc%5Etfw">@HillaryClinton</a>&#39;s UI is codenamed &quot;Pantsuit&quot;—life is wonderful <a href="https://t.co/iLM1zj6xB9">https://t.co/iLM1zj6xB9</a></p>&mdash; Co.Design (@FastCoDesign) <a href="https://twitter.com/FastCoDesign/status/771052410634694656?ref_src=twsrc%5Etfw">August 31, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet marquee__item"><p lang="en" dir="ltr">Hillary&#39;s campaign has become so entangled with the pantsuit that her design team named their style guide after it: <a href="https://t.co/DoB9GW31Y3">https://t.co/DoB9GW31Y3</a></p>&mdash; WIRED (@WIRED) <a href="https://twitter.com/WIRED/status/771800889619255298?ref_src=twsrc%5Etfw">September 2, 2016</a></blockquote>
+{% endlayoutblock %}
+
+{% layoutblock 'press' %}
+<ul>
+{% for item in clips %}
+<li><a href="{{ item.url }}">{{ item.title }}</a> for {{ item.publication }}</li>
+{% endfor %}
+</ul>
+{% endlayoutblock %}
