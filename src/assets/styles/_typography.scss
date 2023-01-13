@@ -92,12 +92,17 @@ blockquote {
 		&:first-of-type::before {
 			content: '\201c';
 			position: absolute;
-			left: -.5em;
+			font-size: 2rem;
+			font-family: 'Arial', system-ui, -apple-system, sans-serif;
+			left: -15px;
 		}
 
 		&:last-of-type::after {
 			content: '\201d';
 			position: absolute;
+			font-size: 2rem;
+			font-family: 'Arial', system-ui, -apple-system, sans-serif;
+			margin-left: 5px;
 		}
 	}
 

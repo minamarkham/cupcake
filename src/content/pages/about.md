@@ -1,6 +1,5 @@
 ---
 title: About
-metatitle: 'About Mina'
 subtitle: I turn concepts (and caffeine) into code.
 ---
 
