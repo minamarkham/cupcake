@@ -1,14 +1,13 @@
 <header class="menu">
 	<div class="menu__title-wrap">
 		<a href="/" class="menu__title">Mina Markham</a>
-		<p class="menu__info">Engineer. Designer.</p>
+		<span class="menu__info">Engineer. Designer.</span>
 	</div>
 	<div class="menu__right">
-	{% include "partials/theme-toggle.njk" %}
-	<nav class="menu__links" role="navigation">
-		{% for item in navigation %}
-		<a href="{{ item.url }}" class="menu__item {% if item.url == page.url %}active menu__item--current{% endif %}">{{ item.title }}</a>
-		{% endfor %}
-	</nav>
+		<nav class="menu__links" role="navigation">
+			{% for item in navigation %}
+			<a href="{{ item.url }}" class="menu__item {% if item.url == page.url %}active menu__item--current{% endif %}">{{ item.title }}</a>
+			{% endfor %}
+		</nav>
 	</div>
 </header>

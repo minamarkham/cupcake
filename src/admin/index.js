@@ -7,46 +7,35 @@ CMS.registerPreviewTemplate("posts", Post);
 CMS.registerPreviewTemplate("pages", Page);
 
 CMS.registerEditorComponent({
-	id:"image",
-	label: "Image",
-	fields:[{
-		name: "url",
-		label: "url",
-		widget: "string"
-	}],
-	pattern: /{% image "(.*)" %}/,
-	fromBlock: function(match){
-		return{
-			link: match[1]
-		};
-	},
-	toBlock: ({url}) => `{% image "${url}" %}`,
-	toPreview: ({url}) => {
-		return `
-			<img src="${url}" alt="" />
-		`
-	}
-});
-
-CMS.registerEditorComponent({
 	id:"figure",
 	label: "Figure",
-	fields:[{
-		name: "caption",
-		label: "caption",
-		widget: "string"
-	}],
+	fields:[
+		{
+			name: "src",
+			label: "src",
+			widget: "string"
+		},
+		{
+			name: "alt",
+			label: "alt",
+			widget: "string"
+		},
+		{
+			name: "caption",
+			label: "caption",
+			widget: "string"
+		}
+	],
 	pattern: /{% figure "(.*)" %}/,
 	fromBlock: function(match){
 		return{
 			link: match[1]
 		};
 	},
-	toBlock: ({content, caption}) => `{% figure "${caption}" %}`,
-	toPreview: ({content, caption}) => {
+	toBlock: ({src}) => `{% figure "${src}" %}`,
+	toPreview: ({caption}) => {
 		return `
 			<figure>
-				${content}
 				<figcaption>${caption}</figcaption>
 			</figure>
 		`

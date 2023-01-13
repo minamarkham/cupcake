@@ -14,9 +14,7 @@ tags:
     - hfa
 ---
 
-{% figure 'Every good Pantsuit starts with the right patterns.' %}
-{% image "/assets/images/pantsuit/15C5u2qaG6obSqqnVugc-Aw.jpeg", "" %}
-{% endfigure %}
+{% figure "/assets/images/pantsuit/15C5u2qaG6obSqqnVugc-Aw.jpeg", "", 'Every good Pantsuit starts with the right patterns.' %}
 
 Design systems. Pattern libraries. Styleguides. Whatever you want to call them, they are very much in style right now.
 
@@ -26,23 +24,17 @@ Campaigns move at [lightning speed](https://medium.com/git-out-the-vote/building
 
 Thus, Pantsuit was born.
 
-{% figure 'Me, deciding on the name “Pantsuit”' %}
-{% image "/assets/images/pantsuit/169FyZhDZJcclYYK42AvGvw.gif", "" %}
-{% endfigure %}
+{% figure '/assets/images/pantsuit/169FyZhDZJcclYYK42AvGvw.gif', '', 'Me, deciding on the name “Pantsuit”' %}
 
 Pantsuit is Hillary for America’s internal design system. Its primary goal is to serve as a single source of truth for the design and front-end teams. My job is to make sure the system is modular and flexible enough to be used in any number of unpredictable ways.
 
-{% figure '_Our_ [_phone banking tool_](https://www.hillaryclinton.com/calls/) _and_ [_The Briefing_](https://www.hillaryclinton.com/briefing/) _are two projects utilizing Pantsuit._' %}
-{% image "/assets/images/pantsuit/18dr4NXH-n1TlB4WBw4BUpg.jpeg", "" %}
-{% endfigure %}
+{% figure '/assets/images/pantsuit/18dr4NXH-n1TlB4WBw4BUpg.jpeg', '', '_Our_ [_phone banking tool_](https://www.hillaryclinton.com/calls/) _and_ [_The Briefing_](https://www.hillaryclinton.com/briefing/) _are two projects utilizing Pantsuit._' %}
 
 The first version of the system was created for, and is still used by, our donations platform. Its purpose was to achieve a 1:1 UI parity of the live site while completely rewriting the underlying code base.
 
 When the time came for a redesign of [hillaryclinton.com](http://www.hillaryclinton.com), I was charged with creating a new version of Pantsuit while simultaneously building the new site.
 
-{% figure '_Mama’s got a brand new Pantsuit._' %}
-{% image "/assets/images/pantsuit/1cAm7KUh3P6lFfZaKjxzi8Q.png", "" %}
-{% endfigure %}
+{% figure "/assets/images/pantsuit/1cAm7KUh3P6lFfZaKjxzi8Q.png", "", '_Mama’s got a brand new Pantsuit._' %}
 
 This system isn’t perfect, and is by no means dogmatic. It’s simply what has worked for us given the pace and scope of the work we do.
 
@@ -52,9 +44,7 @@ The core CSS architecture of Pantsuit is based around a combination of [SMACSS](
 
 Each class name is prefixed with an indicator of that class’ purpose and scope, based on the ITCSS inverted triangle.
 
-{% figure '_It’s an inverted hanger. Cause Pantsuit. Get it?_' %}
-{% image "/assets/images/pantsuit/1K0X161jn_6wTKjuTLjN_TQ.jpeg", "" %}
-{% endfigure %}
+{% figure "/assets/images/pantsuit/1K0X161jn_6wTKjuTLjN_TQ.jpeg", "", '_It’s an inverted hanger. Cause Pantsuit. Get it?_' %}
 
 ```scss
 .o- // an object, an unstyled design pattern
@@ -69,9 +59,7 @@ In each layer of the inverted triangle, the scope of the styles get narrower and
 
 Aside from some high-level styling on HTML elements, our system consists of these type of class-based selectors. This markup-independent approach allowed us to solve an unique problem. In particular, it gave us the tools to style the same collection of components with the same markup, differently based on its position in the DOM.
 
-{% figure '_We really love forms. Also, have you_ [_signed up to get texts_](https://www.hillaryclinton.com/forms/texts-from-hillary/)_?_' %}
-{% image "/assets/images/pantsuit/1dfop6AVxjPQx9bzA8rAPGQ.jpeg", "" %}
-{% endfigure %}
+{% figure "/assets/images/pantsuit/1dfop6AVxjPQx9bzA8rAPGQ.jpeg", "", '_We really love forms. Also, have you_ [_signed up to get texts_](https://www.hillaryclinton.com/forms/texts-from-hillary/)_?_' %}
 
 For example, each of these call-to-action forms have the similar markup, with the main difference being their location on the page. The styling and layout of the form elements change based on the container the form is placed in. This is in addition to some base-level styling on the inputs and buttons to achieve consistency.
 
@@ -83,9 +71,7 @@ One easy step towards achieving compliance was to ensure that the content of eac
 
 To make sure that color-blind and low-vision users could easily see our content, the design team made some adjustments to our initial color palette to provide better contrast between background and text elements.
 
-{% figure '_Homepage elements before and after color contrast fixes._' %}
-{% image "/assets/images/pantsuit/1RngcpTaRJE9jenUA2lMsZg.jpeg", "" %}
-{% endfigure %}
+{% figure "/assets/images/pantsuit/1RngcpTaRJE9jenUA2lMsZg.jpeg", "", '_Homepage elements before and after color contrast fixes._' %}
 
 In addition to proper use of hierarchy and contrast, we implemented separate focus states from hover states to provide keyboard-only users the visual feedback they need when navigating a page.
 
@@ -95,7 +81,7 @@ Of course there’s still work to be done, but the [initial feedback](https://ww
 
 A design system is only as good as its documentation, so it was really important that I created a site that was both easy for my team to use and for me to keep updated. We use a combination of [assemble](https://github.com/assemble/assemble), [kss-node](https://github.com/kss-node/kss-node) and [nunjucks](https://github.com/mozilla/nunjucks) to document Pantsuit.
 
-{% image "/assets/images/pantsuit/1w7G52xHHslBw7tJLUj1Vcg.png", "" %}
+{% figure "/assets/images/pantsuit/1w7G52xHHslBw7tJLUj1Vcg.png" %}
 
 KSS-node parses the comments in the code and generates markup based on the actual styles of your system. As the styles are updated, so is the documentation.
 
@@ -108,9 +94,7 @@ KSS-node parses the comments in the code and generates markup based on the actua
 // Styleguide 5.button
 ```
 
-{% figure '_Documenting all the things!_' %}
-{% image "/assets/images/pantsuit/1swte0LdEuqD3kvQ9LwcyvA.png", "" %}
-{% endfigure %}
+{% figure "/assets/images/pantsuit/1swte0LdEuqD3kvQ9LwcyvA.png", "", '_Documenting all the things!_' %}
 
 ---
 

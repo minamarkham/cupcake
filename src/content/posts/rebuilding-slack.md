@@ -13,21 +13,15 @@ tags:
     - slack
 ---
 
-{% figure 'Illustrations by [Alice Lee](http://byalicelee.com/).' %}
-{% image "/assets/images/slack/1N48fpqutpCqswRistXpymw.jpeg", "" %}
-{% endfigure %}
+{% figure "/assets/images/slack/1N48fpqutpCqswRistXpymw.jpeg", "", 'Illustrations by [Alice Lee](http://byalicelee.com/).' %}
 
 In August, we released a major redesign of [slack.com](https://slack.com/), and we want to give you a peek behind-the-scenes. Rebuilding our marketing website was a massive project that took careful coordination across a variety of teams, departments, and agencies.
 
 We implemented a redesign while overhauling all the under-the-hood code. Our aim was to address a few goals at the same time: deliver a consistent rebranded experience while tackling critical improvements to site architecture, code modularity, and overall performance and accessibility. This would afford us a new foundation for several important company initiatives, including [internationalization](https://slackhq.com/bienvenue-willkommen-bienvenidos-to-a-more-globally-accessible-slack-546a458b21ae).
 
-{% image "/assets/images/slack/1Q0gC53oTuet-cjsfhRafUQ.png", "" %}
-
-{% image "/assets/images/slack/1HrvfG0uHQYUc0j763Cp4uw.png", "" %}
-
-{% figure '_Slack.com (L-R: August 2013, January 2017, August 2017)_' %}
-{% image "/assets/images/slack/15BjTaWrvqZPjbhDrS5FBOQ.png", "" %}
-{% endfigure %}
+{% figure "/assets/images/slack/1Q0gC53oTuet-cjsfhRafUQ.png" %}
+{% figure "/assets/images/slack/1HrvfG0uHQYUc0j763Cp4uw.png" %}
+{% figure "/assets/images/slack/15BjTaWrvqZPjbhDrS5FBOQ.png", "", '_Slack.com (L-R: August 2013, January 2017, August 2017)_' %}
 
 ### Cleaner and leaner code
 
@@ -41,19 +35,13 @@ Some other interesting data points:
 -   14 unique colors, down from 91
 -   1,719 selectors, down from 2,328
 
-{% figure '**_Before_**_: Lots of deep spikes and valleys indicate poorly managed_ [_CSS specificity_](https://csswizardry.com/2014/10/the-specificity-graph/)_._' %}
-{% image "/assets/images/slack/0Kx8ltSgpKXyXRdaD.jpg", "" %}
-{% endfigure %}
+{% figure "/assets/images/slack/0Kx8ltSgpKXyXRdaD.jpg", "", '**_Before_**_: Lots of deep spikes and valleys indicate poorly managed_ [_CSS specificity_](https://csswizardry.com/2014/10/the-specificity-graph/)_._' %}
 
-{% figure '**_After_**_: Using a mostly class-based system resulted in a drop in our specificity._' %}
-{% image "/assets/images/slack/0BmFqbD-18McrbaDi.jpg", "" %}
-{% endfigure %}
+{% figure "/assets/images/slack/0BmFqbD-18McrbaDi.jpg", "", '**_After_**_: Using a mostly class-based system resulted in a drop in our specificity._' %}
 
 Our CSS is organized based on the [ITCSS philosophy](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) and uses [BEM-like](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) naming conventions. Selectors are named using a single-letter prefix to indicate the type of style the class represents. The prefix is followed by the name of the component and any variation applied to it. For example, `u-margin-top--small` represents a utility class that sets `margin-top` to the small value set by our variables. Utility classes such as these are an essential part of our system as it allows our devs to fine tune pieces of UI without having to rewrite a lot of CSS. In addition, spacing between components is one of the tricker parts of creating a design system. Utility classes such as `u-margin-top--small` let us create consistent spacing and eliminate the need to reset or undo any spacing already applied to a component.
 
-{% figure '_Our biggest gains were on the pricing page, which saw a 53% decrease in loading time._' %}
-{% image "/assets/images/slack/0YrT_q3rSjUFssyYy.jpg", "" %}
-{% endfigure %}
+{% figure "/assets/images/slack/0_YrT_q3rSjUFssyYy.gif", "", '_Our biggest gains were on the pricing page, which saw a 53% decrease in loading time._' %}
 
 ### A modern, responsive layout
 
@@ -63,15 +51,11 @@ At first we tried to implement our layout with a traditional 12-column grid usin
 
 Some of the patterns were pretty simple.
 
-{% figure '_A basic three-column grid block._' %}
-{% image "/assets/images/slack/0IXMPtmw5vQfr-fZ0.jpg", "" %}
-{% endfigure %}
+{% figure "/assets/images/slack/0IXMPtmw5vQfr-fZ0.jpg", "", '_A basic three-column grid block._' %}
 
 Others were more complex, which really showcased Grid’s abilities.
 
-{% figure '_A photo collage object._' %}
-{% image "/assets/images/slack/0Q_tqzOLre__HPLIL.jpg", "" %}
-{% endfigure %}
+{% figure "/assets/images/slack/0Q_tqzOLre__HPLIL.jpg", "", '_A photo collage object._' %}
 
 Before our Grid implementation, a layout like the one above required lots of wrapping, and sometimes empty, divs to mimic a two-dimensional grid.
 
@@ -106,9 +90,7 @@ With CSS Grid, we’re able to remove the extra markup needed to simulate a grid
 
 At first we used Modernizr to detect Grid support, however that resulted in flashes of unstyled layout while the library loaded.
 
-{% figure '_Pages defaulted to the mobile layout and reflowed once Modernizr detected Grid support._' %}
-{% image "/assets/images/slack/0PFKwdHYeunJfV-Sh.jpg", "" %}
-{% endfigure %}
+{% figure "/assets/images/slack/0_PFKwdHYeunJfV-Sh.gif", "", '_Pages defaulted to the mobile layout and reflowed once Modernizr detected Grid support._' %}
 
 We decided that addressing the jarring experience of the layout shift was a higher priority than backwards compatibility. The compromise was to use CSS Grid as an enhancement and fallback to Flexbox and other techniques when needed.
 
@@ -195,9 +177,7 @@ The logic for this mixin takes a parameter, such as `display-as-btn-text`, and e
 
 This process, also known as [art direction](http://usecases.responsiveimages.org/#art-direction), is accomplished by using the [`picture` and `source`](https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content) elements with [Picturefill](https://scottjehl.github.io/picturefill/) as a polyfill for older browsers. Defining characteristics, like device size, device resolution, orientation allows us to display different image assets when the design dictates it.
 
-{% figure '_Our Features pages use_ srcset _to display different images based on viewport size._' %}
-{% image "/assets/images/slack/15SzojYwz0QGQF614iNNBmg.gif", "" %}
-{% endfigure %}
+{% figure "/assets/images/slack/15SzojYwz0QGQF614iNNBmg.gif", "", '_Our Features pages use_ srcset _to display different images based on viewport size._' %}
 
 With these tools, we were able to display the best possible version of an asset based upon query parameters we set. In the above example, the main hero image needed a simpler version for a smaller viewport.
 

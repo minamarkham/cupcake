@@ -4,8 +4,9 @@ title: 'Speaking'
 subtitle: I've been told I talk too much.
 permalink: /speaking/
 ---
-{% set events = collections.events %}
-{% set podcast = collections.podcasts %}
+{% set pastEvents = collections.pastEvents %}
+{% set upcomingEvents = collections.upcomingEvents %}
+{% set podcasts = collections.podcasts %}
 
 <h2>An international keynote speaker with over nine years experience, I have spoken at events all over the world including <a href="https://aneventapart.com/">An Event Apart</a>, <a href="https://www.clarityconf.com/">Clarity</a> and <a href="https://www.braziljs.org/">BrazilJS</a>.</h2>
 
@@ -14,12 +15,34 @@ permalink: /speaking/
 <p>Get in touch if you'd like to book me for a future speaking engagement.</p>
 
 <h2>Upcoming Appearances</h2>
-
+{% if upcomingEvents.length > 0 %}
+<table>
+	<thead>
+		<tr>
+			<th>Event</th>
+			<th>Date</th>
+			<th>Location</th>
+			<th>Link</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for event in upcomingEvents %}
+		<tr>
+			<td data-label="Event"><a href="{{ event.url }}">{{ event.name }}</a></td>
+			<td data-label="Date"><time datetime="{{ event.datetime | machineDate }}">{{ event.datetime | readableDate }}</time></td>
+			<td data-label="Location">{{ event.where }}</td>
+			<td data-label="Link"><a href="{{ event.onsale.url }}">Buy Tickets</a></td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+{%- else -%}
 <p>None scheduled —</p>
+{%- endif -%}
 
 <h2>Past Appearances</h2>
 
-<h4>I have appeared at {{ events.length }} events on (almost) every continent.</h4>
+<h4>I have appeared at {{ pastEvents.length }} events on (almost) every continent.</h4>
 
 {% include "partials/map.njk" %}
 
@@ -33,13 +56,13 @@ permalink: /speaking/
 		</tr>
 	</thead>
 	<tbody>
-		{% for event in events %}
+		{% for event in pastEvents %}
 		<tr>
 			<td data-label="Event">
 				<a href="{{ event.url }}">{{ event.name }}</a>
-				{% if event.keynote %}<span class="post-tag">keynote</span>{%- endif -%}
+				{# {% if event.keynote %}<span class="post-tag">keynote</span>{%- endif -%}
 				{% if event.panel %}<span class="post-tag">panel</span>{%- endif -%}
-				{% if event.workshop %}<span class="post-tag">workshop</span>{%- endif -%}
+				{% if event.workshop %}<span class="post-tag">workshop</span>{%- endif -%} #}
 			</td>
 			<td data-label="Date"><time datetime="{{ event.datetime | machineDate }}">{{ event.datetime | readableDate }}</time></td>
 			<td data-label="Location">{{ event.where }}</td>
