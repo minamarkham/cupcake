@@ -1,0 +1,22 @@
+<div class="marquee__section">
+	<div class="marquee__row">
+		<div class="marquee__group">
+			{% renderlayoutblock 'marquee' %}
+		</div>
+		<div aria-hidden="true" class="marquee__group">
+			{% renderlayoutblock 'marquee' %}
+		</div>
+	</div>
+	{% if reverse %}
+	<div class="marquee__row marquee--reverse">
+		<div class="marquee__group">
+			{% renderlayoutblock 'marqueeReverse' %}
+		</div>
+		<div aria-hidden="true" class="marquee__group">
+			{% renderlayoutblock 'marqueeReverse' %}
+		</div>
+	</div>
+	{% endif %}
+</div>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
