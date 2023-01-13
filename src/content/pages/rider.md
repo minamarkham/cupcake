@@ -9,7 +9,7 @@ If I say no to your event (even if you do all of the below), please don't take i
 
 ## Compensation
 
-### 🛩️/ Travel
+### 🛩️ Travel
 - I ask that travel to and from the event is provided (assuming it is not local, I'm currently based in the Bay Area).
 - Business Class is preferred, especially for longer flights. And I must be able to bring at least a carry-on. I shouldn't have to say that, but I've had bad experiences in the past.
 - I am a member of a bunch of airlines and hotel rewards things. If organizers of an event are booking on my behalf, I ask that you use one of those if possible!
