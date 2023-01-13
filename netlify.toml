@@ -1,4 +1,4 @@
 [build]
-  base = ""
-  publish = ""
+  base = "./"
+  publish = "./"
   command = "echo '6.0—banana-creme'"
