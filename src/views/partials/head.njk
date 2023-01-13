@@ -2,15 +2,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="icon" href="/favicon.png" type="image/svg+xml">
-	<link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
-	<link rel="icon" href="/icon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
-	<link rel="manifest" href="/manifest.webmanifest">
-
-	{# RSS Feed #}
-	<link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}">
-
 	{% if metatitle %}
 	{% set pageTitle = metatitle %}
 	{% else %}
@@ -20,7 +11,7 @@
 	{# metagen plugin output #}
 	{% metagen
 		title = pageTitle + " | " + site.title,
-		desc = site.desc,
+		desc = site.description,
 		url = site.url + page.url,
 		img = site.url + site.image.src,
 		img_alt = site.image.alt,
@@ -31,6 +22,15 @@
 		locale = "en_us",
 		css = ["https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css", "/assets/styles/main.css"]
 	%}
+
+	<link rel="icon" href="/favicon.png" type="image/svg+xml">
+	<link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+	<link rel="icon" href="/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+	<link rel="manifest" href="/manifest.webmanifest">
+
+	{# RSS Feed #}
+	<link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}">
 
 	{% if page.url === '/styleguide/' %}
 	<link rel="stylesheet" href="{{ '/assets/styles/styleguide.css' | url }}">
