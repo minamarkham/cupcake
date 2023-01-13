@@ -14,13 +14,13 @@ module.exports = {
 	},
 
 	/**
-	 * Add image shortcode (requires image plugin)
+	 * Add figure shortcode (requires image plugin)
 	 * https://www.11ty.dev/docs/plugins/image/
 	 */
-	image: function (eleventyConfig) {
+	figure: function (eleventyConfig) {
 		const Image = require('@11ty/eleventy-img');
 
-		function imageShortcode(src, alt = '', className = '', style = '', sizes = '') {
+		function imageShortcode(src, alt) {
 			const options = {
 				widths: [null],
 				formats: [null],
@@ -35,10 +35,7 @@ module.exports = {
 			Image(srcPlusPath, options);
 
 			const imageAttributes = {
-				class: className,
-				style,
 				alt,
-				sizes,
 				loading: 'lazy',
 				decoding: 'async',
 			};
@@ -47,21 +44,24 @@ module.exports = {
 			return Image.generateHTML(metadata, imageAttributes);
 		}
 
-		eleventyConfig.addNunjucksShortcode('image', imageShortcode);
+		function figureShortcode(src, alt = '', caption = null) {
+			const id = (Math.random() + 1).toString(36).substring(7);
+			const image = src.split(".").pop() === 'gif' ? `<img src="${src}" alt="${alt}" />` : imageShortcode(src, alt);
+			const figcaption = caption ? `<figcaption>${caption}</figcaption>` : '';
+
+			return `<figure id="${id}anchor" class="figure">
+			<a href="#${id}">${image}</a>
+			<a href="#${id}anchor" class="lightbox" id="${id}"><span style="background-image: url('${src}')"></span></a>
+			${figcaption}
+			</figure>`;
+		}
+
+		eleventyConfig.addShortcode('figure', figureShortcode);
 	},
 
-	figure: function (eleventyConfig) {
-		eleventyConfig.addPairedShortcode(
-			'figure',
-			(content, caption) => `
-			<figure>
-				${content}
-				<figcaption>${caption}</figcaption>
-			</figure>
-			`
-		);
-	},
-
+	/**
+	 * Add youtube shortcode
+	 */
 	youtube: function (eleventyConfig) {
 		eleventyConfig.addShortcode("youtube", (videoURL, title) => {
 		  const url = new URL(videoURL);
@@ -71,6 +71,9 @@ module.exports = {
 		});
 	},
 
+	/**
+	 * Add vimeo shortcode
+	 */
 	vimeo: function (eleventyConfig) {
 		eleventyConfig.addShortcode("vimeo", (videoURL) => {
 			const url = new URL(videoURL);

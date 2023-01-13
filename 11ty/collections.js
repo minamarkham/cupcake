@@ -16,17 +16,30 @@ module.exports = {
 		});
 	},
 
-	  projects: function (eleventyConfig) {
+	projects: function (eleventyConfig) {
 		eleventyConfig.addCollection('projects', function (collectionApi) {
 			const projects = collectionApi.getFilteredByGlob('src/content/projects/*.njk');
 			return projects.sort((a, b) => Number(a.data.order) > Number(b.data.order) ? 1 : -1);
 		});
 	},
 
-	events: function (eleventyConfig) {
+	pastEvents: function (eleventyConfig) {
 		const events = require("../src/data/events.js")
-		eleventyConfig.addCollection('events', function () {
-			return events;
+		eleventyConfig.addCollection('pastEvents', function () {
+			return events.filter(p => {
+				if (Date.now() < p.datetime.getTime()) return false;
+				return true;
+			});
+		});
+	},
+
+	upcomingEvents: function (eleventyConfig) {
+		const events = require("../src/data/events.js")
+		eleventyConfig.addCollection('upcomingEvents', function () {
+			return events.filter(p => {
+				if (Date.now() > p.datetime.getTime()) return false;
+				return true;
+			});
 		});
 	},
 
