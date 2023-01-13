@@ -2,9 +2,7 @@
   <img alt="" src="./logo.jpg" width="100" />
   <h1>cupcake, a personal site.</h1>
   <p>Source code for <a href="https://mina.codes/" target="_blank">mina.codes</a>, my personal website.</p>
-  <h3>Current flavor: <a href="https://github.com/minamarkham/cupcake/tree/6.0%E2%80%94banana-creme">banana creme</a></h3>
-
-  <img alt="" src="./cover.jpg" width="900" />
+  <h3>Current flavor: <a href="https://github.com/minamarkham/cupcake/tree/7.0%E2%80%94funfetti">funfetti</a></h3>
 
   <p>
     Previous flavors:
@@ -12,7 +10,8 @@
     <a href="https://2008.mina.codes/" target="_blank">chocolate</a>,
     <a href="https://2011.mina.codes/" target="_blank">strawberry</a>,
     <a href="https://2012.mina.codes/" target="_blank">lemon</a>,
-    and <a href="https://2013.mina.codes/" target="_blank">red velvet</a>.
+    <a href="https://2013.mina.codes/" target="_blank">red velvet</a>,
+    and <a href="https://2014.mina.codes/" target="_blank">banana creme</a>.
   </p>
 </div>
 <br/>
