@@ -58,7 +58,7 @@ article {
 	}
 
 	:target {
-		background: rgba(255, 51, 119, 0.5);
+		background: var(--color-primary-transparent);
 	}
 
 	&__anchor {

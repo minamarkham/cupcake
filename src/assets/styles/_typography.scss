@@ -1,8 +1,18 @@
 /* @link https://aristath.github.io/blog/typography-scales-with-css-vars */
+/* @link https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale */
+
 :root {
 	--base-size: 1.25em; // 20px
 	--line-height: 1.45;
-	--type-scale: 1.250; //1.333 1.414 1.500 1.618
+	--minor-second: 1.067;
+	--major-second: 1.125;
+	--minor-third: 1.2;
+	--major-third: 1.25;
+	--perfect-fourth: 1.333;
+	--augmented-fourth: 1.414;
+	--perfect-fifth: 1.5;
+	--golden-ratio: 1.618;
+	--type-scale: var(--major-third);
 	--size-l-1: calc(1rem * var(--type-scale));
 	--size-l-2: calc(var(--size-l-1) * var(--type-scale));
 	--size-l-3: calc(var(--size-l-2) * var(--type-scale));

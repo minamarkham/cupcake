@@ -25,8 +25,8 @@
 	white-space: nowrap;
 	font-style: italic;
 	color: var(--color-text);
-	margin: 2rem 0;
-	font-size: 2rem;
+	margin: 4rem 0;
+	font-size: 2.5rem;
 
 	@media (prefers-reduced-motion: no-preference) {
 		animation: scroll 30s linear infinite;
@@ -65,7 +65,7 @@ blockquote.twitter-tweet {
 	font-size: clamp(1.31rem, 1.24rem + 0.37vw, 1.5rem);
 	width: clamp(15rem, 90vw, 70rem);
 	max-width: 50rem;
-	h1 { margin-left: -2rem; }
+	@include screen(940px) { h1 { margin-left: -2rem; } }
 }
 
 .button-copy {
@@ -107,5 +107,53 @@ blockquote.twitter-tweet {
 		position: absolute;
 		width: 100%;
 		height: 100%;
+	}
+}
+
+.arrow {
+	font-size: 1.8rem;
+	vertical-align: top;
+	padding-right: 0.5rem;
+	line-height: 1;
+}
+
+.offline-btn {
+	-webkit-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+	background: 0 0;
+	border: none;
+	outline: 0;
+	border-bottom: 1px dashed var(--color-primary);
+	padding: 0;
+	margin-top: 1rem;
+	text-transform: uppercase;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+// https://codepen.io/gschier/pen/kyRXVx?editors=1000
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 5000;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 7em;
+	background: rgba(0, 0, 0, 0.8);
+
+	&:target {
+		display: block;
+	}
+
+	span {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 }

@@ -3,11 +3,11 @@
 	align-items: flex-end;
 
 	p {
-		max-width: 70vw;
-		font-size: 4vw;
+		font-size: clamp(30px, 3vw, 70px);
 		text-transform: none;
 		font-weight: 300;
 		line-height: 1.4;
+		@include screen(940px) { max-width: 70vw; }
 	}
 
 	a {
@@ -36,6 +36,7 @@
 	}
 }
 
-.c-hello {
-	width: 25em;
+.hello {
+	max-width: 30em;
+	width: 80vw;
 }

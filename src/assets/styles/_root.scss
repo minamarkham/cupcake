@@ -2,37 +2,53 @@
 	--font-family-sans-serif: 'TT Chocolates', sans-serif;
 	--font-family-monospace: 'Dank Mono', monospace;
 	--font-family-system: system-ui, -apple-system, sans-serif;
-	--pink: #F37;
-	--teal: #008080;
-	--cyan: #48DED4;
-	--white: #FFF;
-	--black: #000;
-	--off-white: #F2F2F2;
-	--off-black: #1C1C1C;
-	--magenta: #E82C75;
-	--fuschia: #FF0081;
-	--dark-fuschia: #E60074;
-	--color-gray-90: #333;
+
+	--pink: hsl(340, 100%, 60%);
+	--teal: hsl(180, 100%, 25%);
+	--cyan: hsl(176, 69%, 58%);
+	--magenta: hsl(337, 80%, 54%);
+	--fuschia: hsl(330, 100%, 50%);
+	--dark-fuschia: hsl(330, 100%, 45%);
+
+	--white: hsl(0, 0%, 100%);
+	--black: hsl(0, 0%, 0%);
+	--off-white: hsl(0, 0%, 95%);
+	--off-black: hsl(0, 0%, 10%);
+
+	--gray-90: hsl(0, 0%, 90%);
+	--gray-80: hsl(0, 0%, 80%);
+	--gray-70: hsl(0, 0%, 70%);
+	--gray-60: hsl(0, 0%, 60%);
+	--gray-50: hsl(0, 0%, 50%);
+	--gray-40: hsl(0, 0%, 40%);
+	--gray-30: hsl(0, 0%, 30%);
+	--gray-20: hsl(0, 0%, 20%);
+
 	--color-primary: var(--pink);
+	// --color-secondary: var(--cyan);
+	// --color-tertiary: var(--fuschia);
+	// --color-muted: var(--fuschia);
 	--color-accent: var(--teal);
 	--color-background: var(--white);
-	--color-foreground: #CBCCCD; // bdbdbd
+	--color-foreground: var(--gray-80);
 	--color-text: var(--off-black);
 	--color-link: var(--color-primary);
-	--code-bg: #0F1C23;
+	--color-primary-transparent: hsla(var(--pink), 0.5);
+
+	--code-bg: var(--off-black); // #0F1C23;
 	--button-bg: var(--fuschia);
 	--button-bg-active: var(--dark-fuschia);
 	--background-pattern: radial-gradient(var(--color-foreground) 1px, var(--color-background) 1px);
-	--kbd-color-background: #F7F7F7;
-	--kbd-color-border: #CBCCCD;
-	--kbd-color-text: #222325;
+	--kbd-color-background: var(--off-white);
+	--kbd-color-border: var(--gray-80);
+	--kbd-color-text: var(--off-black);
 	--aspect-ratio: 16 / 9;
 
 	// @media (prefers-color-scheme: dark)
 	&[dark] {
-		--color-gray-90: #DAD8D8;
-		--color-text: #CCC;
+		--gray-20: var(--gray-80);
+		--color-text: var(--gray-80);
 		--color-background: var(--off-black);
-		--color-foreground: #222;
+		--color-foreground: var(--off-black);
 	}
 }

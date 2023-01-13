@@ -5,7 +5,7 @@
 @import 'fonts';
 
 body {
-	background: #1c1c1c;
+	background: var(--off-black);
 	color: var(--color-foreground);
 	font-size: 2vw;
 	line-height: 1em;

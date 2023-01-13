@@ -4,7 +4,7 @@
 
 	h1 {
 		&::before, &::after {
-			color: #ccc;
+			color: var(--gray-80);
 		}
 		&::before {
 			content: '/*';
@@ -33,7 +33,7 @@
 
 .postlist-date {
 	font-size: 0.8125em;
-	color: var(--color-gray-90);
+	color: var(--gray-20);
 	word-spacing: -0.5px;
 }
 
@@ -46,7 +46,7 @@
 	display: inline-block;
 
 	&:visited {
-		&, * { color: #AAA; }
+		&, * { color: var(--gray-70); }
 		span::before {
 			color: var(--color-background);
 		}
@@ -66,7 +66,6 @@
 			content: "\2217";
 		}
 	}
-	.post-pagination & { span { top: 1.8rem; } }
 }
 
 .post-header {

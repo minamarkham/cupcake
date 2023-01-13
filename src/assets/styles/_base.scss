@@ -27,13 +27,13 @@ body {
 
 main {
 	padding: 0 5vw;
-	margin-top: 10rem;
 	flex: 1;
 	position: relative;
 
 	&:focus {
 		outline: none;
 	}
+	@include screen(940px) { margin-top: 10rem; }
 }
 
 %button {
@@ -221,6 +221,8 @@ dl {
 	@include screen(768px) {
 		grid-template-columns: minmax(max-content, 150px) 1fr;
 		column-gap: 2vw;
+		margin-top: 1rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -301,13 +303,13 @@ thead {
 }
 
 tr {
-	border: 1px solid #DDD;
+	border: 1px solid var(--gray-90);
 	display: block;
 	margin-bottom: .625em;
 }
 
 td {
-	border-bottom: 1px solid #DDD;
+	border-bottom: 1px solid var(--gray-90);
 	display: block;
 	min-height: 30px;
 	text-align: right;
@@ -346,7 +348,7 @@ td {
 
 	tr {
 		border: 0;
-		border-bottom: 1px solid #DDD;
+		border-bottom: 1px solid var(--gray-90);
 		padding: .35em;
 		margin: 0;
 		display: table-row;
@@ -392,7 +394,7 @@ img {
 	&::after {
 		content: '🚫' ' Broken Image of ' attr(alt);
 		font-size: 16px;
-		color: #646464;
+		color: var(--gray-40);
 		display: flex;
 		position: absolute;
 		z-index: 2;
@@ -401,7 +403,7 @@ img {
 		width: 100%;
 		height: 100%;
 		background-color: var(--white);
-		border: 1px dashed #DDD;
+		border: 1px dashed var(--gray-90);
 		align-items: center;
 		justify-content: center;
 	}
@@ -414,21 +416,10 @@ figcaption {
 	margin-top: 0.5rem;
 }
 
-dialog::backdrop {
-	background: repeating-linear-gradient(
-		45deg,
-		rgb(0 0 0 / 20%),
-		rgb(0 0 0 / 20%) 1px,
-		rgb(0 0 0 / 30%) 1px,
-		rgb(0 0 0 / 30%) 20px
-	);
-	backdrop-filter: blur(3px);
-}
-
 code {
 	background: #D8DEE9;
 	border-radius: 0.3em;
-	color: #343D46 !important;
+	color: #343D46;
 	font-size: .875em;
 	font-weight: 600;
 	padding: 0.1em 0.5em;
@@ -443,7 +434,6 @@ pre[class*="language-"] {
 	overflow: auto;
 	border-radius: 0;
 	color: var(--color-foreground);
-	font-size: .95rem;
 	text-shadow: none;
 	direction: ltr;
 	text-align: left;
@@ -492,7 +482,7 @@ hr {
 
 	&::before {
 		content: '';
-		background: linear-gradient(to right, transparent, #818078, transparent);
+		background: linear-gradient(to right, transparent, var(--gray-50), transparent);
 		position: absolute;
 		left: 0;
 		top: 50%;
@@ -506,7 +496,7 @@ hr {
 		display: inline-block;
 		padding: 0 0.5em;
 		line-height: 1.5em;
-		color: #818078;
-		background-color: #FCFCFA;
+		color: var(--gray-50);
+		background-color: var(--color-background);
 	}
 }
