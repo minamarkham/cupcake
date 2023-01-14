@@ -1,20 +1,26 @@
 [
 	{
-		"src": "../assets/images/press-kit/9.jpg"
+		"src": "../assets/images/press-kit/9.jpg",
+		"credit": "📸 Ruben Chamorro"
 	},
 	{
-		"src": "../assets/images/press-kit/2.jpg"
+		"src": "../assets/images/press-kit/2.jpg",
+		"credit": "📸 <a href='https://www.sarakerens.com'>Sara Kerens</a>"
 	},
 	{
-		"src": "../assets/images/press-kit/3.jpg"
+		"src": "../assets/images/press-kit/3.jpg",
+		"credit": "📸 <a href='https://www.tarsipixstudios.com'>Brian de Rivera Simon</a>"
 	},
 	{
-		"src": "../assets/images/press-kit/4.jpg"
+		"src": "../assets/images/press-kit/11.jpg",
+		"credit": "📸 <a href='http://www.samuelfisch.com/'>Samuel Fisch</a>"
 	},
 	{
-		"src": "../assets/images/press-kit/5.jpg"
+		"src": "../assets/images/press-kit/5.jpg",
+		"credit": "📸 <a href='https://www.WhiteOctoberEvents.co.uk'>White October Events</a>"
 	},
 	{
-		"src": "../assets/images/press-kit/7.jpg"
+		"src": "../assets/images/press-kit/7.jpg",
+		"credit": "📸 <a href='https://www.tarsipixstudios.com'>Brian de Rivera Simon</a>"
 	}
 ]

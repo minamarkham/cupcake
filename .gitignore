@@ -1,6 +1,9 @@
 # build artefacts
 www/
+
+# wip content
 src/content/posts/_drafts
+src/content/posts/_old
 
 # secrets and errors
 .env

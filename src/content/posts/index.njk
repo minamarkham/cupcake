@@ -28,6 +28,7 @@ pagination:
 	{% endfor %}
 </ul>
 
+{% if pagination.pages > 1 %}
 <nav>
 	<ul class="pagination">
 		{%- for pageEntry in pagination.pages %}
@@ -35,3 +36,4 @@ pagination:
 		{%- endfor %}
 	</ul>
 </nav>
+{% endif %}

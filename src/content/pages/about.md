@@ -9,11 +9,17 @@ I've been building stuff on the web for the last decade, creating some websites 
 
 I [speak](/speaking/) at conferences worldwide, sharing my experience and expertise in a variety of topics such as design systems and CSS architecture.
 
-Outside of work, I like ampersands, interior design, LEGOs, and the color pink. I graduated from [Syracuse University](https://en.wikipedia.org/wiki/Syracuse_University) with a dual major in Graphic Arts from the S.I. Newhouse School of Public Communications and Women’s Studies.
+Outside of work, I like ampersands, interior design, LEGOs, and the color pink. I graduated from [Syracuse University](https://www.syracuse.edu/) with a dual major in Graphic Arts from the S.I. Newhouse School of Public Communications and Women’s Studies.
 
 To see more of what I've been up to, view my [highlights](https://highlights.mina.codes/).
 
 <p class="scroll">design engineering • technologist • keynote speaker • design systems • product design • accessibility • teaching • leadership •&nbsp;<span aria-hidden="true">design engineering • technologist • keynote speaker • design systems • product design • accessibility • teaching • leadership •&nbsp;</span></p>
+
+## Press Mentions
+<ul>
+{% for item in press %}<li><a href="{{ item.url }}">{{ item.title }}</a> for {{ item.publication }}</li>
+{% endfor %}
+</ul>
 
 ## Where I've Been
 

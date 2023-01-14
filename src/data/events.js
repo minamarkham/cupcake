@@ -12,12 +12,29 @@ module.exports = [
 		"talk": true
 	},
 	{
+		"name": "Instrument",
+		"url": "https://www.instrument.com/",
+		"datetime": DateTime.fromFormat('06-11-2022', 'MM-dd-yyyy').toJSDate(),
+		"where": "Online",
+		"internal": true,
+		"online": true
+	},
+	{
 		"name": "Clarity Conference",
 		"url": "https://www.clarityconf.com/event/2021",
 		"datetime": DateTime.fromFormat('10-27-2021', 'MM-dd-yyyy').toJSDate(),
 		"where": "Online",
 		"online": true,
 		"emcee": true
+	},
+	{
+		"name": "Google@Home",
+		"url": "https://design.google/",
+		"datetime": DateTime.fromFormat('11-11-2020', 'MM-dd-yyyy').toJSDate(),
+		"where": "Online",
+		"internal": true,
+		"online": true,
+		"qa": true
 	},
 	{
 		"name": "An Event Apart Online Together: Fall Summit",
@@ -49,6 +66,13 @@ module.exports = [
 		"where": "Memphis, Tennessee",
 		"talk": true,
 		"workshop": true
+	},
+	{
+		"name": "Artifact Conference",
+		"url": "https://artifactconf.com/",
+		"datetime": DateTime.fromFormat('09-30-2019', 'MM-dd-yyyy').toJSDate(),
+		"where": "Austin, Texas",
+		"talk": true
 	},
 	{
 		"name": "BrazilJS Conf",

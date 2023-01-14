@@ -1,16 +1,13 @@
 ---
 layout: page.njk
 title: 'Speaker Kit'
-subtitle: Hi! 👋🏾 Do you need a bio and/or photo of me? You can copy and paste from the info below. For high-res images, download my press kit. Please be sure to include photo credits when applicable.
+subtitle: Hi! 👋🏾 Do you need a bio and/or photo of me? You can copy and paste from the info below. For high-res images, download my speaker kit. Please be sure to include photo credits when applicable.
 permalink: /speaker-kit/
+templateEngineOverride: njk,md
 ---
 </div>
 <section class="photo__grid">
-	{% for photo in photos %}
-	<figure class="photo__grid-item">
-		<img src="{{ photo.src }}" alt="" />
-	</figure>
-	{% endfor %}
+	{% for photo in photos %}<figure class="photo__grid-item"><img src="{{ photo.src }}" alt="" /><figcaption>{{ photo.credit | safe }}</figcaption></figure>{% endfor %}
 </section>
 <a href="/assets/files/minamarkham-speakerkit.zip" class="" download>
 	<span class="circle" aria-hidden="true">
@@ -24,14 +21,40 @@ permalink: /speaker-kit/
 
 {% include "partials/my-bios.njk" %}
 
-{% for bio in bios %}
-<details class="accordion-item" {% if bio.open %}open{% endif %}>
-	<summary><span class="accordion-title">{{ bio.words }}</span><span class="icon" aria-hidden="true"></span></summary>
-	<div class="accordion-content">
-		<span id="{{ bio.words | slugify }}">{{ bio.bio | safe }}</span>
-		<button class="button-copy" data-clipboard-target="#{{ bio.words | slugify }}">
-			<svg version="1.1" width="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 115.77 122.88"  xml:space="preserve"><path d="M89.62,13.96v7.73h12.19h0.01v0.02c3.85,0.01,7.34,1.57,9.86,4.1c2.5,2.51,4.06,5.98,4.07,9.82h0.02v0.02 v73.27v0.01h-0.02c-0.01,3.84-1.57,7.33-4.1,9.86c-2.51,2.5-5.98,4.06-9.82,4.07v0.02h-0.02h-61.7H40.1v-0.02 c-3.84-0.01-7.34-1.57-9.86-4.1c-2.5-2.51-4.06-5.98-4.07-9.82h-0.02v-0.02V92.51H13.96h-0.01v-0.02c-3.84-0.01-7.34-1.57-9.86-4.1 c-2.5-2.51-4.06-5.98-4.07-9.82H0v-0.02V13.96v-0.01h0.02c0.01-3.85,1.58-7.34,4.1-9.86c2.51-2.5,5.98-4.06,9.82-4.07V0h0.02h61.7 h0.01v0.02c3.85,0.01,7.34,1.57,9.86,4.1c2.5,2.51,4.06,5.98,4.07,9.82h0.02V13.96L89.62,13.96z M79.04,21.69v-7.73v-0.02h0.02 c0-0.91-0.39-1.75-1.01-2.37c-0.61-0.61-1.46-1-2.37-1v0.02h-0.01h-61.7h-0.02v-0.02c-0.91,0-1.75,0.39-2.37,1.01 c-0.61,0.61-1,1.46-1,2.37h0.02v0.01v64.59v0.02h-0.02c0,0.91,0.39,1.75,1.01,2.37c0.61,0.61,1.46,1,2.37,1v-0.02h0.01h12.19V35.65 v-0.01h0.02c0.01-3.85,1.58-7.34,4.1-9.86c2.51-2.5,5.98-4.06,9.82-4.07v-0.02h0.02H79.04L79.04,21.69z M105.18,108.92V35.65v-0.02 h0.02c0-0.91-0.39-1.75-1.01-2.37c-0.61-0.61-1.46-1-2.37-1v0.02h-0.01h-61.7h-0.02v-0.02c-0.91,0-1.75,0.39-2.37,1.01 c-0.61,0.61-1,1.46-1,2.37h0.02v0.01v73.27v0.02h-0.02c0,0.91,0.39,1.75,1.01,2.37c0.61,0.61,1.46,1,2.37,1v-0.02h0.01h61.7h0.02 v0.02c0.91,0,1.75-0.39,2.37-1.01c0.61-0.61,1-1.46,1-2.37h-0.02V108.92L105.18,108.92z"/></svg>
-		</button>
-	</div>
-</details>
-{% endfor %}
+{% set micro %}
+
+.@MinaMarkham is a Staff Engineer at @SlackHQ, a speaker, organizer, and lover of design systems.
+{% endset %}
+
+{% set short %}
+
+Mina Markham is a Staff Engineer at Slack. She’s a lover of design systems and prolific public speaker, appearing at events worldwide, including CSS Dev Conf, Fluent, and Future of Web Design.
+
+Previously at Hillary for America, her work on the Pantsuit pattern library has been spotlighted in [Forbes](https://www.forbes.com/sites/christinawallace/2017/04/17/mina-markahm-is-a-sasstronaut/#2ca6ee847ac3), [WIRED](https://www.wired.com/2016/09/key-clintons-identity-online-pantsuit/), [Fast Company](https://www.fastcompany.com/3063367/hillarys-campaign-named-its-ui-pantsuit-perfectly), and [Communication Arts](https://www.commarts.com/columns/coding-a-pantsuit). Mina likes ampersands, Oreos, traveling, cupcakes, and the color pink. She lives in Oakland, California.
+{% endset %}
+
+{% set medium %}
+
+Mina Markham is a front-end architect, international speaker and lover of design systems. She writes code for a living, currently as a Staff Engineer at Slack.
+
+Previously a senior engineer at Hillary for America, her work on the Pantsuit pattern library has been spotlighted in [Forbes](https://www.forbes.com/sites/christinawallace/2017/04/17/mina-markahm-is-a-sasstronaut/#2ca6ee847ac3), [WIRED](https://www.wired.com/2016/09/key-clintons-identity-online-pantsuit/), [Fast Company](https://www.fastcompany.com/3063367/hillarys-campaign-named-its-ui-pantsuit-perfectly), and [Communication Arts](https://www.commarts.com/columns/coding-a-pantsuit).
+
+A prolific public speaker, Mina has appeared at events worldwide, including CSS Dev Conf, Fluent, and Future of Web Design.
+
+Mina likes ampersands, Oreos, traveling, cupcakes, and the color pink. When she's not crafting sites or teaching others, she is probably in her kitchen baking something chocolatey. Mina graduated from [Syracuse University](https://www.syracuse.edu/) with a dual major in Graphic Arts from the S.I. Newhouse School of Public Communications and Women’s Studies. She lives in Oakland, California.
+{% endset %}
+
+{% set long %}
+
+Mina Markham is a front-end architect, international speaker, and lover of design systems. She writes code for a living, currently for the Customer Acquisition team at Slack.
+
+Previously, she built the heralded Pantsuit pattern library for Hillary for America, which was utilized by almost every application housed on hillaryclinton.com during the 2016 campaign. Mina’s work has been spotlighted in [Forbes](https://www.forbes.com/sites/christinawallace/2017/04/17/mina-markahm-is-a-sasstronaut/#2ca6ee847ac3), [WIRED](https://www.wired.com/2016/09/key-clintons-identity-online-pantsuit/), [Fast Company](https://www.fastcompany.com/3063367/hillarys-campaign-named-its-ui-pantsuit-perfectly), and [Communication Arts](https://www.commarts.com/columns/coding-a-pantsuit).
+
+A prolific public speaker, Mina has appeared at events worldwide, including An Event Apart, CSS Dev Conf, Fluent, and Future of Web Design.
+
+Mina likes ampersands, Oreos, traveling, cupcakes, and the color pink.  When she's not crafting sites or teaching others, she is probably in her kitchen baking something chocolatey. Mina graduated from [Syracuse University](https://www.syracuse.edu/) with a dual major in Graphic Arts from the S.I. Newhouse School of Public Communications and Women’s Studies, and is living proof that you don't need a computer science degree to work in tech. She lives in Oakland, California.
+
+You can learn more about Mina — and check out her current projects — at [mina.codes](http://mina.codes).
+{% endset %}
+
+{% details 'Micro', micro %}{% details 'Short', short, true %}{% details 'Medium', medium %}{% details 'Long', long %}

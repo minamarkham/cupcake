@@ -10,6 +10,15 @@
 	grid-gap: var(--gutter);
 	margin-bottom: 2rem;
 
+	figcaption {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		padding: 2px 10px;
+		background: rgba(255,255,255,.9);
+		border-radius: 15px;
+	}
+
 	@media (max-width: 420px) { grid-template-columns: 1fr; }
 	@media (max-width: 600px) {
 		grid-template-columns: 1fr 1fr;
@@ -57,6 +66,13 @@
 				calc(100% - var(--border-width)) calc(66% - var(--border-width)),
 				var(--border-width) calc(85% - var(--border-width))
 			);
+		}
+
+		figcaption {
+			top: 10px;
+			left: 20px;
+			bottom: auto;
+			right: auto;
 		}
 	}
 
