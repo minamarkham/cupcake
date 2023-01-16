@@ -83,7 +83,7 @@ The site is auto-deployed on [Netlify][netlify] from the `main` branch on GitHub
 ~~🖍️ [Syntax highlighting](https://www.11ty.dev/docs/plugins/syntaxhighlight/) for code blocks~~  
 ~~💌 Contact form (using [Netlify Forms](https://docs.netlify.com/forms/setup/))~~  
 📝 Integrate with [Netlify CMS](https://www.netlifycms.org/)  
-~~🏃‍♀️ Setup [Speedlify][speedlify]~~
+~~🏃‍♀️ Setup [Speedlify][speedlify]~~. 
 ⚙️  Service worker to cache content for offline access  
 ~~📡 [RSS feed](https://www.11ty.dev/docs/plugins/rss/) for blog posts~~  
 ~~🖼 Image optimization with `eleventy-image`~~  
