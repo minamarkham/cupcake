@@ -33,8 +33,7 @@ module.exports = [
 		"datetime": DateTime.fromFormat('11-11-2020', 'MM-dd-yyyy').toJSDate(),
 		"where": "Online",
 		"internal": true,
-		"online": true,
-		"qa": true
+		"online": true
 	},
 	{
 		"name": "An Event Apart Online Together: Fall Summit",

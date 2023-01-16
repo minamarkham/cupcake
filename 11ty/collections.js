@@ -26,10 +26,12 @@ module.exports = {
 	pastEvents: function (eleventyConfig) {
 		const events = require("../src/data/events.js")
 		eleventyConfig.addCollection('pastEvents', function () {
-			return events.filter(p => {
+			const filtered = events.filter(p => {
 				if (Date.now() < p.datetime.getTime()) return false;
 				return true;
 			});
+
+			return filtered.sort((a, b) => Number(a.datetime) < Number(b.datetime) ? 1 : -1);
 		});
 	},
 
