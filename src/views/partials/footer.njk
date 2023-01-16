@@ -1,3 +1,40 @@
-<footer class="site-footer" role="contentinfo">
-    <p><strong>&copy;{% year %} Mina Markham</strong> Made with <span class="emoji">💻 </span> by me + <a href="/speaker-kit/">Speaker Kit</a> + <a href="/styleguide/">Styleguide</a> + <a href="//tweets.mina.codes">Twitter Archive</a> + <a href="{{ pkg.repository.url }}" target="_blank">View source</a> + Powered by <a href="https://www.11ty.dev/">Eleventy</a> &amp; <a href="https://www.netlify.com/">Netlify</a>.</p>
+<footer class="footer" role="contentinfo">
+	<div class="footer__inner">
+		<p class="footer__item">
+			<strong>&copy; {% year %} Mina Markham</strong><br />
+			All rights reserved
+		</p>
+
+		<p class="footer__item">
+			<strong>Powered by</strong><br />
+			<a href="https://www.11ty.dev/">Eleventy</a> &amp; <a href="https://www.netlify.com/">Netlify</a>
+		</p>
+
+		<p class="footer__item">
+			<strong>Social</strong><br />
+			<a href="//tweets.mina.codes">Twitter Archive</a>
+		</p>
+
+		<p class="footer__item">
+			<strong>Colophon</strong><br />
+			<a href="{{ pkg.repository.url }}" target="_blank">View source</a>
+		</p>
+
+		<p class="footer__item">
+			<strong>Links</strong><br />
+			<a href="/speaker-kit/">Speaker Kit</a> /
+			<a href="/styleguide/">Styleguide</a>
+		</p>
+
+		<p class="footer__item footer__item--right u-desktop-only">
+			<a href="https://speedlify.mina.codes/mina.codes/" class="footer__speedlify">
+				<speedlify-score speedlify-url="https://speedlify.mina.codes" hash="2d5258a0" score weight></speedlify-score>
+			</a>
+		</p>
+
+		<p class="footer__item footer__item--right">
+			<a href="{{ "/feed.xml" | url }}">RSS Feed</a>
+		</p>
+
+	</div>
 </footer>

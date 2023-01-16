@@ -3,11 +3,13 @@
 		<a href="/" class="menu__title">Mina Markham</a>
 		<span class="menu__info">Engineer. Designer.</span>
 	</div>
-	<div class="menu__right">
-		<nav class="menu__links" role="navigation">
+	<nav class="menu__right">
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<ul class="menu__links">
 			{% for item in navigation %}
-			<a href="{{ item.url }}" class="menu__item {% if item.url == page.url %}active menu__item--current{% endif %}">{{ item.title }}</a>
+			<li><a href="{{ item.url }}" class="menu__item{% if item.url == page.url %} menu__item--current{% endif %}">{{ item.title }}</a></li>
 			{% endfor %}
-		</nav>
-	</div>
+		</ul>
+	</nav>
 </header>

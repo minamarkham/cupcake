@@ -25,10 +25,10 @@
 	--gray-20: hsl(0, 0%, 20%);
 
 	--color-primary: var(--pink);
-	// --color-secondary: var(--cyan);
+	--color-secondary: var(--cyan);
 	// --color-tertiary: var(--fuschia);
 	// --color-muted: var(--fuschia);
-	--color-accent: var(--teal);
+	--color-accent: var(--gray-80);
 	--color-background: var(--white);
 	--color-foreground: var(--gray-80);
 	--color-text: var(--off-black);
@@ -43,12 +43,4 @@
 	--kbd-color-border: var(--gray-80);
 	--kbd-color-text: var(--off-black);
 	--aspect-ratio: 16 / 9;
-
-	// @media (prefers-color-scheme: dark)
-	&[dark] {
-		--gray-20: var(--gray-80);
-		--color-text: var(--gray-80);
-		--color-background: var(--off-black);
-		--color-foreground: var(--off-black);
-	}
 }

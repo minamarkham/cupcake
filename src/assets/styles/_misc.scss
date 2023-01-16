@@ -157,3 +157,8 @@ blockquote.twitter-tweet {
 		background-size: contain;
 	}
 }
+
+.u-desktop-only {
+	display: none;
+	@media (min-width: 1260px) { display:block }
+}
