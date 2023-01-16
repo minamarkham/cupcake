@@ -42,10 +42,12 @@
 		"last 2 versions"
 	],
 	"dependencies": {
-		"clipboard": "^2.0.11"
+		"clipboard": "^2.0.11",
+		"speedlify-score": "^2.0.2"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.0-canary.13",
+		"@11ty/eleventy-cache-assets": "^2.3.0",
 		"@11ty/eleventy-img": "^2.0.1",
 		"@11ty/eleventy-navigation": "^0.3.5",
 		"@11ty/eleventy-plugin-rss": "^1.1.1",

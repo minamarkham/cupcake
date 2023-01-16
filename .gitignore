@@ -19,8 +19,9 @@ node_modules/
 # temporary files
 .npm
 
-# eslint cache
+# cache
 .eslintcache
+.cache
 
 # deployment Files
 .netlify
