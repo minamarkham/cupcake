@@ -5,7 +5,7 @@
   <h3>Current flavor: <a href="https://github.com/minamarkham/cupcake/tree/live">funfetti</a></h3>
 
 | Flavor       | Branch                                                    | Link                                 |
-| :----------- | --------------------------------------------------------- | ------------------------------------ |
+| :----------- | :-------------------------------------------------------- | :----------------------------------- |
 | Banana Creme | [2014](https://github.com/minamarkham/cupcake/tree/2014)  | [View site](https://2014.mina.codes) |
 | Red Velvet   | [2013](https://github.com/minamarkham/cupcake/tree/2013)  | [View site](https://2013.mina.codes) |
 | Lemon        | [2012](https://github.com/minamarkham/cupcake/tree/2012)  | [View site](https://2012.mina.codes) |
