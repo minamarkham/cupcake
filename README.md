@@ -2,7 +2,7 @@
   <img alt="" src="./logo.jpg" width="100" />
   <h1>cupcake, a personal site.</h1>
   <p>Source code for <a href="https://mina.codes/" target="_blank">mina.codes</a>, my personal website.</p>
-  <h3>Current flavor: <a href="https://github.com/minamarkham/cupcake/tree/7.0%E2%80%94funfetti">funfetti</a></h3>
+  <h3>Current flavor: <a href="https://github.com/minamarkham/cupcake/tree/live">funfetti</a></h3>
 
   <p>
     Previous flavors:
