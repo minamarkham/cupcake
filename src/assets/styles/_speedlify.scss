@@ -1,3 +1,12 @@
+:root {
+	--speedlify-border: #0cce6b;
+	--speedlify-good: #088645;
+	--speedlify-ok: #ffa400;
+	--speedlify-bad: #ff4e42;
+	--speedlify-up: #008000;
+	--speedlify-down: #ff0000;
+}
+
 speedlify-score {
 	display: flex;
 	flex-wrap: wrap;
@@ -13,16 +22,16 @@ speedlify-score {
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	border: 2px solid #0cce6b;
-	color: #088645;
+	border: 2px solid var(--speedlify-border);
+	color: var(--speedlify-good);
 	margin-left: 0.4615384615385em; /* 6px /13 */
 }
 .speedlify-score-ok {
-	color: #ffa400;
+	color: var(--speedlify-ok);
 	border-color: currentColor;
 }
 .speedlify-score-bad {
-	color: #ff4e42;
+	color: var(--speedlify-bad);
 	border-color: currentColor;
 }
 .speedlify-rank:before {
@@ -35,13 +44,13 @@ speedlify-score {
 	line-height: 1;
 }
 .speedlify-rank-change.up {
-	color: green;
+	color: var(--speedlify-up);
 }
 .speedlify-rank-change.up:before {
 	content: "⬆";
 }
 .speedlify-rank-change.down {
-	color: red;
+	color: var(--speedlify-down);
 }
 .speedlify-rank-change.down:before {
 	content: "⬇";

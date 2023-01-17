@@ -12,7 +12,7 @@
 -->
 	{% include "partials/head.njk" %}
 	<body class="{% if bodyClass %}{{ bodyClass }}{% endif %}">
-		<a class="visually-hidden" href="#main">Skip to content</a>
+		<a class="skip-link" href="#main">Skip to content</a>
 		{% include "partials/header.njk" %}
 		<main class="{% if templateClass %}{{ templateClass }}{% endif %}" tabindex="-1">
 			{{ content | safe }}

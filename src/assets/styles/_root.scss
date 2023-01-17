@@ -30,6 +30,7 @@
 	// --color-muted: var(--fuschia);
 	--color-accent: var(--gray-80);
 	--color-background: var(--white);
+	--color-background-tint: var(--gray-80);
 	--color-foreground: var(--gray-80);
 	--color-text: var(--off-black);
 	--color-link: var(--color-primary);
@@ -38,7 +39,7 @@
 	--code-bg: var(--off-black); // #0F1C23;
 	--button-bg: var(--fuschia);
 	--button-bg-active: var(--dark-fuschia);
-	--background-pattern: radial-gradient(var(--color-foreground) 1px, var(--color-background) 1px);
+	--background-pattern: radial-gradient(var(--color-background-tint) 1px, var(--color-background) 1px);
 	--kbd-color-background: var(--off-white);
 	--kbd-color-border: var(--gray-80);
 	--kbd-color-text: var(--off-black);

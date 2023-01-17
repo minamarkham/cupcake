@@ -10,7 +10,7 @@ footnotes:
 - key: queen-bey
   note: '<a href="https://www.theguardian.com/music/2016/jun/27/beyonce-star-formation-destinys-child-queen-bey-tour">"Beyoncé’s star formation: from Destiny’s Child to Queen Bey"</a>. The Guardian. June 27, 2016.'
 scroll: 'Dangerously In Love • B’Day • I Am… Sasha Fierce • 4 • Beyoncé • Lemonade • Everything Is Love • Homecoming: The Live Album • The Lion King: The Gift • Renaissance'
-themes: ['cupcake', 'renaissance', 'lemonade', 'beychella1', 'beychella2']
+colors: ['background', 'primary', 'secondary', 'text', 'accent']
 fonts:
 - name: TTChocolates
   style: Extra Light
@@ -54,8 +54,8 @@ fonts:
 	<section class="colors">
 		<h6>colors</h6>
 		<div class="color-row">
-			{% for i in range(0, themes.length) %}
-			<div class="color-block color-{{ i }}">
+			{% for color in colors %}
+			<div class="color-block color-{{ color }}" data-color="{{ color }}">
 				<div class="color-swatch"></div>
 			</div>
 			{% endfor %}
@@ -83,13 +83,13 @@ fonts:
 			</div>
  			<div class="font-example__bodytext">
 				<small class="subheader">Body Text</small>
-				<p>Fan me off, my wrist goes click / Dimples on my hip, stretch marks on my tits / Drinking my water, minding my biz / Monday, I’m overrated, Tuesday, on my dick / Flip-flop, flippy, flip-flop and ass bitch / Fan me off, watch my wrist go click.</p>
-				<p><strong>I break chains all by myself / Won't let my freedom rot in hell / I'mma keep runnin' because a winner don't quit on themselves.</strong></p>
+				<p>Fan me off, my wrist goes click / Dimples on my hip, stretch marks on my tits / Drinking my water, minding my biz / Monday, I’m overrated, Tuesday, on my dick / Flip-flop, flippy, flip-flop and ass bitch / Fan me off, watch my wrist go click</p>
+				<p><strong>I break chains all by myself / Won't let my freedom rot in hell / I'mma keep runnin' because a winner don't quit on themselves</strong></p>
 				<p><em>Remember those walls I built? / Well, baby, they're tumblin' down / And they didn't even put up a fight / They didn't even make a sound / I found a way to let you win / But I never really had a doubt / Standin' in the light of your halo / I got my angel now</em></p>
 				<small class="subheader">Lists</small>
 				<ul>
-					<li>Ivy Park</li>
 					<li>Parkwood Entertainment</li>
+					<li>Ivy Park</li>
 					<li>Formation Scholars</li>
 					<li>Survivor Foundation
 				</ul>
@@ -101,8 +101,8 @@ fonts:
 				</ol>
 				<small class="subheader">Quotes</small>
 				<blockquote>
-					<p>I don’t like to gamble, but if there’s one thing I’m willing to bet on, it’s myself.</p>
-					<footer>Beyoncé Knowles</footer>
+					<p>As a Black woman, I used to feel like the world wanted me to stay in my little box. And Black women often feel underestimated. I wanted us to be proud of the struggle; Thankful for the beauty that comes with a painful history and rejoice in the pain, rejoice in the imperfections and the wrongs that are so damn right. I wanted everyone to feel grateful for their curves, their sass, their honesty, thankful for their freedom.</p>
+					<footer>Beyoncé Knowles-Carter</footer>
 				</blockquote>
 			</div>
 		</div>

@@ -274,7 +274,7 @@
 		margin-top: 30px;
 
 		span {
-			background: var(--white);
+			background: var(--color-background);
 			padding: 0 15px 0 0;
 		}
 
@@ -418,7 +418,6 @@
 .back-to-top {
 	position: fixed;
 	padding: 10px;
-	z-index: 3000;
 	right: 30px;
 	bottom: 30px;
 	transition: bottom .5s;
@@ -440,7 +439,7 @@
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	padding: 0 5rem 0 1rem;
-	color: var(--gray-20);
+	color: var(--color-background-tint);
 	border-left: 4px solid currentcolor;
 	font-style: italic;
 
@@ -527,7 +526,7 @@
 		text-transform: uppercase;
 		font-weight: 600;
 		margin-bottom: 0;
-		color: var(--gray-30);
+		color: var(--color-background-tint);
 		font-size: 1rem;
 		font-style: normal;
 		letter-spacing: 0.1rem;

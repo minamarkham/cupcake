@@ -1,8 +1,9 @@
 header {
-	padding: 3rem 5vw;
-	text-align: center;
-	line-height: 1;
+	padding: 2rem 10vw 2rem 5vw;
 	font-size: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
 	@include screen(940px) {
 		position: fixed;
@@ -11,7 +12,7 @@ header {
 		background-size: 20px 20px;
 		background-attachment: fixed;
 		grid-template-columns: 30% 70%;
-		z-index: 1;
+		z-index: 10;
 	}
 
 	&::before {
@@ -22,20 +23,36 @@ header {
 		left: 0;
 		right: 0;
 		top: 0;
-		z-index: 1000;
+		z-index: 1;
 	}
 }
 
+%visually-hidden,
 .visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: auto;
-	margin: 0;
+	clip: rect(1px, 1px ,1px, 1px);
+	height: 1px;
 	overflow: hidden;
-	padding: 0;
 	position: absolute;
 	width: 1px;
-	white-space: nowrap;
+}
+
+.skip-link {
+	@extend %visually-hidden;
+	z-index: 20;
+	outline: none;
+	top: 1.5rem;
+	left: 1.5rem;
+	font-weight: 500;
+	color: var(--color-text);
+	background-color: var(--color-primary);
+	padding: .5em 1em;
+	text-decoration: none;
+	position: fixed;
+	&:focus {
+		clip: auto;
+		height: auto;
+		width: auto;
+	}
 }
 
 .theme-toggle {
@@ -189,7 +206,7 @@ header {
 	margin: 0;
 	position: absolute;
 	right: 1vw;
-	top: 29px;
+	top: 26px;
 	z-index: 2;
 }
 

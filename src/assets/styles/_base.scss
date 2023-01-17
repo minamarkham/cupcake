@@ -303,13 +303,13 @@ thead {
 }
 
 tr {
-	border: 1px solid var(--gray-90);
+	border: 1px solid var(--color-text);
 	display: block;
 	margin-bottom: .625em;
 }
 
 td {
-	border-bottom: 1px solid var(--gray-90);
+	border-bottom: 1px solid var(--color-text);
 	display: block;
 	min-height: 30px;
 	text-align: right;
@@ -348,7 +348,7 @@ td {
 
 	tr {
 		border: 0;
-		border-bottom: 1px solid var(--gray-90);
+		border-bottom: 1px solid var(--color-text);
 		padding: .35em;
 		margin: 0;
 		display: table-row;
@@ -378,7 +378,7 @@ video,
 object {
 	max-width: 100%;
 	width: 100%;
-	height: auto; // 100%
+	height: auto;
 	object-fit: cover;
 }
 
@@ -392,18 +392,17 @@ img {
 	min-height: 50px;
 
 	&::after {
-		content: '🚫' ' Broken Image of ' attr(alt);
+		content: '🚫' ' Broken image of ' attr(alt);
 		font-size: 16px;
-		color: var(--gray-40);
+		color: var(--color-text);
 		display: flex;
 		position: absolute;
-		z-index: 2;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: var(--white);
-		border: 1px dashed var(--gray-90);
+		background-color: var(--color-background);
+		border: 1px dashed var(--color-background-tint);
 		align-items: center;
 		justify-content: center;
 	}
@@ -482,7 +481,7 @@ hr {
 
 	&::before {
 		content: '';
-		background: linear-gradient(to right, transparent, var(--gray-50), transparent);
+		background: linear-gradient(to right, transparent, var(--color-background-tint), transparent);
 		position: absolute;
 		left: 0;
 		top: 50%;
@@ -496,7 +495,7 @@ hr {
 		display: inline-block;
 		padding: 0 0.5em;
 		line-height: 1.5em;
-		color: var(--gray-50);
+		color: var(--color-text);
 		background-color: var(--color-background);
 	}
 }
