@@ -1,0 +1,93 @@
+:where(html) {
+	--color-background: hsl(0, 0%, 100%);
+	--color-background-tint: hsl(0, 0%, 80%);
+	--color-secondary: hsl(210, 2%, 80%);
+	--color-text: hsl(0, 0%, 10%);
+	--color-primary: hsl(340, 100%, 60%);
+	--color-accent: hsl(176, 69%, 58%);
+}
+
+@media(prefers-color-scheme: dark) {
+	:where(html) {
+	--color-background: hsl(0, 0%, 10%);
+	--color-background-tint: hsl(0, 0%, 0%);
+	--color-primary: hsl(340, 100%, 60%);
+	--color-secondary: hsl(220, 4%, 33%);
+	--color-text: hsl(0, 0%, 100%);
+	--color-accent: hsl(176, 69%, 58%);
+	}
+}
+
+
+[data-theme="cupcake"] {
+	--color-background: hsl(0, 0%, 100%);
+	--color-background-tint: hsl(0, 0%, 80%);
+	--color-secondary: hsl(210, 2%, 80%);
+	--color-text: hsl(0, 0%, 10%);
+	--color-primary: hsl(340, 100%, 60%);
+	--color-accent: hsl(176, 69%, 58%);
+}
+
+[data-theme="cupcake"][data-color-scheme="dark"] {
+	--color-background: hsl(0, 0%, 10%);
+	--color-background-tint: hsl(0, 0%, 0%);
+	--color-primary: hsl(340, 100%, 60%);
+	--color-secondary: hsl(220, 4%, 33%);
+	--color-text: hsl(0, 0%, 100%);
+	--color-accent: hsl(176, 69%, 58%);
+}
+
+[data-theme="renaissance"] {
+	--color-text: hsl(0, 0%, 0%);
+	--color-background-tint: hsl(220, 4%, 13%);
+	--color-background: hsl(220, 4%, 33%);
+	--color-primary: hsl(200, 3%, 81%);
+	--color-secondary: hsl(0, 0%, 100%);
+	--color-accent: hsl(207, 17%, 55%);
+}
+
+[data-theme="renaissance"][data-color-scheme="dark"] {
+	--color-background: hsl(0, 0%, 0%);
+	--color-background-tint: hsl(0, 0%, 10%);
+	--color-primary: hsl(220, 4%, 33%);
+	--color-text: hsl(200, 3%, 81%);
+	--color-secondary: hsl(0, 0%, 100%);
+	--color-accent: hsl(207, 17%, 55%);
+  }
+
+[data-theme="lemonade"] {
+	--color-text: hsl(154, 15%, 9%);
+	--color-background-tint: hsl(64, 29%, 44%);
+	--color-primary: hsl(166, 24%, 36%);
+	--color-accent: hsl(110, 14%, 66%);
+	--color-secondary: hsl(179, 22%, 48%);
+	--color-background: hsl(64, 29%, 64%);
+}
+
+[data-theme="lemonade"][data-color-scheme="dark"] {
+	--color-background: hsl(154, 15%, 9%);
+	--color-background-tint: hsl(154, 15%, 0%);
+	--color-primary: hsl(166, 24%, 36%);
+	--color-text: hsl(110, 14%, 66%);
+	--color-secondary: hsl(179, 22%, 48%);
+	--color-accent: hsl(64, 29%, 64%);
+}
+
+[data-theme="beychella"] {
+	--color-background: hsl(51, 95%, 54%);
+	--color-background-tint: hsl(51, 95%, 34%);
+	--color-primary: hsl(334, 76%, 59%);
+	--color-secondary: hsl(26, 33%, 56%);
+	--color-text: hsl(307, 25%, 13%);
+	--color-accent: hsl(270, 9%, 82%);
+}
+
+[data-theme="beychella"][data-color-scheme="dark"] {
+	--color-background: hsl(333, 61%, 59%);
+	--color-background-tint: hsl(333, 61%, 39%);
+	--color-: hsl(267, 81%, 69%);
+	--color-primary: hsl(277, 49%, 15%);
+	--color-text: hsl(277, 49%, 15%);
+	--color-accent: hsl(33, 14%, 84%);
+	--color-secondary: hsl(351, 34%, 27%);
+}
