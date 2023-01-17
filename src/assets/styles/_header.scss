@@ -1,18 +1,18 @@
 header {
-	position: fixed;
-	background-color: var(--color-background);
-	background-image: var(--background-pattern);
-	background-size: 20px 20px;
-	background-attachment: fixed;
 	padding: 2rem 10vw 2rem 5vw;
 	font-size: 1rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	z-index: 10;
 
 	@include screen(940px) {
+		position: fixed;
+		background-color: var(--color-background);
+		background-image: var(--background-pattern);
+		background-size: 20px 20px;
+		background-attachment: fixed;
 		grid-template-columns: 30% 70%;
+		z-index: 10;
 	}
 
 	&::before {
@@ -156,7 +156,7 @@ header {
 	background-image: var(--background-pattern);
 	background-size: 20px 20px;
 	background-attachment: fixed;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -204,7 +204,7 @@ header {
 	padding: 26px 20px;
 	user-select: none;
 	margin: 0;
-	position: absolute;
+	position: fixed;
 	right: 1vw;
 	top: 26px;
 	z-index: 2;
