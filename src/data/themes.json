@@ -1,0 +1,87 @@
+[
+	{
+		"name": "cupcake",
+		"variants": {
+			"base": {
+				"background": "hsl(0, 0%, 100%)",
+				"background-tint": "hsl(0, 0%, 80%)",
+				"secondary": "hsl(210, 2%, 80%)",
+				"text": "hsl(0, 0%, 10%)",
+				"primary": "hsl(340, 100%, 60%)",
+				"accent": "hsl(176, 69%, 58%)"
+			},
+			"dark": {
+				"background": "hsl(0, 0%, 10%)",
+				"background-tint": "hsl(0, 0%, 0%)",
+				"primary": "hsl(340, 100%, 60%)",
+				"secondary": "hsl(220, 4%, 33%)",
+				"text": "hsl(0, 0%, 100%)",
+				"accent": "hsl(176, 69%, 58%)"
+			}
+		}
+	},
+	{
+		"name": "renaissance",
+		"variants": {
+			"base": {
+				"text": "hsl(0, 0%, 0%)",
+				"background-tint": "hsl(220, 4%, 13%)",
+				"background": "hsl(220, 4%, 33%)",
+				"primary": "hsl(200, 3%, 81%)",
+				"secondary": "hsl(0, 0%, 100%)",
+				"accent": "hsl(207, 17%, 55%)"
+			},
+			"dark": {
+				"background": "hsl(0, 0%, 0%)",
+				"background-tint": "hsl(0, 0%, 10%)",
+				"primary": "hsl(220, 4%, 33%)",
+				"text": "hsl(200, 3%, 81%)",
+				"secondary": "hsl(0, 0%, 100%)",
+				"accent": "hsl(207, 17%, 55%)"
+			}
+		}
+	},
+	{
+		"name": "lemonade",
+		"variants": {
+			"base": {
+				"text": "hsl(154, 15%, 9%)",
+				"background-tint": "hsl(64, 29%, 44%)",
+				"primary": "hsl(166, 24%, 36%)",
+				"accent": "hsl(110, 14%, 66%)",
+				"secondary": "hsl(179, 22%, 48%)",
+				"background": "hsl(64, 29%, 64%)"
+			},
+			"dark": {
+				"background": "hsl(154, 15%, 9%)",
+				"background-tint": "hsl(154, 15%, 0%)",
+				"primary": "hsl(166, 24%, 36%)",
+				"text": "hsl(110, 14%, 66%)",
+				"secondary": "hsl(179, 22%, 48%)",
+				"accent": "hsl(64, 29%, 64%)"
+			}
+		}
+	},
+	{
+		"name": "beychella",
+		"variants": {
+			"base": {
+				"background": "hsl(51, 95%, 54%)",
+				"background-tint": "hsl(51, 95%, 34%)",
+				"primary": "hsl(334, 76%, 59%)",
+				"secondary": "hsl(26, 33%, 56%)",
+				"text": "hsl(307, 25%, 13%)",
+				"accent": "hsl(270, 9%, 82%)"
+			},
+			"dark": {
+				"background": "hsl(333, 61%, 59%)",
+				"background-tint": "hsl(333, 61%, 39%)",
+				"?": "hsl(267, 81%, 69%)",
+				"primary": "hsl(277, 49%, 15%)",
+				"text": "hsl(277, 49%, 15%)",
+				"accent": "hsl(33, 14%, 84%)",
+				"secondary": "hsl(351, 34%, 27%)"
+			}
+		}
+	}
+]
