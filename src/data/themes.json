@@ -5,7 +5,7 @@
 			"base": {
 				"background": "hsl(0, 0%, 100%)",
 				"background-tint": "hsl(0, 0%, 80%)",
-				"secondary": "hsl(210, 2%, 80%)",
+				"secondary": "hsl(220, 4%, 33%)",
 				"text": "hsl(0, 0%, 10%)",
 				"primary": "hsl(340, 100%, 60%)",
 				"accent": "hsl(176, 69%, 58%)"
@@ -71,7 +71,13 @@
 				"primary": "hsl(334, 76%, 59%)",
 				"secondary": "hsl(26, 33%, 56%)",
 				"text": "hsl(307, 25%, 13%)",
-				"accent": "hsl(270, 9%, 82%)"
+				"accent": "hsl(270, 9%, 82%)",
+				"speedlify-border": "#0cce6b",
+				"speedlify-good": "yellowgreen",
+				"speedlify-ok": "#ffa400",
+				"speedlify-bad": "#ff4e42",
+				"speedlify-up": "#008000",
+				"speedlify-down": "#ff0000"
 			},
 			"dark": {
 				"background": "hsl(333, 61%, 59%)",
