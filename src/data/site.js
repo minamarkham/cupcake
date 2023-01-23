@@ -22,7 +22,7 @@ module.exports = {
 		handle: "minamarkham",
 	},
 	image: {
-		src: "/social-card.jpg",
+		src: "/social-share.jpg",
 		alt: "An engineer, designer, writer, and speaker.",
 	},
 	themeColor: "#ff3377",
