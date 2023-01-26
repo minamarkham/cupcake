@@ -326,6 +326,7 @@ h1 {
 .color-row {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .color-block {
@@ -334,13 +335,14 @@ h1 {
 	margin: 10px 0 0;
 	font-size: 16px;
 	font-weight: bold;
+	flex: 0 0 150px;
 	&::after {
 		content: '--color-' attr(data-color);
 	}
 }
 
 .color-swatch {
-	width: 11vw;
+	width: 10rem;
 	min-height: 120px;
 	max-width: 10em;
 	padding: 10px;

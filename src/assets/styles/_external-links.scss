@@ -73,8 +73,7 @@ a[href^="https://www.youtube.com"]::before {
 	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fwww.youtube.com%2F/");
 }
 a[href^="https://github.com"]::before {
-	border-radius: 0.3125em; /* 5px /16 */
-	border: .5px solid var(--white);
+	border-radius: 50%; /* 5px /16 */
 	background-color: var(--white);
 	background-image: url("https://avatars.mina.codes/https%3A%2F%2Fgithub.com%2F/");
 }

@@ -1,15 +1,15 @@
-# 🧁 funfetti [![Netlify Status](https://api.netlify.com/api/v1/badges/8af1abb7-f4a1-46de-b6c7-cda9727b7dd7/deploy-status)](https://app.netlify.com/sites/cupcake-funfetti/deploys)
+# 🧁 funfetti [![Netlify Status](https://api.netlify.com/api/v1/badges/8af1abb7-f4a1-46de-b6c7-cda9727b7dd7/deploy-status)](https://app.netlify.com/sites/cupcake-liner/deploys)
 
 _Wow, this is an absolutely delicious, I mean really just scrumptious, personal site for the Oakland-based UX engineer Mina Markham._
 
 <p>
   Previous flavors:
-  <a href="https://github.com/minamarkham/cupcake/tree/6.0%E2%80%94banana-creme">banana creme</a>,
-  <a href="https://github.com/minamarkham/cupcake/tree/5.0%E2%80%94red-velvet" target="_blank">red velvet</a>,
-  <a href="https://github.com/minamarkham/cupcake/tree/4.0%E2%80%94lemon" target="_blank">lemon</a>,
-  <a href="https://github.com/minamarkham/cupcake/tree/3.0%E2%80%94strawberry" target="_blank">strawberry</a>,
-  <a href="https://github.com/minamarkham/cupcake/tree/2.0%E2%80%94chocolate" target="_blank">chocolate</a>,
-  and <a href="https://github.com/minamarkham/cupcake/tree/1.0%E2%80%94vanilla" target="_blank">vanilla</a>.
+  <a href="https://github.com/minamarkham/cupcake/tree/2014">banana creme</a>,
+  <a href="https://github.com/minamarkham/cupcake/tree/2013" target="_blank">red velvet</a>,
+  <a href="https://github.com/minamarkham/cupcake/tree/2012" target="_blank">lemon</a>,
+  <a href="https://github.com/minamarkham/cupcake/tree/2011" target="_blank">strawberry</a>,
+  <a href="https://github.com/minamarkham/cupcake/tree/2008" target="_blank">chocolate</a>,
+  and <a href="https://github.com/minamarkham/cupcake/tree/2006" target="_blank">vanilla</a>.
 </p>
 
 ## Development
@@ -41,13 +41,13 @@ npm run build
 
 ## Deployment
 
-The site is auto-deployed on [Netlify][netlify] from the `main` branch on GitHub. Deploys are automated on push to `main`.
+The site is auto-deployed on [Netlify][netlify] from the `live` branch on GitHub. Deploys are automated on push to `live`.
 
 ## Project Structure
 
 `├──` [`11ty/`](./11ty/) — 11ty configuration files <br/>
 `├──` [`src/`](./src/) — input directory a.k.a. source files <br/>
-`│   ├──` [`admin/`](./src/admin/) — [Netlify][netlify] CMS <br/>
+`│   ├──` [`admin/`](./src/admin/) — [Netlify CMS][CMS] <br/>
 `│   ├──` [`assets/`](./src/assets/) — static assets such as images, icons, fonts <br/>
 `│   │   ├──` [`files/`](./src/assets/files/) — downloaded files <br/>
 `│   │   ├──` [`fonts/`](./src/assets/fonts/) — font assets <br/>
@@ -79,10 +79,10 @@ The site is auto-deployed on [Netlify][netlify] from the `main` branch on GitHub
 
 ## Roadmap
 
-~~🚀 Setup [Netlify](https://www.netlify.com/) for deployment~~  
+~~🚀 Setup [Netlify][netlify] for deployment~~  
 ~~🖍️ [Syntax highlighting](https://www.11ty.dev/docs/plugins/syntaxhighlight/) for code blocks~~  
 ~~💌 Contact form (using [Netlify Forms](https://docs.netlify.com/forms/setup/))~~  
-📝 Integrate with [Netlify CMS](https://www.netlifycms.org/)  
+📝 Integrate with [Netlify CMS][CMS]  
 ~~🏃‍♀️ Setup [Speedlify][speedlify]~~  
 ⚙️  Service worker to cache content for offline access  
 ~~📡 [RSS feed](https://www.11ty.dev/docs/plugins/rss/) for blog posts~~  
@@ -93,11 +93,11 @@ This site is built using:
 
 - HTML, obviously
 - CSS w/ fancy grids and custom variables
-- [11ty](https://www.11ty.dev/), Markdown & [Nunjucks][nunjucks].
-- [Netlify](https://www.netlify.com/) for deployment
+- [11ty][11ty], Markdown & [Nunjucks][nunjucks]
+- [Netlify][netlify]for deployment
 - These fonts:
-  - [TT Chocolates](https://typetype.org/fonts/tt-chocolates/), by TypeType.
-  - [Dank Mono](https://philpl.gumroad.com/l/dank-mono), patched with [Nerd Fonts](https://www.nerdfonts.com/).
+  - [TT Chocolates](https://typetype.org/fonts/tt-chocolates/), by TypeType
+  - [Dank Mono](https://philpl.gumroad.com/l/dank-mono), patched with [Nerd Fonts](https://www.nerdfonts.com/)
   - [Milkshake Script](https://creativemarket.com/mila.garret/6547399-Milkshake-Modern-Handwritten-Script) for flourish
 - Lots of ideas from a lot of cool people
 
@@ -107,6 +107,7 @@ This site is built using:
 
 [11ty]: https://www.11ty.io/
 [Netlify]: https://www.netlify.com/
+[CMS]: https://www.netlify.com/
 [nunjucks]: https://mozilla.github.io/nunjucks/
 [speedlify]: https://www.speedlify.dev/
 [data]: https://www.11ty.dev/docs/data/
