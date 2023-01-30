@@ -3,6 +3,14 @@
  * https://www.11ty.dev/docs/shortcodes/
  */
 
+function gifShortcode(src) {
+	const filename = src.replace('.gif','');
+	return `<video autoplay loop muted playsinline>
+		<source src="${filename}.webm" type="video/webm">
+		<source src="${filename}.mp4" type="video/mp4">
+	</video>`;
+};
+
 module.exports = {
 	/**
 	 * Add date shortcode
@@ -46,7 +54,7 @@ module.exports = {
 
 		function figureShortcode(src, alt = '', caption = null) {
 			const id = (Math.random() + 1).toString(36).substring(7);
-			const image = src.split(".").pop() === 'gif' ? `<img src="${src}" alt="${alt}" />` : imageShortcode(src, alt);
+			const image = src.split(".").pop() === 'gif' ? gifShortcode(src) : imageShortcode(src, alt);
 			const figcaption = caption ? `<figcaption>${caption}</figcaption>` : '';
 
 			return `<figure id="${id}anchor" class="figure">
@@ -86,12 +94,7 @@ module.exports = {
 	 * Add GIF replacement shortcode
 	 */
 	gif: function (eleventyConfig) {
-		eleventyConfig.addShortcode("gif", (filename) => {
-			return `<video autoplay loop muted playsinline>
-				<source src="${filename}.webm" type="video/webm">
-				<source src="${filename}.mp4" type="video/mp4">
-			</video>`;
-		});
+		eleventyConfig.addShortcode('gif', gifShortcode);
 	},
 
 	/**
