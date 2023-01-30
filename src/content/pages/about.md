@@ -17,7 +17,7 @@ To see more of what I've been up to, view my [highlights](https://highlights.min
 
 ## Press Mentions
 <ul>
-{% for item in press %}<li><a href="{{ item.url }}">{{ item.title }}</a> for {{ item.publication }}</li>
+{% for item in mentions %}<li><a href="{{ item.url }}">{{ item.title }}</a> for {{ item.publication }}</li>
 {% endfor %}
 </ul>
 
