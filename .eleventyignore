@@ -6,4 +6,4 @@
 # Ignore all README files
 README.md
 src/content/posts/_drafts/*
-.DS_Store
+**/**/.DS_Store
