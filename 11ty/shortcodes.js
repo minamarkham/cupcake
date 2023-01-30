@@ -83,6 +83,18 @@ module.exports = {
 	},
 
 	/**
+	 * Add GIF replacement shortcode
+	 */
+	gif: function (eleventyConfig) {
+		eleventyConfig.addShortcode("gif", (filename) => {
+			return `<video autoplay loop muted playsinline>
+				<source src="${filename}.webm" type="video/webm">
+				<source src="${filename}.mp4" type="video/mp4">
+			</video>`;
+		});
+	},
+
+	/**
 	 * Add details shortcode
 	 */
 	details: function (eleventyConfig) {
