@@ -51,6 +51,70 @@ main {
 	display: inline-block;
 }
 
+.offline-btn {
+	@extend %button;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	background: transparent;
+	padding: 0;
+	font-size: inherit;
+	font-family: inherit;
+	width: 13rem;
+	height: auto;
+	font-size: 1rem;
+	margin-top: 1rem;
+
+	.circle {
+		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+		position: relative;
+		display: block;
+		margin: 0;
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: 1.625rem;
+		border: 1px solid var(--color-primary);
+	}
+
+	.cache-icon {
+		position: absolute;
+		top: 5px;
+		left: 9px;
+		font-size: 1.25rem;
+	}
+
+	.button-text {
+		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 0.5rem 0;
+		margin: 0 0 0 1.85rem;
+		line-height: 1.6;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&:hover,
+	&:focus {
+		background: none;
+
+		.circle {
+			width: 100%;
+		}
+
+		.button-text {
+			color: var(--color-primary);
+		}
+	}
+}
+
 // https://codepen.io/kathykato/pen/rZRaNe
 a[download] {
 	@extend %button;

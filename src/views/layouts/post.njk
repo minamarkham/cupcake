@@ -28,6 +28,12 @@ layout: base.njk
 		<h2>{{ subtitle }}</h2>
 		<p>Published on <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
 		{% if canonical %}— for <a href="{{ canonical.url }}">{{ canonical.title }}</a>{% endif %}</p>
+		<button class="offline-btn">
+			<span class="circle" aria-hidden="true">
+				<span class="cache-icon">⬇</span>
+			</span>
+			<span class="button-text">Save for Offline</span>
+		</button>
 	</div>
 	{{ layoutContent | safe }}
 </article>

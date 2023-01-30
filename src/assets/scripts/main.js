@@ -1,6 +1,7 @@
 import copy from './modules/copy';
 import { animateButton, handleSubmit } from './modules/form';
 import './modules/speedlify';
+import './modules/cache';
 
 copy();
 

@@ -48,5 +48,8 @@
 
 	<script>
 		{% include "partials/init-theme.njk" %}
+		if (navigator && navigator.serviceWorker) {
+			navigator.serviceWorker.register('/serviceworker.js');
+		}
 	</script>
 </head>
