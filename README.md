@@ -94,7 +94,7 @@ This site is built using:
 - HTML, obviously
 - CSS w/ fancy grids and custom variables
 - [11ty][11ty], Markdown & [Nunjucks][nunjucks]
-- [Netlify][netlify]for deployment
+- [Netlify][netlify] for deployment
 - These fonts:
   - [TT Chocolates](https://typetype.org/fonts/tt-chocolates/), by TypeType
   - [Dank Mono](https://philpl.gumroad.com/l/dank-mono), patched with [Nerd Fonts](https://www.nerdfonts.com/)
@@ -107,7 +107,7 @@ This site is built using:
 
 [11ty]: https://www.11ty.io/
 [Netlify]: https://www.netlify.com/
-[CMS]: https://www.netlify.com/
+[CMS]: https://www.netlifycms.org/
 [nunjucks]: https://mozilla.github.io/nunjucks/
 [speedlify]: https://www.speedlify.dev/
 [data]: https://www.11ty.dev/docs/data/
