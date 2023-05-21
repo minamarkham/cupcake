@@ -12,6 +12,7 @@ npm-debug.log*
 
 # macOS related files
 .DS_Store
+Icon?
 
 # dependency directories
 node_modules/
