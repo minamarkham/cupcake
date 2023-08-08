@@ -17,11 +17,7 @@
 # Headers rule example
 # For more information see:- https://www.netlify.com/docs/netlify-toml-reference/
 
-#[[headers]]
-#   Define which paths this specific [[headers]] block will cover.
-#   for = "/*"
-
-#[headers.values]
-#   X-Frame-Options = "DENY"
-#   X-XSS-Protection = "1; mode=block"
-#   Content-Security-Policy = "frame-ancestors https://www.facebook.com"
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "https://minamarkh.am"

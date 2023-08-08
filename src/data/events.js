@@ -2,17 +2,6 @@ const { DateTime } = require("luxon");
 
 module.exports = [
 	{
-		"id": "ZuW1c",
-		"name": "Render ATL 2023",
-		"url": "https://www.renderatl.com/",
-		"datetime": DateTime.fromFormat('05-31-2023', 'MM-dd-yyyy').toJSDate(),
-		"where": "Atlanta, Georgia",
-		"onsale": {
-			"url": "https://www.renderatl.com/#tickets"
-		},
-		"talk": true
-	},
-	{
 		"id": "FGuHp",
 		"name": "Instrument",
 		"url": "https://www.instrument.com/",
