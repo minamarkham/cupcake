@@ -2,7 +2,7 @@
 /* @link https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale */
 
 :root {
-	--base-size: 1.25em; // 20px
+	--base-size: 1em;
 	--line-height: 1.45;
 	--minor-second: 1.067;
 	--major-second: 1.125;
@@ -12,7 +12,7 @@
 	--augmented-fourth: 1.414;
 	--perfect-fifth: 1.5;
 	--golden-ratio: 1.618;
-	--type-scale: var(--major-third);
+	--type-scale: var(--minor-third);
 	--size-l-1: calc(1rem * var(--type-scale));
 	--size-l-2: calc(var(--size-l-1) * var(--type-scale));
 	--size-l-3: calc(var(--size-l-2) * var(--type-scale));
@@ -53,7 +53,14 @@ h6 {
 	font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 { font-weight: 400; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+}
 
 a {
 	color: var(--color-link);
@@ -68,25 +75,11 @@ blockquote {
 	position: relative;
 	min-width: 400px;
 	max-width: 820px;
-	font-size: 1.25vw;
+	font-size: var(--size-l-1);
 	line-height: 1.4;
 	text-rendering: optimizelegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-fon-smoothing: grayscale;
-
-	@media screen and (max-width: 1600px) {
-		font-size: 2vw;
-	}
-
-	@media all and (max-width: 1200px) {
-		font-size: 2.5vw;
-	}
-
-	@media all and (max-width: 600px) {
-		font-size: 18px;
-		width: 100%;
-		min-width: 100%;
-	}
 
 	p {
 		&:first-of-type::before {
@@ -110,17 +103,13 @@ blockquote {
 		position: relative;
 		margin-top: 1rem;
 		text-transform: uppercase;
-		font-size: 1em;
+		font-size: 0.6em;
 		letter-spacing: 1px;
 		font-weight: 700;
-		@include screen(768px) {
-			font-size: .6em;
-		}
 
 		&::before {
 			content: '–';
-			position: absolute;
-			left: -.6em;
+			margin-right: 0.6em;
 		}
 	}
 }
@@ -209,7 +198,7 @@ ol {
 .page-title {
 	font-family: var(--font-family-monospace);
 	font-style: italic;
-	font-size: clamp(2rem,4vw,4rem);
+	font-size: clamp(2rem, 4vw, 4rem);
 	letter-spacing: -4px;
 
 	&::before {
@@ -230,7 +219,7 @@ ol {
 		}
 
 		&:not(:last-child)::after {
-			content: ", ";
+			content: ', ';
 		}
 	}
 }

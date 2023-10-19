@@ -5,87 +5,79 @@ $typefaces: (
 		family: 'Dank Mono',
 		weight: 400,
 		style: normal,
+		display: swap,
 	),
 	'DankMono-Bold': (
 		family: 'Dank Mono',
 		weight: 600,
 		style: normal,
+		display: swap,
 	),
 	'DankMono-Italic': (
 		family: 'Dank Mono',
 		weight: 400,
 		style: italic,
+		display: swap,
 	),
-
-	'TTChocolates-Bold': (
-		family: 'TT Chocolates',
+	'Satoshi-Bold': (
+		family: 'Satoshi',
 		weight: 700,
 		style: normal,
+		display: swap,
 	),
-	'TTChocolates-Bold-Italic': (
-		family: 'TT Chocolates',
+	'Satoshi-BoldItalic': (
+		family: 'Satoshi',
 		weight: 700,
 		style: italic,
+		display: swap,
 	),
-	'TTChocolates-Demi-Bold': (
-		family: 'TT Chocolates',
-		weight: 600,
+	'Satoshi-Black': (
+		family: 'Satoshi',
+		weight: 900,
 		style: normal,
+		display: swap,
 	),
-	'TTChocolates-Demi-Bold-Italic': (
-		family: 'TT Chocolates',
-		weight: 600,
+	'Satoshi-BlackItalic': (
+		family: 'Satoshi',
+		weight: 900,
 		style: italic,
+		display: swap,
 	),
-	'TTChocolates-Extra-Bold': (
-		family: 'TT Chocolates',
-		weight: 800,
-		style: normal,
-	),
-	'TTChocolates-Extra-Bold-Italic': (
-		family: 'TT Chocolates',
-		weight: 800,
-		style: italic,
-	),
-	'TTChocolates-Extra-Light-Italic': (
-		family: 'TT Chocolates',
-		weight: 200,
-		style: italic,
-	),
-	'TTChocolates-Extra-Light': (
-		family: 'TT Chocolates',
-		weight: 200,
-		style: normal,
-	),
-	'TTChocolates-Italic': (
-		family: 'TT Chocolates',
+	'Satoshi-Italic': (
+		family: 'Satoshi',
 		weight: 400,
 		style: italic,
+		display: swap,
 	),
-	'TTChocolates-Light-Italic': (
-		family: 'TT Chocolates',
+	'Satoshi-LightItalic': (
+		family: 'Satoshi',
 		weight: 300,
 		style: italic,
+		display: swap,
 	),
-	'TTChocolates-Light': (
-		family: 'TT Chocolates',
+	'Satoshi-Light': (
+		family: 'Satoshi',
 		weight: 300,
 		style: normal,
+		display: swap,
 	),
-	'TTChocolates-Medium-Italic': (
-		family: 'TT Chocolates',
+	'Satoshi-MediumItalic': (
+		family: 'Satoshi',
 		weight: 500,
 		style: italic,
+		display: swap,
 	),
-	'TTChocolates-Medium': (
-		family: 'TT Chocolates',
+	'Satoshi-Medium': (
+		family: 'Satoshi',
 		weight: 500,
 		style: normal,
+		display: swap,
 	),
-	'TTChocolates-Regular': (
-		family: 'TT Chocolates',
+	'Satoshi-Regular': (
+		family: 'Satoshi',
 		weight: 400,
 		style: normal,
+		display: swap,
 	),
 );
 
@@ -95,6 +87,7 @@ $typefaces: (
 			font-family: map.get(map.get($typefaces, $file), family);
 			font-style: map.get(map.get($typefaces, $file), style);
 			font-weight: map.get(map.get($typefaces, $file), weight);
+			font-display: map.get(map.get($typefaces, $file), display);
 			src: url('../fonts/#{$file}.woff') format('woff'),
 				url('../fonts/#{$file}.woff2') format('woff2');
 		}

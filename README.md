@@ -96,7 +96,7 @@ This site is built using:
 - [11ty][11ty], Markdown & [Nunjucks][nunjucks]
 - [Netlify][netlify] for deployment
 - These fonts:
-  - [TT Chocolates](https://typetype.org/fonts/tt-chocolates/), by TypeType
+  - [Satoshi](https://www.fontshare.com/fonts/satoshi), by Indian Type Foundry
   - [Dank Mono](https://philpl.gumroad.com/l/dank-mono), patched with [Nerd Fonts](https://www.nerdfonts.com/)
   - [Milkshake Script](https://creativemarket.com/mila.garret/6547399-Milkshake-Modern-Handwritten-Script) for flourish
 - Lots of ideas from a lot of cool people

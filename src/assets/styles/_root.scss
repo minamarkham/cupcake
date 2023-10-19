@@ -1,5 +1,5 @@
 :root {
-	--font-family-sans-serif: 'TT Chocolates', sans-serif;
+	--font-family-sans-serif: 'Satoshi', sans-serif;
 	--font-family-monospace: 'Dank Mono', monospace;
 	--font-family-system: system-ui, -apple-system, sans-serif;
 
@@ -39,7 +39,10 @@
 	--code-bg: var(--off-black); // #0F1C23;
 	--button-bg: var(--fuschia);
 	--button-bg-active: var(--dark-fuschia);
-	--background-pattern: radial-gradient(var(--color-background-tint) 1px, var(--color-background) 1px);
+	--background-pattern: radial-gradient(
+		var(--color-background-tint) 1px,
+		var(--color-background) 1px
+	);
 	--kbd-color-background: var(--off-white);
 	--kbd-color-border: var(--gray-80);
 	--kbd-color-text: var(--off-black);

@@ -1,12 +1,14 @@
 .footer {
-	font-size: 0.875rem;
+	font-size: 0.8rem;
 	padding: 3rem 6vw;
 	border-top: 1px solid var(--color-background-tint);
 	margin-top: 3rem;
 
 	a {
 		color: var(--color-text);
-		&:hover { color: var(--color-link);}
+		&:hover {
+			color: var(--color-link);
+		}
 	}
 
 	&__inner {
@@ -36,7 +38,9 @@
 
 	&__speedlify {
 		text-decoration: none !important;
-		&::after { display: none; }
+		&::after {
+			display: none;
+		}
 	}
 
 	@include screen(86.563rem) {
