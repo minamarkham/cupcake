@@ -42,7 +42,9 @@
 		"last 2 versions"
 	],
 	"dependencies": {
+		"cheet.js": "^0.3.3",
 		"clipboard": "^2.0.11",
+		"js-confetti": "^0.11.0",
 		"speedlify-score": "^2.0.2"
 	},
 	"devDependencies": {
