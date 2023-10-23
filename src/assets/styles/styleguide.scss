@@ -21,37 +21,37 @@ main {
 	grid-template-columns: 100%;
 	grid-template-rows: repeat(9, fit-content(300px));
 	grid-template-areas:
-		"colors"
-		"typography"
-		"links"
-		"marquee"
-		"code"
-		"buttons"
-		"social"
-		"pagination"
-		"animation"
-		"footnotes"
-		"forms"
-		"tables"
-		"media1"
-		"media2"
-		"media3"
-		"media4"
-		"media5";
+		'colors'
+		'typography'
+		'links'
+		'marquee'
+		'code'
+		'buttons'
+		'social'
+		'pagination'
+		'animation'
+		'footnotes'
+		'forms'
+		'tables'
+		'media1'
+		'media2'
+		'media3'
+		'media4'
+		'media5';
 	@include screen(992px) {
 		grid-template-columns: repeat(5, 1fr);
 		grid-template-rows: repeat(10, fit-content(300px));
 		grid-template-areas:
-			"colors colors colors colors colors"
-			"typography typography typography typography typography"
-			"code code marquee marquee marquee"
-			"social social social animation links"
-			"buttons buttons buttons pagination links"
-			"footnotes footnotes forms forms forms"
-			"tables tables tables tables tables"
-			"media1 media1 media2 media2 media2"
-			"media1 media1 media3 media3 media3"
-			"media4 media4 media4 media5 media5";
+			'colors colors colors colors colors'
+			'typography typography typography typography typography'
+			'code code marquee marquee marquee'
+			'social social social animation links'
+			'buttons buttons buttons pagination links'
+			'footnotes footnotes forms forms forms'
+			'tables tables tables tables tables'
+			'media1 media1 media2 media2 media2'
+			'media1 media1 media3 media3 media3'
+			'media4 media4 media4 media5 media5';
 	}
 }
 
@@ -85,7 +85,7 @@ section {
 	.label {
 		font-weight: 700;
 		margin: 0;
-		font-size: .8rem;
+		font-size: 0.8rem;
 		text-transform: uppercase;
 		display: block;
 	}
@@ -120,7 +120,9 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	.pagination { padding: 0; }
+	.pagination {
+		padding: 0;
+	}
 }
 
 @keyframes pulse {
@@ -140,6 +142,7 @@ section {
 .animation {
 	grid-area: animation;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
@@ -214,17 +217,17 @@ blockquote {
 }
 
 h1 {
-	.font-family-dankmono-bold & {
+	.font-family-caskaydiacove-bold & {
 		font-family: var(--font-family-monospace);
 		font-weight: 800;
 	}
 
-	.font-family-dankmono-italic & {
+	.font-family-caskaydiacove-italic & {
 		font-family: var(--font-family-monospace);
 		font-style: italic;
 	}
 
-	.font-family-dankmono-regular & {
+	.font-family-caskaydiacove-regular & {
 		font-family: var(--font-family-monospace);
 	}
 
@@ -301,7 +304,7 @@ h1 {
 	padding: 10px 0;
 	font-weight: 800;
 	margin: 0;
-	font-size: .9rem;
+	font-size: 0.9rem;
 	text-transform: uppercase;
 }
 
@@ -315,11 +318,11 @@ h1 {
 	font-family: var(--font-family-monospace);
 	max-width: 10em;
 	margin: 10px 0 0;
-	font-size: 16px;
 	font-weight: bold;
 	flex: 0 0 150px;
 	&::after {
 		content: '--color-' attr(data-color);
+		font-size: 15px;
 	}
 }
 

@@ -34,7 +34,9 @@ main {
 	&:focus {
 		outline: none;
 	}
-	@include screen(940px) { margin-top: 10rem; }
+	@include screen(940px) {
+		margin-top: 10rem;
+	}
 }
 
 %button {
@@ -70,7 +72,7 @@ main {
 	margin-top: 1rem;
 
 	.circle {
-		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+		@include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
 		position: relative;
 		display: block;
 		margin: 0;
@@ -88,7 +90,7 @@ main {
 	}
 
 	.button-text {
-		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+		@include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -134,7 +136,7 @@ a[download] {
 	font-size: 1rem;
 
 	.circle {
-		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+		@include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
 		position: relative;
 		display: block;
 		margin: 0;
@@ -145,7 +147,7 @@ a[download] {
 	}
 
 	.icon {
-		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+		@include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -153,7 +155,7 @@ a[download] {
 		background: var(--color-primary);
 
 		&.arrow {
-			@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+			@include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
 			left: 0.35rem;
 			width: 1.125rem;
 			height: 0.125rem;
@@ -174,7 +176,7 @@ a[download] {
 	}
 
 	.button-text {
-		@include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+		@include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -218,7 +220,8 @@ a[download] {
 	position: relative;
 	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 
-	&::before, &::after {
+	&::before,
+	&::after {
 		position: absolute;
 		content: '';
 		display: block;
@@ -233,26 +236,25 @@ a[download] {
 	&::before {
 		display: none;
 		top: -75%;
-		background-image:
+		background-image: radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+			radial-gradient(circle, transparent 20%, var(--button-bg) 20%, transparent 30%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
-			radial-gradient(circle,  transparent 20%, var(--button-bg) 20%, transparent 30%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
-			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
-			radial-gradient(circle,  transparent 10%, var(--button-bg) 15%, transparent 20%),
+			radial-gradient(circle, transparent 10%, var(--button-bg) 15%, transparent 20%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%);
-		background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+		background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%,
+			18% 18%;
 	}
 
 	&::after {
 		display: none;
 		bottom: -75%;
-		background-image:
+		background-image: radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
-			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
-			radial-gradient(circle,  transparent 10%, var(--button-bg) 15%, transparent 20%),
+			radial-gradient(circle, transparent 10%, var(--button-bg) 15%, transparent 20%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
 			radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
@@ -324,7 +326,6 @@ details {
 		margin: 1rem;
 	}
 
-
 	&[open] {
 		> summary {
 			color: var(--color-primary);
@@ -370,7 +371,7 @@ thead {
 tr {
 	border: 1px solid var(--color-text);
 	display: block;
-	margin-bottom: .625em;
+	margin-bottom: 0.625em;
 }
 
 td {
@@ -408,24 +409,28 @@ td {
 	}
 
 	caption {
-		margin: .5em 0 .75em;
+		margin: 0.5em 0 0.75em;
 	}
 
 	tr {
 		border: 0;
 		border-bottom: 1px solid var(--color-text);
-		padding: .35em;
+		padding: 0.35em;
 		margin: 0;
 		display: table-row;
 	}
 
-	td { border: none; }
+	td {
+		border: none;
+	}
 
-	td::before { display: none; }
+	td::before {
+		display: none;
+	}
 
 	th,
 	td {
-		padding: .625em;
+		padding: 0.625em;
 		text-align: left;
 		display: table-cell;
 	}
@@ -481,16 +486,21 @@ figcaption {
 }
 
 code {
-	background: #D8DEE9;
+	background: #d8dee9;
 	border-radius: 0.3em;
-	color: #343D46;
-	font-size: .875em;
+	color: #343d46;
+	font-size: 0.875em;
 	font-weight: 600;
 	padding: 0.1em 0.5em;
 	font-family: var(--font-family-monospace);
 }
 
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
+	font-family: var(--font-family-monospace);
+}
+
+pre[class*='language-'] {
 	padding: 1em;
 	margin: 1em 0;
 	background: var(--code-bg);
@@ -530,7 +540,8 @@ kbd {
 	}
 }
 
-samp, tt {
+samp,
+tt {
 	font-family: var(--font-family-monospace);
 }
 
@@ -546,7 +557,12 @@ hr {
 
 	&::before {
 		content: '';
-		background: linear-gradient(to right, transparent, var(--color-background-tint), transparent);
+		background: linear-gradient(
+			to right,
+			transparent,
+			var(--color-background-tint),
+			transparent
+		);
 		position: absolute;
 		left: 0;
 		top: 50%;

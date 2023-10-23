@@ -1,6 +1,18 @@
 @use 'sass:map';
 
 $typefaces: (
+	'CaskaydiaCoveNF-ExtraLight': (
+		family: 'CaskaydiaCove NF',
+		weight: 200,
+		style: normal,
+		display: swap,
+	),
+	'CaskaydiaCoveNF-ExtraLightItalic': (
+		family: 'CaskaydiaCove NF',
+		weight: 200,
+		style: italic,
+		display: swap,
+	),
 	'DankMono-Regular': (
 		family: 'Dank Mono',
 		weight: 400,
