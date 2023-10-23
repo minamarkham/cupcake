@@ -20,6 +20,11 @@
 		"external": false
 	},
 	{
+		"title": "Uses",
+		"url": "/uses/",
+		"external": false
+	},
+	{
 		"title": "Say Hi",
 		"url": "/say-hi/",
 		"external": false
